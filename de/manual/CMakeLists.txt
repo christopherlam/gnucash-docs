@@ -89,6 +89,11 @@ set (figures
         figures/Pref_Sched.png
         figures/Pref_Windows.png
         figures/Reconcile_Screen.png
+        figures/Report_Investment_Lots.png
+        figures/Report_Investment_Lots_Bar.png
+        figures/Report_Investment_Lots_StackedBar.png
+        figures/Report_Options_Dialog.png
+        figures/Report_Saved_Config.png
         figures/Report_Screen.png
         figures/Reset_Warnings.png
         figures/Scheduled_Transactions.png
