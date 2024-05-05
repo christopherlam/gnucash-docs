@@ -469,6 +469,7 @@
 <!ENTITY mc.fi.exp.acct-csv "<menuchoice>&gm.file;&gsm.fi.exp;&gmi.fi.exp.acct-csv;</menuchoice>">
 <!ENTITY mc.fi.exp.tran-csv "<menuchoice>&gm.file;&gsm.fi.exp;&gmi.fi.exp.tran-csv;</menuchoice>">
 <!ENTITY mc.fi.exp.regi-csv "<menuchoice>&gm.file;&gsm.fi.exp;&gmi.fi.exp.regi-csv;</menuchoice>">
+<!ENTITY mc.fi.exp.rep "<menuchoice>&gm.file;&gsm.fi.exp;&gmi.fi.exp.rep;</menuchoice>">
 <!ENTITY mc.fi.exp.acct "<menuchoice>&gm.file;&gsm.fi.exp;&gmi.fi.exp.acct;</menuchoice>">
 <!ENTITY mc.fi.prop "<menuchoice><shortcut><keycombo>&kc.alt;&kc.enter;</keycombo></shortcut>&gm.file;&gmi.fi.prop;</menuchoice>">
 <!ENTITY mc-gmi.fi.prop "<menuchoice><shortcut><keycombo>&kc.alt;&kc.enter;</keycombo></shortcut>&gmi.fi.prop;</menuchoice>">

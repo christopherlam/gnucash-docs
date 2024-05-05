@@ -54,7 +54,7 @@
 <!ENTITY % gmi.fi.exp.acct-csv "<guimenuitem>Konten<accel>h</accel>ierarchie nach CSV exportieren…</guimenuitem>">
 <!ENTITY % gmi.fi.exp.tran-csv "<guimenuitem><accel>B</accel>uchungen nach CSV exportieren…</guimenuitem>">
 <!ENTITY % gmi.fi.exp.regi-csv "<guimenuitem><accel>A</accel>ktives Kontobuch als CSV-Datei exportieren…</guimenuitem>">
-<!ENTITY % gmi.fi.exp.rep "<guimenuitem><accel>B</accel>ericht exportieren</guimenuitem>">
+<!ENTITY % gmi.fi.exp.rep "<guimenuitem><accel>B</accel>ericht exportieren…</guimenuitem>">
 <!ENTITY % gmi.fi.exp.acct "<guimenuitem><accel>K</accel>onten exportieren</guimenuitem>">
 <!ENTITY % gmi.fi.prop "<guimenuitem><accel>E</accel>igenschaften</guimenuitem>">
 <!ENTITY % gmi.fi.mru "<guimenuitem>Zuletzt geöffnete Dateien</guimenuitem>">
