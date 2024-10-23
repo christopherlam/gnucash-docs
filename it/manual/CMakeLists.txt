@@ -15,7 +15,6 @@ set (entities
     ${CMAKE_SOURCE_DIR}/manual/C/legal.docbook
     ${CMAKE_SOURCE_DIR}/manual/C/txf-categories.docbook
     ${CMAKE_SOURCE_DIR}/manual/C/fdl-appendix.docbook
-    ${CMAKE_SOURCE_DIR}/manual/C/tips-appendix.docbook
 )
 
 set (figures

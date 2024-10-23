@@ -631,7 +631,8 @@
               </para>
 
               <para>After selecting the type of source for price quotes, select a quote source from the pull-down menu.
-                For details on currently supported sources see <xref linkend="fq-sources"></xref>.
+                For details on currently supported sources see
+                <ulink url="&url-wiki;Online_Quotes#Finance::Quote_Sources">wiki:Online_Quotes#Finance::Quote_Sources</ulink>.
               </para>
 
               <note>
@@ -644,11 +645,12 @@
               <para>If you are outside the US and use one of the different Yahoo sources or multiple sources containing
                 Yahoo, you should append the market code for the security such as PA for Paris, BE
                 for Berlin, etc. Example: 12150.PA (a Peugeot security in the Paris market).
-                <xref linkend="gnc-tbl-fq-yahoo-exchange-codes"></xref> below lists suffixes for
-                various markets around the world.
+                <ulink url="&url-wiki;Online_Quotes#Yahoo_Specifics">wiki:Online_Quotes#Yahoo_Specifics</ulink> below
+                lists suffixes for various markets around the world.
               </para>
 
-              <para>Pseudo-symbols for TIAA-CREF funds are listed in table <xref linkend="PsSymbs-TIAA-CREF"></xref>.
+              <para>Pseudo-symbols for TIAA-CREF funds are listed in table
+                <ulink url="&url-wiki;Online_Quotes#TIAA-CREF_Specifics">wiki:Online_Quotes#TIAA-CREF_Specifics</ulink>.
               </para>
             </listitem>
 

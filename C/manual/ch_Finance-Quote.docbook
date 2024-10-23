@@ -446,7 +446,7 @@ Failed to initialize Finance::Quote: missing_modules Finance::Quote JSON::Parse
                 rates are denominated in the first code.
                 <footnote>
                   <para>Since &app-fq; 1.41 the default source for currencies is <quote>Alpha Vantage</quote>. See also the
-                    notes on <xref linkend="gnc-tbl-fq-currency-source" />.
+                    notes on <ulink url="&url-wiki;Online_Quotes#Finance::Quote_Sources_-_Currency_Source">wiki:Online_Quotes#Finance::Quote_Sources_-_Currency_Source</ulink>.
                   </para>
                 </footnote>
                 For example:
@@ -481,9 +481,9 @@ Finance::Quote fields GnuCash uses:
     symbol: AAPL            &lt;=== required
       date: 07/28/2023      &lt;=== recommended
   currency: USD             &lt;=== required
-      last: 193.22          &lt;=\ 
+      last: 193.22          &lt;=\
        nav:                 &lt;=== one of these
-     price:                 &lt;=/ 
+     price:                 &lt;=/
 </screen>
                       </informalexample>
                     </para>
