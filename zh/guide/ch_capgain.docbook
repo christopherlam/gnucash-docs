@@ -112,6 +112,7 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/capgain_appmain.png"
+                       contentwidth="6.25in" autoscale-screenshot="1"
                        srccredit="Bengt Thuree" />
           </imageobject>
           <caption>
@@ -135,6 +136,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/capgain_app2main.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -259,6 +261,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/capgain_app3main.png"
+                             contentwidth="6.25in" autoscale-screenshot="1"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>

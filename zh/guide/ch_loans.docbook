@@ -19,6 +19,8 @@
   - 术语 borrower/lender 翻译为“借款人/放款人”，避免使用“贷款人”（有歧义）
   - 汉语中贷款指“银行或其他信用机构向借款人所作的借款”，所以对银行的loan翻译为“贷款”，对个人的loan译为“借款”
   - captial gain 作为固定词组翻译为资本利得，而不翻译成资本收益。但gain单独使用时可按语境译为收益。
+  - 处理个人借款时，也可使用“借钱”、“还钱”等口语化的表述。
+  - payment 翻译为“还款”而非“付款”。
 -->
 
 <chapter id="chapter_loans">
@@ -190,6 +192,7 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/loans_fcalc.png"
+                       contentwidth="4.45in" autoscale-screenshot="1"
                        srccredit="Bengt Thuree" />
           </imageobject>
           <caption>
@@ -232,7 +235,7 @@
       </varlistentry>
 
       <varlistentry>
-        <term>每期还款额</term>
+        <term>每期还款</term>
 
         <listitem>
           <para>每期要偿还的金额。
@@ -423,6 +426,7 @@
       <mediaobject>
         <imageobject>
           <imagedata fileref="figures/loans_mortgage1.png"
+                     contentwidth="6.25in" autoscale-screenshot="1"
                      srccredit="Bengt Thuree" />
         </imageobject>
       </mediaobject>
@@ -512,6 +516,7 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/loans_mortgage2.png"
+                       contentwidth="9.38in" autoscale-screenshot="1"
                        srccredit="Bengt Thuree" />
           </imageobject>
         </mediaobject>
@@ -527,6 +532,7 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/loans_mortgage3.png"
+                       contentwidth="6.25in" autoscale-screenshot="1"
                        srccredit="Bengt Thuree" />
           </imageobject>
         </mediaobject>
@@ -721,6 +727,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/loans_PrivateLoanInitial.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -771,6 +778,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/loans_PrivateLoanFirstPayment.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -827,6 +835,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/loans_PrivateLoanSecondPayment.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -850,6 +859,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/loans_PrivateLoanSecondPaymentAccounts.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>

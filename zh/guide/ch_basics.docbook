@@ -441,6 +441,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/basics_TipOfDay.png"
+                         contentwidth="4.17in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -466,6 +467,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/basics_Accounts.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -503,6 +505,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/basics_CheckAccount.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree"/>
             </imageobject>
 
@@ -826,6 +829,7 @@ Translators:
                   <mediaobject>
                     <imageobject>
                       <imagedata fileref="figures/basics_SaveXML.png"
+                                 contentwidth="6.96in" autoscale-screenshot="1"
                                  srccredit="Cristian Marchi"/>
                     </imageobject>
 
@@ -866,7 +870,7 @@ Translators:
 
                 <screenshot id="basics-SaveSQL">
                   <mediaobject>
-                    <imageobject role="fo">
+                    <imageobject>
                       <imagedata fileref="figures/basics_SaveSQL.png"
                                  srccredit="Cristian Marchi"/>
                     </imageobject>
@@ -1244,13 +1248,9 @@ Translators:
 
           <screenshot id="basics-NewAccountHierarchySetup">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup.png"
+                           contentwidth="9.38in" autoscale-screenshot="1"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1278,6 +1278,7 @@ Translators:
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_NewBookOpts.png"
+                           contentwidth="9.38in" autoscale-screenshot="1"
                            srccredit="Frank H. Ellenberger"/>
               </imageobject>
 
@@ -1301,13 +1302,9 @@ Translators:
 
           <screenshot id="basics-NewAccountHierarchySetup-currency">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_currency.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup_currency.png"
+                           contentwidth="9.38in" autoscale-screenshot="1"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1331,13 +1328,9 @@ Translators:
 
           <screenshot id="basics-NewAccountHierarchySetup-Accounts">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_Accounts.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup_Accounts.png"
+                           contentwidth="9.38in" autoscale-screenshot="1"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1357,13 +1350,9 @@ Translators:
 
           <screenshot id="basics-NewAccountHierarchySetup-Setup.png">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_Setup.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup_Setup.png"
+                           contentwidth="9.38in" autoscale-screenshot="1"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1383,13 +1372,9 @@ Translators:
 
           <screenshot id="basics-NewAccountHierarchySetup-Finish">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_Finish.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup_Finish.png"
+                           contentwidth="9.38in" autoscale-screenshot="1"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1413,6 +1398,7 @@ Translators:
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_EmptyAccounts.png"
+                           contentwidth="6.25in" autoscale-screenshot="1"
                            srccredit="Frank H. Ellenberger"/>
               </imageobject>
             </mediaobject>

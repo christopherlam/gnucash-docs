@@ -133,6 +133,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cbook_gcashdata4.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -159,6 +160,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_transferin.png"
+                             contentwidth="9.38in" autoscale-screenshot="1"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -181,6 +183,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_checkexamp.png"
+                             contentwidth="9.38in" autoscale-screenshot="1"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -203,6 +206,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_atm.png"
+                             contentwidth="9.38in" autoscale-screenshot="1"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -255,6 +259,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_reconexamp.png"
+                             contentwidth="9.38in" autoscale-screenshot="1"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -280,6 +285,7 @@
                 <mediaobject>
                   <imageobject>
                     <imagedata fileref="figures/cbook_servch.png"
+                               contentwidth="9.38in" autoscale-screenshot="1"
                                srccredit="Bengt Thuree" />
                   </imageobject>
                   <caption>
@@ -302,6 +308,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_reconciledCheckAct.png"
+                             contentwidth="9.38in" autoscale-screenshot="1"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -328,6 +335,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cbook_chartaccts5.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>

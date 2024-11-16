@@ -233,6 +233,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/accts_DefaultIncomeAccounts.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -248,6 +249,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/accts_DefaultExpenseAccounts.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -313,6 +315,7 @@ Translators:
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/accts_CreateAssetsAccount.png"
+                             contentwidth="3.74in" autoscale-screenshot="1"
                              srccredit="Cristian Marchi"/>
                 </imageobject>
 
@@ -352,6 +355,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/accts_toplevel.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -458,6 +462,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/accts_tree.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 

@@ -89,6 +89,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_registersplit4.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -107,6 +108,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_registersplit5.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -127,6 +129,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_registersplit6.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -319,6 +322,7 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/txns_registersplit2.png"
+                       contentwidth="9.38in" autoscale-screenshot="1"
                        srccredit="Bengt Thuree" />
           </imageobject>
           <caption>
@@ -343,7 +347,8 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/txns_registersplit3.png"
-              srccredit="Bengt Thuree" />
+                       contentwidth="9.38in" autoscale-screenshot="1"
+                       srccredit="Bengt Thuree" />
           </imageobject>
           <caption>
             <para>此图展示了跳转到<emphasis>收入:薪资</emphasis>科目后的界面。
@@ -371,6 +376,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_register_2account.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -392,6 +398,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_register_2account2.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -424,6 +431,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_register_multiaccount.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -468,6 +476,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_reconcile_window1.png"
+                         contentwidth="2.44in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi"/>
             </imageobject>
           </mediaobject>
@@ -558,6 +567,7 @@
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/txns_reconcile_window2.png"
+                           contentwidth="9.38in" autoscale-screenshot="1"
                            srccredit="Cristian Marchi"/>
               </imageobject>
               <caption>
@@ -621,6 +631,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_reconcile_window3.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -653,6 +664,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger1.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -671,6 +683,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger2.png"
+                         contentwidth="6.96in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -686,6 +699,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger3.png"
+                         contentwidth="5.79in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -702,6 +716,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger4.png"
+                         contentwidth="5.79in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -728,6 +743,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-2.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi"/>
             </imageobject>
             <caption>
@@ -745,12 +761,9 @@
         <title><guilabel>编辑计划交易</guilabel>窗口的<guilabel>概览</guilabel>标签页</title>
         <screenshot id="txns-sxn-editor-3-overview">
           <mediaobject>
-            <imageobject role="html">
+            <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-3-overview.png"
-                         srccredit="Cristian Marchi" width="&img-w;"/>
-            </imageobject>
-            <imageobject role="fo">
-              <imagedata fileref="figures/txns_sxn_editor-3-overview.png"
+                         contentwidth="9.14in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi" />
             </imageobject>
             <caption>
@@ -823,12 +836,9 @@
         <title><guilabel>编辑计划交易</guilabel>窗口的<guilabel>频率</guilabel>标签页</title>
         <screenshot id="txns-sxn-editor-3-frequency">
           <mediaobject>
-            <imageobject role="html">
+            <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-3-frequency.png"
-                         srccredit="Cristian Marchi" width="&img-w;"/>
-            </imageobject>
-            <imageobject role="fo">
-              <imagedata fileref="figures/txns_sxn_editor-3-frequency.png"
+                         contentwidth="9.14in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi" />
             </imageobject>
             <caption>
@@ -902,12 +912,9 @@
         <title><guilabel>编辑计划交易</guilabel>窗口的<guilabel>交易模板</guilabel>标签页</title>
         <screenshot id="txns-sxn-editor-3-template">
           <mediaobject>
-            <imageobject role="html">
+            <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-3-template.png"
-                         srccredit="Cristian Marchi" width="&img-w;"/>
-            </imageobject>
-            <imageobject role="fo">
-              <imagedata fileref="figures/txns_sxn_editor-3-template.png"
+                         contentwidth="9.14in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi" />
             </imageobject>
             <caption>
@@ -927,6 +934,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-4.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi" />
             </imageobject>
           </mediaobject>
@@ -955,6 +963,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor_slr.png"
+                         contentwidth="6.67in" autoscale-screenshot="1"
                          srccredit="Cristian Marchi" />
             </imageobject>
          </mediaobject>
@@ -1000,6 +1009,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_puttoget_Charts.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -1048,6 +1058,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_puttoget_Charts1.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -1133,6 +1144,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_puttoget_Charts2.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>

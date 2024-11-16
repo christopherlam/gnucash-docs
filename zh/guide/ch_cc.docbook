@@ -175,7 +175,8 @@
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/cc_Reversing_Transaction_1.png"
-                             srccredit="Bengt Thuree"/>
+                           contentwidth="9.38in" autoscale-screenshot="1"
+                           srccredit="Bengt Thuree"/>
               </imageobject>
               <caption>
                 <para>此图展示了对冲购买交易后的<emphasis>负债:信用卡</emphasis>科目账簿。
@@ -194,7 +195,8 @@
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/cc_Reversing_Transaction_2.png"
-                             srccredit="Bengt Thuree"/>
+                           contentwidth="9.38in" autoscale-screenshot="1"
+                           srccredit="Bengt Thuree"/>
               </imageobject>
               <caption>
                 <para>此图展示了对冲购买交易后的<emphasis>费用:服装</emphasis>科目账簿。
@@ -230,7 +232,8 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_accounts.png"
-                       srccredit="Bengt Thuree"/>
+                         contentwidth="6.25in" autoscale-screenshot="1"
+                         srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
               <para>在这个步步为营例子中跟踪信用卡账目前的初始科目结构。
@@ -259,6 +262,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_purchases.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -282,6 +286,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_refund.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -305,6 +310,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_interest.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -332,6 +338,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_reconcile_init.png"
+                         contentwidth="2.44in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree"/>
             </imageobject>
           </mediaobject>
@@ -347,6 +354,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_reconcile.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -373,6 +381,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_payment.png"
+                         contentwidth="9.38in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -392,6 +401,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_final.png"
+                         contentwidth="6.25in" autoscale-screenshot="1"
                          srccredit="Bengt Thuree"/>
             </imageobject>
           </mediaobject>
