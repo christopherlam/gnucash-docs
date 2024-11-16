@@ -7,11 +7,9 @@
 <!-- untranslated message -->
 <!ENTITY % untranslated 'Caro leitor, lamentamos, ainda ninguém ofereceu uma tradução
   para as secções seguintes. Se quiser ajudar, siga as instruções na <ulink
-  url="https://wiki.gnucash.org/wiki/Translation#Translating_the_GnuCash_Guide_and_Help">
+  url="https://wiki.gnucash.org/wiki/Documentation_Translation">
   <citetitle>Wiki do Gnucash: como traduzir o guia e/ou os ficheiros de ajuda do GnuCash</citetitle></ulink>.
-  Questões podem ser discutidas na lista gnucash-user@gnucash.org o gnucash-br@gnucash.org.'>
-
-<!ENTITY untranslated-pt "%untranslated;"> <!-- For backward compatibility. Remove if unnecessary. -->
+  Questões podem ser discutidas na lista <email>gnucash-user@gnucash.org</email> o <email>gnucash-br@gnucash.org</email>.'>
 
 <!-- Include "gnc-gui-C.dtd" -->
 <!ENTITY % gnc-gui-C SYSTEM "gnc-gui-C.dtd">

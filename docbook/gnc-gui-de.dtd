@@ -179,8 +179,8 @@
 <!ENTITY % gmi.bus.emp.o-view "<guimenuitem>Mitarbeiter<accel>ü</accel>bersicht</guimenuitem>">
 <!ENTITY % gmi.bus.emp.new-emp "<guimenuitem><accel>N</accel>euer Mitarbeiter…</guimenuitem>">
 <!ENTITY % gmi.bus.emp.find-emp "<guimenuitem>Mitarbeiter <accel>s</accel>uchen…</guimenuitem>">
-<!ENTITY % gmi.bus.emp.new-exp-vou "<guimenuitem>Neue Auslagene<accel>r</accel>stattung…</guimenuitem>">
-<!ENTITY % gmi.bus.emp.find-exp-vou "<guimenuitem>Auslagenerstattung s<accel>u</accel>chen…</guimenuitem>">
+<!ENTITY % gmi.bus.emp.new-vchr "<guimenuitem>Neue Auslagene<accel>r</accel>stattung…</guimenuitem>">
+<!ENTITY % gmi.bus.emp.find-vchr "<guimenuitem>Auslagenerstattung s<accel>u</accel>chen…</guimenuitem>">
 <!ENTITY % gmi.bus.emp.pro-pay "<guimenuitem><accel>Z</accel>ahlung verarbeiten…</guimenuitem>">
 <!ENTITY % gmi.bus.link-doc "<guimenuitem>Verknüpfte <accel>G</accel>eschäftsdokumente</guimenuitem>">
 <!ENTITY % gmi.bus.tax-tab "<guimenuitem>USt.-<accel>S</accel>teuertabelle…</guimenuitem>">
@@ -444,11 +444,9 @@
 <!ENTITY % untranslated 'Geehrte Leser, leider hat bisher niemand eine Übersetzung
   der folgenden Teile erstellt. Falls Sie uns dabei helfen möchten, folgen Sie
   bitte der Anleitung in <ulink
-    url="https://wiki.gnucash.org/wiki/Translation#Translating_the_GnuCash_Guide_and_Help">
-    <citetitle>Gnucash wiki: How to translate the GnuCash guide and/or help files</citetitle></ulink>.
-  Fragen können auf der deutschsprachigen Mailingliste gnucash-de@gnucash.org diskutiert werden.'>
-
-<!ENTITY untranslated-de "%untranslated;"> <!-- For backward compatibility. Remove if unnecessary. -->
+    url="https://wiki.gnucash.org/wiki/Documentation_Translation">
+    <citetitle>Gnucash wiki: Translating the GnuCash Guide and Manual</citetitle></ulink>.
+  Fragen können auf der deutschsprachigen Mailingliste <email>gnucash-de@gnucash.org</email> diskutiert werden.'>
 
 
 <!-- Include "gnc-gui-C.dtd" -->

@@ -31,17 +31,18 @@ https://www.w3.org/2003/entities/2007/w3centities-f.ent
 <!--
   Some global declarations which are used in the files. For easier
   maintenance they are collected here.
+  Note that this entities are not available in gnc-gui-*.dtd files!
   
   1. a) Publication - should only be changed by the release manager!
 -->
 <!ENTITY series-stable "5">
-<!ENTITY vers-stable "&series-stable;.6">
+<!ENTITY vers-stable "&series-stable;.9">
 <!ENTITY series-unstable "none">
 <!ENTITY vers-unstable "none">
-<!ENTITY app-fq-vers "1.59">
+<!ENTITY app-fq-vers "1.63">
 
 <!ENTITY manrevision "&vers-stable;">
-<!ENTITY date "31 March 2024">
+<!ENTITY date "29 September 2024">
 <!-- Fixme: a dirty hack to reference the other document
             Replace them after olink setup               -->
 <!ENTITY url-docs-draft "https://code.gnucash.org/docs/">  <!-- used while developing and for the API-docs -->
@@ -136,29 +137,29 @@ https://www.w3.org/2003/entities/2007/w3centities-f.ent
 <!ENTITY url-src-stable "https://github.com/Gnucash/gnucash/tree/stable/"> <!-- Append the desired topic -->
 
 <!ENTITY url-wiki "https://wiki.gnucash.org/wiki/">  <!-- You could append the desired topic, but better create a separate entity. -->
-<!ENTITY url-wiki-de "https://wiki.gnucash.org/wiki/De/">  <!-- German root -->
-<!ENTITY url-wiki-api-custom "https://wiki.gnucash.org/wiki/Custom_Reports#The_GnuCash_API">
-<!ENTITY url-wiki-api-using "https://wiki.gnucash.org/wiki/Using_the_API">
-<!ENTITY url-wiki-bus-feat "https://wiki.gnucash.org/wiki/Business_Features_Issues">
-<!ENTITY url-wiki-faq "https://wiki.gnucash.org/wiki/FAQ">
-<!ENTITY url-wiki-faq-de "https://wiki.gnucash.org/wiki/De/FAQ">
-<!ENTITY url-wiki-faq-quot "https://wiki.gnucash.org/wiki/FAQ#Q:_How_do_I_fix_a_.22system_error.22_or_.22unknown_error.22_when_getting_stock_quotes.3F">
-<!ENTITY url-wiki-irc "https://wiki.gnucash.org/wiki/IRC">
-<!ENTITY url-wiki-L12N "https://wiki.gnucash.org/wiki/Translation">
-<!ENTITY url-wiki-L12N-tax "https://wiki.gnucash.org/wiki/Translation#How_to_create_localized_Income_Tax_Tables">
-<!ENTITY url-wiki-locale "https://wiki.gnucash.org/wiki/Locale_Settings">
-<!ENTITY url-wiki-ml "https://wiki.gnucash.org/wiki/Mailing_Lists">
-<!ENTITY url-wiki-ml-de "https://wiki.gnucash.org/wiki/De/Feedback#Auf_der_Mailingliste">
-<!ENTITY url-wiki-pmt-term "https://wiki.gnucash.org/wiki/Payment_Terms">
-<!ENTITY url-wiki-ofx "https://wiki.gnucash.org/wiki/Setting_up_OFXDirectConnect">
-<!ENTITY url-wiki-ofx-banks "https://wiki.gnucash.org/wiki/OFX_Direct_Connect_Bank_Settings">
-<!ENTITY url-wiki-OQ "https://wiki.gnucash.org/wiki/Online_Quotes">
-<!ENTITY url-wiki-qif "https://wiki.gnucash.org/wiki/Quicken_Migration">
-<!ENTITY url-wiki-xslt "https://wiki.gnucash.org/wiki/De/export_to_excel_xls_transform">
-<!ENTITY url-wiki-lots "https://wiki.gnucash.org/wiki/Concept_of_Lots">
+<!ENTITY url-wiki-de "&url-wiki;De/">  <!-- German root -->
+<!ENTITY url-wiki-api-custom "&url-wiki;Custom_Reports#The_GnuCash_API">
+<!ENTITY url-wiki-api-using "&url-wiki;Using_the_API">
+<!ENTITY url-wiki-bus-feat "&url-wiki;Business_Features_Issues">
+<!ENTITY url-wiki-faq "&url-wiki;FAQ">
+<!ENTITY url-wiki-faq-de "&url-wiki;De/FAQ">
+<!ENTITY url-wiki-faq-quot "&url-wiki;FAQ#Q:_How_do_I_fix_a_.22system_error.22_or_.22unknown_error.22_when_getting_stock_quotes.3F">
+<!ENTITY url-wiki-irc "&url-wiki;IRC">
+<!ENTITY url-wiki-L12N "&url-wiki;Translation">
+<!ENTITY url-wiki-L12N-tax "&url-wiki;Translation#How_to_create_localized_Income_Tax_Tables">
+<!ENTITY url-wiki-locale "&url-wiki;Locale_Settings">
+<!ENTITY url-wiki-ml "&url-wiki;Mailing_Lists">
+<!ENTITY url-wiki-ml-de "&url-wiki;De/Feedback#Auf_der_Mailingliste">
+<!ENTITY url-wiki-pmt-term "&url-wiki;Payment_Terms">
+<!ENTITY url-wiki-ofx "&url-wiki;Setting_up_OFXDirectConnect">
+<!ENTITY url-wiki-ofx-banks "&url-wiki;OFX_Direct_Connect_Bank_Settings">
+<!ENTITY url-wiki-OQ "&url-wiki;Online_Quotes">
+<!ENTITY url-wiki-qif "&url-wiki;Quicken_Migration">
+<!ENTITY url-wiki-xslt "&url-wiki;De/export_to_excel_xls_transform">
+<!ENTITY url-wiki-lots "&url-wiki;Concept_of_Lots">
   <!-- wiki Special: translation is done by mediawiki: -->
-<!ENTITY url-wiki-category "https://wiki.gnucash.org/wiki/Special:Categories">
-<!ENTITY url-wiki-search "https://wiki.gnucash.org/wiki/Special:Search">
+<!ENTITY url-wiki-category "&url-wiki;Special:Categories">
+<!ENTITY url-wiki-search "&url-wiki;Special:Search">
 
 <!-- b) Third party URLs: -->
 <!ENTITY url-av "https://www.alphavantage.co/"> <!-- A F::Q source, which requires registration -->

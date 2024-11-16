@@ -102,7 +102,7 @@
       </itemizedlist>
     </para>
 
-    <para>Das komplette Hilfemenü wird in <xref linkend="AccTree-help-menu"></xref>beschrieben.
+    <para>Das komplette Hilfemenü wird in <xref linkend="AccTree-help-menu"></xref> beschrieben.
     </para>
 
     <variablelist>
@@ -154,11 +154,11 @@
         &appname;!</guilabel> Menü wählen.
       </para>
 
-      <para>Um diese Anleitung manuell zu öffnen, gehen Sie zu &mc.help.guide;.
+      <para>Um es zu einem späteren Zeitpunkt zu öffnen, gehen Sie zu &mc.help.guide;.
       </para>
 
       <important>
-        <para>Es wird dringend empfohlen, dieses Handbuch zu lesen, wenn Sie mit der Nutzung von &app; neu
+        <para>Es wird dringend empfohlen, das Tutorial zu lesen, wenn Sie mit der Nutzung von &app; neu
           beginnen oder mit den Konzepten der Buchhaltung nicht vertraut sind.
         </para>
       </important>

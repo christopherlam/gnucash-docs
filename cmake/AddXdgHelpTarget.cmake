@@ -90,7 +90,7 @@ function (add_xdghelp_target targetbase lang entities figures)
         COMPONENT "xdghelp")
 
     # Add links to make our documentation visible for KDE's help system
-    set(doc_install_dir_kde_base "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_DATADIR}/doc/HTML")
+    set(doc_install_dir_kde_base "\$ENV{DESTDIR}${CMAKE_INSTALL_DATADIR}/doc/HTML")
     install(CODE "execute_process (COMMAND ${CMAKE_COMMAND} -E make_directory \"${doc_install_dir_kde_base}\")"
         COMPONENT "xdghelp")
     install(CODE "execute_process (COMMAND ${CMAKE_COMMAND} -E create_symlink \"../../../${doc_install_dir_base}\" \"${doc_install_dir_kde_base}/${kde_lang}\")"

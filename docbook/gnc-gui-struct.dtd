@@ -174,8 +174,8 @@
 <!ENTITY gmi.bus.emp.o-view "%gmi.bus.emp.o-view;">
 <!ENTITY gmi.bus.emp.new-emp "%gmi.bus.emp.new-emp;">
 <!ENTITY gmi.bus.emp.find-emp "%gmi.bus.emp.find-emp;">
-<!ENTITY gmi.bus.emp.new-exp-vou "%gmi.bus.emp.new-exp-vou;">
-<!ENTITY gmi.bus.emp.find-exp-vou "%gmi.bus.emp.find-exp-vou;">
+<!ENTITY gmi.bus.emp.new-vchr "%gmi.bus.emp.new-vchr;">
+<!ENTITY gmi.bus.emp.find-vchr "%gmi.bus.emp.find-vchr;">
 <!ENTITY gmi.bus.emp.pro-pay "%gmi.bus.emp.pro-pay;">
 <!ENTITY gmi.bus.link-doc "%gmi.bus.link-doc;">
 <!ENTITY gmi.bus.tax-tab "%gmi.bus.tax-tab;">
@@ -604,8 +604,8 @@
 <!ENTITY mc.bus.emp.o-view "<menuchoice>&gm.bus;&gsm.bus.emp;&gmi.bus.emp.o-view;</menuchoice>">
 <!ENTITY mc.bus.emp.new-emp "<menuchoice>&gm.bus;&gsm.bus.emp;&gmi.bus.emp.new-emp;</menuchoice>">
 <!ENTITY mc.bus.emp.find-emp "<menuchoice>&gm.bus;&gsm.bus.emp;&gmi.bus.emp.find-emp;</menuchoice>">
-<!ENTITY mc.bus.emp.new-exp-vou "<menuchoice>&gm.bus;&gsm.bus.emp;&gmi.bus.emp.new-exp-vou;</menuchoice>">
-<!ENTITY mc.bus.emp.find-exp-vou "<menuchoice>&gm.bus;&gsm.bus.emp;&gmi.bus.emp.find-exp-vou;</menuchoice>">
+<!ENTITY mc.bus.emp.new-vchr "<menuchoice>&gm.bus;&gsm.bus.emp;&gmi.bus.emp.new-vchr;</menuchoice>">
+<!ENTITY mc.bus.emp.find-vchr "<menuchoice>&gm.bus;&gsm.bus.emp;&gmi.bus.emp.find-vchr;</menuchoice>">
 <!ENTITY mc.bus.emp.pro-pay "<menuchoice>&gm.bus;&gsm.bus.emp;&gmi.bus.emp.pro-pay;</menuchoice>">
 <!ENTITY mc.bus.link-doc "<menuchoice>&gm.bus;&gmi.bus.link-doc;</menuchoice>">
 <!ENTITY mc.bus.tax-tab "<menuchoice>&gm.bus;&gmi.bus.tax-tab;</menuchoice>">
@@ -639,6 +639,7 @@
 <!ENTITY mc.rep.bgt.bgt-p-r "<menuchoice>&gm.rep;&gsm.rep.bgt;&gmi.rep.bgt.bgt-p-r;</menuchoice>">
 <!ENTITY mc.rep.bgt.bgt-rep "<menuchoice>&gm.rep;&gsm.rep.bgt;&gmi.rep.bgt.bgt-rep;</menuchoice>">
 <!ENTITY mc-gsm.rep.bus "<menuchoice>&gsm.rep.bus;<guimenuitem /></menuchoice>">
+<!ENTITY mc.rep.bus "<menuchoice>&gm.rep; &gsm.rep.bus;</menuchoice>">
 <!ENTITY mc.rep.bus.aus-tax "<menuchoice>&gm.rep;&gsm.rep.bus;&gmi.rep.bus.aus-tax;</menuchoice>">
 <!ENTITY mc.rep.bus.cus-rep "<menuchoice>&gm.rep;&gsm.rep.bus;&gmi.rep.bus.cus-rep;</menuchoice>">
 <!ENTITY mc.rep.bus.cus-sum "<menuchoice>&gm.rep;&gsm.rep.bus;&gmi.rep.bus.cus-sum;</menuchoice>">

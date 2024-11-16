@@ -79,6 +79,42 @@
 
     <revhistory>
       <revision>
+        <revnumber>&appname; Tutorial e guia de conceitos 5.9</revnumber>
+        <date>29 de setembro de 2024</date>
+        <revdescription>
+          <para role="author">Multiple authors
+          </para>
+
+          <para role="publisher">&appname; Documentation Team
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>&appname; Tutorial e guia de conceitos 5.8</revnumber>
+        <date>7 de julio de 2024</date>
+        <revdescription>
+          <para role="author">Multiple authors
+          </para>
+
+          <para role="publisher">&appname; Documentation Team
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>&appname; Tutorial e guia de conceitos 5.7</revnumber>
+        <date>30 de junho de 2024</date>
+        <revdescription>
+          <para role="author">Multiple authors
+          </para>
+
+          <para role="publisher">&appname; Documentation Team
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
         <revnumber>&appname; Tutorial e guia de conceitos 5.6</revnumber>
         <date>31 de março de 2024</date>
         <revdescription>

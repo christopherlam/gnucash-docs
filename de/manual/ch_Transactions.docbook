@@ -3104,8 +3104,9 @@ Translators:
 
       <note>
         <para>Die hier abgebildeten Farben sind die Standardwerte für &app;, die in
-          <ulink url="&url-gh-gc-stable;gnucash/gnucash-fallback-310.css">gnucash-fallback-310.css</ulink>.
-          Wenn die gtk-3.0-CSS-Dateien geändert wurden, können unterschiedliche Farben auftreten.
+          <ulink url="&url-gh-gc-stable;gnucash/gnucash-fallback.css">gnucash-fallback.css</ulink>
+          definiert sind. Wenn die gtk-3.0-CSS-Dateien geändert wurden, können unterschiedliche
+          Farben auftreten.
         </para>
       </note>
 

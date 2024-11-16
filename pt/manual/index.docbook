@@ -47,6 +47,42 @@
 
     <revhistory>
       <revision>
+        <revnumber>Manual de ajuda do &appname; 5.9</revnumber>
+        <date>29 de setembro de 2024</date>
+        <revdescription>
+          <para role="author">Múltiplos autores
+          </para>
+
+          <para role="publisher">Equipa de documentação do &appname;
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Manual de ajuda do &appname; 5.8</revnumber>
+        <date>7 de julio de 2024</date>
+        <revdescription>
+          <para role="author">Múltiplos autores
+          </para>
+
+          <para role="publisher">Equipa de documentação do &appname;
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>Manual de ajuda do &appname; 5.7</revnumber>
+        <date>30 de junho de 2024</date>
+        <revdescription>
+          <para role="author">Múltiplos autores
+          </para>
+
+          <para role="publisher">Equipa de documentação do &appname;
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
         <revnumber>Manual de ajuda do &appname; 5.6</revnumber>
         <date>31 de março de 2024</date>
         <revdescription>

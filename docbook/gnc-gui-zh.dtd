@@ -178,8 +178,8 @@
 <!ENTITY % gmi.bus.emp.o-view "<guimenuitem>Employess Overview(<accel></accel>)</guimenuitem>">
 <!ENTITY % gmi.bus.emp.new-emp "<guimenuitem>新增员工…(<accel>N</accel>)</guimenuitem>">
 <!ENTITY % gmi.bus.emp.find-emp "<guimenuitem>查找员工…(<accel>F</accel>)</guimenuitem>">
-<!ENTITY % gmi.bus.emp.new-exp-vou "<guimenuitem>新建费用凭证…(<accel>E</accel>)</guimenuitem>">
-<!ENTITY % gmi.bus.emp.find-exp-vou "<guimenuitem>查找费用凭证…(<accel>V</accel>)</guimenuitem>">
+<!ENTITY % gmi.bus.emp.new-vchr "<guimenuitem>新建费用凭证…(<accel>E</accel>)</guimenuitem>">
+<!ENTITY % gmi.bus.emp.find-vchr "<guimenuitem>查找费用凭证…(<accel>V</accel>)</guimenuitem>">
 <!ENTITY % gmi.bus.emp.pro-pay "<guimenuitem>收付…(<accel>P</accel>)</guimenuitem>">
 <!ENTITY % gmi.bus.link-doc "<guimenuitem>商业原始凭证(<accel></accel>)</guimenuitem>">
 <!ENTITY % gmi.bus.tax-tab "<guimenuitem>税率(<accel>T</accel>)</guimenuitem>">
@@ -445,8 +445,8 @@
 -->
 
 <!ENTITY % untranslated '很抱歉，下文尚未提供翻译。如果您愿意，可以按照<ulink
-    url="https://wiki.gnucash.org/wiki/Translation#Translating_the_GnuCash_Guide_and_Help">
-  <citetitle>Gnucash wiki: How to translate the GnuCash guide and/or help files</citetitle></ulink>的指引帮助我们完善翻译。更多问题可在gnucash-zh@gnucash.org邮件列表进行讨论。'>
+    url="https://wiki.gnucash.org/wiki/Documentation_Translation">
+    <citetitle>Gnucash wiki: Translating the GnuCash Guide and Manual</citetitle></ulink>的指引帮助我们完善翻译。更多问题可在gnucash-zh@gnucash.org邮件列表进行讨论。'>
 <!ENTITY untranslated "%untranslated;">
 
 

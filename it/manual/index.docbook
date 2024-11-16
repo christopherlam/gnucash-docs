@@ -210,6 +210,42 @@
 
     <revhistory>
       <revision>
+        <revnumber>&appname; Help Manual 5.9</revnumber>
+        <date>29 September 2024</date>
+        <revdescription>
+          <para role="author">Multiple authors
+          </para>
+
+          <para role="publisher">&appname; Documentation Team
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>&appname; Help Manual 5.8</revnumber>
+        <date>7 July 2024</date>
+        <revdescription>
+          <para role="author">Multiple authors
+          </para>
+
+          <para role="publisher">&appname; Documentation Team
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>&appname; Help Manual 5.7</revnumber>
+        <date>30 June 2024</date>
+        <revdescription>
+          <para role="author">Multiple authors
+          </para>
+
+          <para role="publisher">&appname; Documentation Team
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
         <revnumber>&appname; Help Manual 5.6</revnumber>
         <date>31 March 2024</date>
         <revdescription>
@@ -12420,7 +12456,7 @@ Translators:
       will have to pay for them.
     </para>
 
-    <sect1 id="busnss-ar-setup1">
+    <sect1 id="busnss-ar-setup">
       <title>Initial Setup</title>
 
       <para>To set up &app; to handle accounts receivable and accounts payable for a company the following
@@ -12743,7 +12779,7 @@ Translators:
 
       <variablelist>
         <varlistentry>
-          <term><xref linkend="busnss-ar-customers1"/></term>
+          <term><xref linkend="busnss-ar-customers"/></term>
 
           <listitem>
             <para>People or companies to whom you sell products or services on credit.
@@ -12762,7 +12798,7 @@ Translators:
         </varlistentry>
 
         <varlistentry>
-          <term><xref linkend="busnss-ar-jobs1"/></term>
+          <term><xref linkend="busnss-ar-jobs"/></term>
 
           <listitem>
             <para>Is where you register Customer Jobs. Jobs are a mechanism by which you can group multiple invoices
@@ -12772,7 +12808,7 @@ Translators:
         </varlistentry>
 
         <varlistentry>
-          <term><xref linkend="busnss-ar-payment1"/></term>
+          <term><xref linkend="busnss-ar-payment"/></term>
 
           <listitem>
             <para>Used to register payments you received from a customer.
@@ -12785,14 +12821,14 @@ Translators:
       </para>
     </sect1>
 
-    <sect1 id="busnss-ar-customers1">
+    <sect1 id="busnss-ar-customers">
       <title>Customers</title>
 
       <para>Customers are people or companies to whom you sell goods or services. They must be registered within
         the A/R system.
       </para>
 
-      <sect2 id="busnss-ar-custnew2">
+      <sect2 id="busnss-ar-custnew">
         <title>Nuovo</title>
 
         <para>To register a new customer, enter the menu
@@ -12918,7 +12954,7 @@ Translators:
         </itemizedlist>
       </sect2>
 
-      <sect2 id="busnss-ar-custfind2">
+      <sect2 id="busnss-ar-custfind">
         <title>Find and Edit</title>
 
         <para>To search for an existing customer, use the
@@ -12975,7 +13011,7 @@ Translators:
         </para>
       </note>
 
-      <sect2 id="busnss-ar-invoicenew2">
+      <sect2 id="busnss-ar-invoicenew">
         <title>Nuovo</title>
 
         <para>To send an invoice to a customer you must first create a new invoice. To create an invoice use
@@ -13012,19 +13048,19 @@ Translators:
               Customer</guilabel> window for this customer, start to type it in this field and &app;
               will try auto complete it for you. Else, press the <guibutton>Select...</guibutton>
               button to access the <guilabel>Find Customer</guilabel> window described in
-              <xref linkend="busnss-ar-custfind2"/>. Highlight the customer you are looking for with
+              <xref linkend="busnss-ar-custfind"/>. Highlight the customer you are looking for with
               a click in the search results, then press the <guibutton>Select</guibutton> button.
             </para>
           </listitem>
 
           <listitem>
             <para><guilabel>Billing Information - Job</guilabel> (optional) - associates the new invoice with a
-              customer job (see <xref linkend="busnss-ar-jobs1"/>). If you remember the
+              customer job (see <xref linkend="busnss-ar-jobs"/>). If you remember the
               <emphasis>job name</emphasis> you entered in the <guilabel>New Job</guilabel> window
               for this job, start to type it in this field and &app; will try auto complete it for
               you. Else, press the <guibutton>Select...</guibutton> button to access the
               <guilabel>Find Job</guilabel> window. This window is the same to the one described in
-              <xref linkend="busnss-ar-custfind2"/>. Highlight the job you are looking for with a
+              <xref linkend="busnss-ar-custfind"/>. Highlight the job you are looking for with a
               click in the search results, then press the <guibutton>Select</guibutton> button.
             </para>
           </listitem>
@@ -13049,7 +13085,7 @@ Translators:
         </para>
       </sect2>
 
-      <sect2 id="busnss-ar-invoiceedit2">
+      <sect2 id="busnss-ar-invoiceedit">
         <title>Modifica</title>
 
         <para>From the Edit Invoice window you can enter an itemized list of goods and services you sold on this
@@ -13202,7 +13238,7 @@ Translators:
         </para>
       </sect2>
 
-      <sect2 id="busnss-ar-invoicepost2">
+      <sect2 id="busnss-ar-invoicepost">
         <title>Post</title>
 
         <para>When you finish editing an invoice and are ready to print, you must <guilabel>Post</guilabel> the
@@ -13219,7 +13255,7 @@ Translators:
           <listitem>
             <para><guilabel>Post Date</guilabel> - specifies the date for the transactions entered into the accounts
               receivable account. By default this is the invoice’s <guilabel>Date
-              Opened</guilabel> (see <xref linkend="busnss-ar-invoicenew2"/> for information about
+              Opened</guilabel> (see <xref linkend="busnss-ar-invoicenew"/> for information about
               that date).
             </para>
           </listitem>
@@ -13282,7 +13318,7 @@ Translators:
         </itemizedlist>
       </sect2>
 
-      <sect2 id="busnss-ar-invoicefind2">
+      <sect2 id="busnss-ar-invoicefind">
         <title>Find</title>
 
         <para>To find an existing invoice, use the
@@ -13321,7 +13357,7 @@ Translators:
         </itemizedlist>
       </sect2>
 
-      <sect2 id="busnss-ar-invoiceprint2">
+      <sect2 id="busnss-ar-invoiceprint">
         <title>Stampa</title>
 
         <para>After you post an invoice, you should print it and send it to your customer. To print an invoice use
@@ -13374,11 +13410,11 @@ Translators:
         </orderedlist>
 
         <para>You can also print invoices from within the Process Payment dialog. See the
-          <xref linkend="busnss-ar-payment1"/> for instructions on how to do so.
+          <xref linkend="busnss-ar-payment"/> for instructions on how to do so.
         </para>
       </sect2>
 
-      <sect2 id="busnss-ar-invoicestarting2">
+      <sect2 id="busnss-ar-invoicestarting">
         <title>Assign Starting Invoice Number</title>
 
         <para>By default, &app; starts with invoice number 1 and increments from there. You can manually type an
@@ -13397,7 +13433,7 @@ Translators:
       </sect2>
     </sect1>
 
-    <sect1 id="busnss-ar-jobs1">
+    <sect1 id="busnss-ar-jobs">
       <title>Customer Jobs</title>
 
       <para>Customer Jobs are used to group multiple invoices and credit notes to the same customer. Use of the
@@ -13433,7 +13469,7 @@ Translators:
             Customer</guilabel> window for this customer, start to type it in this field and &app;
             will try auto complete it for you. Else, press the <guibutton>Select...</guibutton>
             button to access the <guilabel>Find Customer</guilabel> window described in
-            <xref linkend="busnss-ar-custfind2"/>. Highlight the customer you are looking for with a
+            <xref linkend="busnss-ar-custfind"/>. Highlight the customer you are looking for with a
             click in the search results, then press the <guibutton>Select</guibutton> button.
           </para>
         </listitem>
@@ -13474,7 +13510,7 @@ Translators:
       </para>
     </sect1>
 
-    <sect1 id="busnss-ar-payment1">
+    <sect1 id="busnss-ar-payment">
       <title>Process Payment</title>
 
       <para>Eventually, you will receive payment from your customers for outstanding invoices. To register these
@@ -13516,7 +13552,7 @@ Translators:
             window for this customer, start to type it in this field and &app; will try auto
             complete it for you. Else, press the <guibutton>Select...</guibutton> button to access
             the <guilabel>Find Customer</guilabel> window described in
-            <xref linkend="busnss-ar-custfind2"/>. Highlight the customer you are looking for with a
+            <xref linkend="busnss-ar-custfind"/>. Highlight the customer you are looking for with a
             click in the search results, then press the <guibutton>Select</guibutton> button.
           </para>
         </listitem>
@@ -13526,7 +13562,7 @@ Translators:
             you remember the <emphasis>invoice ID</emphasis>, start to type it in this field and
             &app; will try auto complete it for you. Else, press the
             <guibutton>Select...</guibutton> button to access the <guilabel>Find Invoice</guilabel>
-            window described in <xref linkend="busnss-ar-invoicefind2"/>. Highlight the invoice you
+            window described in <xref linkend="busnss-ar-invoicefind"/>. Highlight the invoice you
             are looking for with a click in the search results, then press the
             <guibutton>Select</guibutton> button.
           </para>
@@ -13564,7 +13600,7 @@ Translators:
         </listitem>
       </itemizedlist>
 
-      <sect2 id="busnss-ar-overpay2">
+      <sect2 id="busnss-ar-overpay">
         <title>Over Payments or Pre-Payments</title>
 
         <para>If a customer overpays an invoice or pays for goods or services before they have been invoiced,
@@ -13574,7 +13610,7 @@ Translators:
         </para>
       </sect2>
 
-      <sect2 id="busnss-ar-partpay2">
+      <sect2 id="busnss-ar-partpay">
         <title>Partial Payments</title>
 
         <para>Partial payments are possible too. Select the invoice to pay. &app; will automatically suggest that
@@ -13689,7 +13725,7 @@ Translators:
     <sect1 id="busnss-ar-invoicechange">
       <title>Changing the Invoice Appearance</title>
 
-      <para>The default Invoice style, as shown in <xref linkend="busnss-ar-invoiceprint2"/>, is fairly barren.
+      <para>The default Invoice style, as shown in <xref linkend="busnss-ar-invoiceprint"/>, is fairly barren.
         The default invoice style leaves the top part of the form blank, so you can print on company
         letterhead paper. There are some things you can do to change invoice appearance.
       </para>
@@ -13752,7 +13788,7 @@ Translators:
 <!-- start of A/P
 ______________________________________________________________________________________________________________________________________________________________________
 -->
-    <sect1 id="busnss-ap-components1">
+    <sect1 id="busnss-ap-components">
       <title>Debiti correnti</title>
 
       <para>&app; has an integrated accounts payable system. As with <emphasis>Accounts Receivable</emphasis>
@@ -13801,14 +13837,14 @@ ________________________________________________________________________________
       </para>
     </sect1>
 
-    <sect1 id="busnss-ap-vendors1">
+    <sect1 id="busnss-ap-vendors">
       <title>Vendors</title>
 
       <para>A vendor is a company or person from whom you purchase goods or services. Vendors must be registered
         within the A/P system.
       </para>
 
-      <sect2 id="busnss-ap-vendornew2">
+      <sect2 id="busnss-ap-vendornew">
         <title>Nuovo</title>
 
         <para>To register a new vendor, select the
@@ -13915,7 +13951,7 @@ ________________________________________________________________________________
         </itemizedlist>
       </sect2>
 
-      <sect2 id="busnss-ap-vendorfind2">
+      <sect2 id="busnss-ap-vendorfind">
         <title>Find and Edit</title>
 
         <para>To search for an existing vendor, use the
@@ -13953,7 +13989,7 @@ ________________________________________________________________________________
       </sect2>
     </sect1>
 
-    <sect1 id="busnss-ap-bills1">
+    <sect1 id="busnss-ap-bills">
       <title>Ricevute</title>
 
       <para>A bill is a request for payment you receive from a vendor. &app; can track bills.
@@ -13972,7 +14008,7 @@ ________________________________________________________________________________
         </para>
       </note>
 
-      <sect2 id="busnss-ap-billnew2">
+      <sect2 id="busnss-ap-billnew">
         <title>Nuovo</title>
 
         <para>When you receive a bill from a vendor and want to enter it into &app;, you must create a new bill.
@@ -14008,19 +14044,19 @@ ________________________________________________________________________________
               window for this vendor, start to type it in this field and &app; will try auto
               complete it for you. Else, press the <guibutton>Select...</guibutton> button to access
               the <guilabel>Find Vendor</guilabel> window described in
-              <xref linkend="busnss-ap-vendorfind2"/>. Highlight the vendor you are looking for with
+              <xref linkend="busnss-ap-vendorfind"/>. Highlight the vendor you are looking for with
               a click in the search results, then press the <guibutton>Select</guibutton> button.
             </para>
           </listitem>
 
           <listitem>
             <para><guilabel>Billing Info - Job</guilabel> (optional) - associates a vendor job (see
-              <xref linkend="busnss-ap-jobs1"/>) with this bill. If you remember the <emphasis>job
+              <xref linkend="busnss-ap-jobs"/>) with this bill. If you remember the <emphasis>job
               name</emphasis> you entered in the <guilabel>New Job</guilabel> window for this job,
               start to type it in this field and &app; will try auto complete it for you. Else,
               press the <guibutton>Select...</guibutton> button to access the <guilabel>Find
               Job</guilabel> window. This window is very similar to the one described in
-              <xref linkend="busnss-ap-vendorfind2"/>. Highlight the job you are looking for with a
+              <xref linkend="busnss-ap-vendorfind"/>. Highlight the job you are looking for with a
               click in the search results, then press the <guibutton>Select</guibutton> button.
             </para>
           </listitem>
@@ -14055,7 +14091,7 @@ ________________________________________________________________________________
         </para>
       </sect2>
 
-      <sect2 id="busnss-ap-billedit2">
+      <sect2 id="busnss-ap-billedit">
         <title>Modifica</title>
 
         <para>From the Edit Bill window you can enter an itemized list of goods and services you purchased, in a
@@ -14140,7 +14176,7 @@ ________________________________________________________________________________
         </para>
       </sect2>
 
-      <sect2 id="busnss-ap-billpost2">
+      <sect2 id="busnss-ap-billpost">
         <title>Post</title>
 
         <para>When you finish editing a bill, you should <guilabel>Post</guilabel> the bill. You do not have to
@@ -14213,7 +14249,7 @@ ________________________________________________________________________________
         </itemizedlist>
       </sect2>
 
-      <sect2 id="busnss-ap-billfind2">
+      <sect2 id="busnss-ap-billfind">
         <title>Find</title>
 
         <para>To find an existing bill, use the
@@ -14231,13 +14267,13 @@ ________________________________________________________________________________
 
         <note>
           <para>There are other ways to access an existing bill. These are similar to accessing invoices for your
-            customers. See <xref linkend="busnss-ar-invoicefind2"/> for more information.
+            customers. See <xref linkend="busnss-ar-invoicefind"/> for more information.
           </para>
         </note>
       </sect2>
     </sect1>
 
-    <sect1 id="busnss-ap-jobs1">
+    <sect1 id="busnss-ap-jobs">
       <title>Vendor Jobs</title>
 
       <para>Vendor Jobs are used to group multiple bills and credit notes from a single vendor. Use of the
@@ -14305,7 +14341,7 @@ ________________________________________________________________________________
       </para>
     </sect1>
 
-    <sect1 id="busnss-ap-payment1">
+    <sect1 id="busnss-ap-payment">
       <title>Process Payment</title>
 
       <para>Eventually, you need to pay your bills. To do so, use the Process Payment application found in
@@ -14344,7 +14380,7 @@ ________________________________________________________________________________
             window for this vendor, start to type it in this field and &app; will try auto complete
             it for you. Else, press the <guibutton>Select...</guibutton> button to access the
             <guilabel>Find Vendor</guilabel> window described in
-            <xref linkend="busnss-ap-vendorfind2"/>. Highlight the vendor you are looking for with a
+            <xref linkend="busnss-ap-vendorfind"/>. Highlight the vendor you are looking for with a
             click in the search results, then press the <guibutton>Select</guibutton> button.
           </para>
         </listitem>
@@ -14354,7 +14390,7 @@ ________________________________________________________________________________
             <emphasis>bill ID</emphasis>, start to type it in this field and &app; will try auto
             complete it for you. Else, press the <guibutton>Select...</guibutton> button to access
             the <guilabel>Find Bill</guilabel> window described in
-            <xref linkend="busnss-ap-billfind2"/>. Highlight the bill you are looking for with a
+            <xref linkend="busnss-ap-billfind"/>. Highlight the bill you are looking for with a
             click in the search results, then press the <guibutton>Select</guibutton> button in the
             search window.
           </para>
@@ -14393,7 +14429,7 @@ ________________________________________________________________________________
         </listitem>
       </itemizedlist>
 
-      <sect2 id="busnss-ap-overpay2">
+      <sect2 id="busnss-ap-overpay">
         <title>Over Payments or Pre-Payments</title>
 
         <para>If you wish to overpay an invoice or pay for goods or services before they have been invoiced,
@@ -14402,7 +14438,7 @@ ________________________________________________________________________________
         </para>
       </sect2>
 
-      <sect2 id="busnss-ap-partpay2">
+      <sect2 id="busnss-ap-partpay">
         <title>Partial Payments</title>
 
         <para>You may wish to partially pay a bill. Select the bill to pay. &app; will automatically suggest that
@@ -14416,8 +14452,8 @@ ________________________________________________________________________________
       <title>Employees</title>
 
       <para>&app; can help your company by tracking employees. You can register a
-        <xref linkend="busnss-emplynew"/>, <xref linkend="busnss-emplyedit"/> existing employees,
-        create <xref linkend="busnss-emply-newvchr"/> and <xref linkend="busnss-emply-editvchr"/>.
+        <xref linkend="busnss-emplynew"/>, <xref linkend="busnss-emplyfind"/> existing employees,
+        create <xref linkend="busnss-emply-vchrnew"/> and <xref linkend="busnss-emply-vchrfind"/>.
       </para>
 
       <para>Expense voucher are used to reimburse employees for authorized expenses (f.e. travels, parking, food
@@ -14539,7 +14575,7 @@ ________________________________________________________________________________
         </itemizedlist>
       </sect2>
 
-      <sect2 id="busnss-emplyedit">
+      <sect2 id="busnss-emplyfind">
         <title>Find and Edit</title>
 
         <para>To search for an existing employee, use the
@@ -14578,7 +14614,7 @@ ________________________________________________________________________________
         </tip>
       </sect2>
 
-      <sect2 id="busnss-emply-newvchr">
+      <sect2 id="busnss-emply-vchrnew">
         <title>New Expense Voucher/Credit Note</title>
 
         <para>To register a new expense voucher/ Credit Note, select the
@@ -14618,7 +14654,7 @@ ________________________________________________________________________________
             <tip>
               <para>The field supports auto-completion so if you start typing &app; will try to complete the text
                 automatically using existing employees name. You can also press the button
-                <guibutton>Select...</guibutton> to open the <link linkend="busnss-emplyedit">Find
+                <guibutton>Select...</guibutton> to open the <link linkend="busnss-emplyfind">Find
                 Employee</link> window.
               </para>
             </tip>
@@ -14645,7 +14681,7 @@ ________________________________________________________________________________
               <para>The field supports auto-completion so if you start typing &app; will try to complete the text
                 automatically using existing Customer name. You can also press the button
                 <guibutton>Select...</guibutton> to open the
-                <link linkend="busnss-ar-custfind2">Find Customer</link> window.
+                <link linkend="busnss-ar-custfind">Find Customer</link> window.
               </para>
             </tip>
           </listitem>
@@ -14665,7 +14701,7 @@ ________________________________________________________________________________
               <para>The field supports auto-completion so if you start typing &app; will try to complete the text
                 automatically using existing Customer name. You can also press the button
                 <guibutton>Select...</guibutton> to open the
-                <link linkend="busnss-ar-custfind2">Find Customer</link> window.
+                <link linkend="busnss-ar-custfind">Find Customer</link> window.
               </para>
             </tip>
           </listitem>
@@ -14677,7 +14713,7 @@ ________________________________________________________________________________
         </itemizedlist>
       </sect2>
 
-      <sect2 id="busnss-emply-editvchr">
+      <sect2 id="busnss-emply-vchrfind">
         <title>Find and Edit Expense Voucher/Credit Note</title>
 
         <para>To search for an existing Expense Voucher, use the

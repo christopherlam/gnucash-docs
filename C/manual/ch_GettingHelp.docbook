@@ -164,25 +164,17 @@
     <sect2 id="tutorial">
       <title>&app; Tutorial and Concepts Guide</title>
 
-      <para>The guide is the counterpart to this help. It explains the concepts used in &app; and has a tutorial
+      <para>The guide is the counterpart to this manual. It explains the concepts used in &app; and has a tutorial
         that takes you through using &app; to manage your accounts. It will appear if you choose
         <guibutton>Open the new user tutorial</guibutton> in the <guilabel>Welcome to
         &appname;!</guilabel> menu.
       </para>
 
-      <para>To open this Guide manually go to
-        <menuchoice>
-          <guimenu>Help</guimenu> <guimenuitem>Tutorial and Concepts Guide</guimenuitem>
-        </menuchoice>
-        or press
-        <keycombo>
-          <keycap>Ctrl</keycap><keycap>H</keycap>
-        </keycombo>
-        .
+      <para>To open that Guide at a later time go to &mc.help.guide;.
       </para>
 
       <important>
-        <para>It is strongly recommended to read this guide if you are new to &app; or unfamiliar with accounting
+        <para>It is strongly recommended to read the Guide if you are new to &app; or unfamiliar with accounting
           concepts.
         </para>
       </important>

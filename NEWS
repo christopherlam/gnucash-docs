@@ -1,5 +1,24 @@
 Version History
 ---------------
+ 5.9   - 29 September 2024
+       o Update github CI actions versions.
+ 5.8   - 7 July 2024
+       o Changed name of gnucash-fallback.css in Transactions chapter.
+ 5.7   - 30 June 2024
+       o Add new chapter Business to the German translation.
+       o gnc-struct: change entity and section id's for 'employee-voucher'
+       o All: manual, ch_Business: Harmonize section IDs: Numbers for the nesting depth
+         of the sections are not required.
+       o All: manual, ch_Business, Change id=“busnss-emplyedit” to “busnss-emplyfind”, as
+         the Find dialog is described here.
+       o docbook: Improve entity untranslated
+       o docbook: use entitiy for url-wiki
+       o de, pt: Update &untranslated-*; to &untranslated;
+       o C: Manual: Getting Help: resolve ambiguities
+       o de: Handbuch: ergänze Leerzeichen, löse Mehrdeutigkeiten auf
+       o docbook: additional entities for business menuitems
+       o Guide(zh): fix xml validity error
+
  5.6   - 31 March 2024
        o Bug 799237 - Dead Link
        o C, de:Manual:Finance-Quote: Note about Expected Time Commitment

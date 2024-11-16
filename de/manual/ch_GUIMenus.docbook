@@ -1393,7 +1393,7 @@
 
             <row>
               <entry namest="c2">
-                <para>&gmi.bus.emp.new-exp-vou;
+                <para>&gmi.bus.emp.new-vchr;
                 </para>
               </entry>
 
@@ -1405,7 +1405,7 @@
 
             <row>
               <entry namest="c2">
-                <para>&gmi.bus.emp.find-exp-vou;
+                <para>&gmi.bus.emp.find-vchr;
                 </para>
               </entry>
 
@@ -6726,18 +6726,18 @@ url="&url-docs-de;guide/chapter_txns.html#txns-regstyle1"> &app; Kurs und Konzep
         <para>Wenn Sie mittels
           <itemizedlist>
             <listitem>
-              <para>&mc.bus.cus.new-inv; eine <xref linkend="busnss-ar-invoicenew2"/>
+              <para>&mc.bus.cus.new-inv; eine <xref linkend="busnss-ar-invoicenew"/>
                 anlegen, mit
               </para>
             </listitem>
             <listitem>
-              <para>&mc.bus.ven.new-bil; eine <xref linkend="busnss-ap-billnew2"/>
+              <para>&mc.bus.ven.new-bil; eine <xref linkend="busnss-ap-billnew"/>
                 erfassen oder auch mit
               </para>
             </listitem>
             <listitem>
-              <para>&mc.bus.emp.new-exp-vou; eine
-                <xref linkend="busnss-emply-newvchr"/> begleichen wollen,
+              <para>&mc.bus.emp.new-vchr; eine
+                <xref linkend="busnss-emply-vchrnew"/> begleichen wollen,
               </para>
             </listitem>
           </itemizedlist>
@@ -6757,7 +6757,7 @@ url="&url-docs-de;guide/chapter_txns.html#txns-regstyle1"> &app; Kurs und Konzep
               </para>
             </listitem>
             <listitem>
-              <para>&mc.bus.emp.find-exp-vou;
+              <para>&mc.bus.emp.find-vchr;
               </para>
             </listitem>
           </itemizedlist>
@@ -7306,7 +7306,7 @@ url="&url-docs-de;guide/chapter_txns.html#txns-regstyle1"> &app; Kurs und Konzep
 
       <sect3 id="gui-business-invoice-summary-bar">
         <title>Zusammenfassungsleiste</title>
-<!-- ToDo: insert xref to the definitions in "busnss-ar-invoicenew2" -->
+<!-- ToDo: insert xref to the definitions in "busnss-ar-invoicenew" -->
         <para>Die <emphasis>Zusammenfassungsleiste</emphasis> im Fenster der
           <emphasis>Geschäftsfunktion</emphasis> zeigt auf einen Blick den Gesamtbetrag, den
           Nettobetrag sowie die Steuern der aktuellen Rechnung an. Sie
