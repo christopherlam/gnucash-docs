@@ -89,7 +89,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_registersplit4.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -108,7 +108,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_registersplit5.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -129,7 +129,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_registersplit6.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -322,7 +322,7 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/txns_registersplit2.png"
-                       contentwidth="9.38in" autoscale-screenshot="1"
+                       screenshot-physicalwidth="9.38in"
                        srccredit="Bengt Thuree" />
           </imageobject>
           <caption>
@@ -347,7 +347,7 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/txns_registersplit3.png"
-                       contentwidth="9.38in" autoscale-screenshot="1"
+                       screenshot-physicalwidth="9.38in"
                        srccredit="Bengt Thuree" />
           </imageobject>
           <caption>
@@ -376,7 +376,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_register_2account.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -398,7 +398,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_register_2account2.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -431,7 +431,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_register_multiaccount.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -476,7 +476,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_reconcile_window1.png"
-                         contentwidth="2.44in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="2.44in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
           </mediaobject>
@@ -567,7 +567,7 @@
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/txns_reconcile_window2.png"
-                           contentwidth="9.38in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="Cristian Marchi"/>
               </imageobject>
               <caption>
@@ -631,7 +631,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_reconcile_window3.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -664,7 +664,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger1.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -683,7 +683,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger2.png"
-                         contentwidth="6.96in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="6.96in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -699,7 +699,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger3.png"
-                         contentwidth="5.79in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="5.79in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -716,7 +716,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger4.png"
-                         contentwidth="5.79in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="5.79in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -743,7 +743,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-2.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
             <caption>
@@ -763,7 +763,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-3-overview.png"
-                         contentwidth="9.14in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.14in"
                          srccredit="Cristian Marchi" />
             </imageobject>
             <caption>
@@ -838,7 +838,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-3-frequency.png"
-                         contentwidth="9.14in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.14in"
                          srccredit="Cristian Marchi" />
             </imageobject>
             <caption>
@@ -914,7 +914,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-3-template.png"
-                         contentwidth="9.14in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.14in"
                          srccredit="Cristian Marchi" />
             </imageobject>
             <caption>
@@ -934,7 +934,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-4.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Cristian Marchi" />
             </imageobject>
           </mediaobject>
@@ -963,7 +963,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor_slr.png"
-                         contentwidth="6.67in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="6.67in"
                          srccredit="Cristian Marchi" />
             </imageobject>
          </mediaobject>
@@ -1009,7 +1009,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_puttoget_Charts.png"
-                         contentwidth="6.25in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -1058,7 +1058,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_puttoget_Charts1.png"
-                         contentwidth="6.25in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -1144,7 +1144,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_puttoget_Charts2.png"
-                         contentwidth="6.25in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>

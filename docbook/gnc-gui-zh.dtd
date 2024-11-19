@@ -449,7 +449,7 @@
     <citetitle>Gnucash wiki: Translating the GnuCash Guide and Manual</citetitle></ulink>的指引帮助我们完善翻译。更多问题可在gnucash-zh@gnucash.org邮件列表进行讨论。'>
 <!ENTITY untranslated "%untranslated;">
 
-<!ATTLIST imagedata autoscale-screenshot CDATA #IMPLIED>
+<!ATTLIST imagedata screenshot-physicalwidth CDATA #IMPLIED>
 
 
 <!-- Include "gnc-gui-C.dtd" -->

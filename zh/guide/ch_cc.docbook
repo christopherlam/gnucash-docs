@@ -175,7 +175,7 @@
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/cc_Reversing_Transaction_1.png"
-                           contentwidth="9.38in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="Bengt Thuree"/>
               </imageobject>
               <caption>
@@ -195,7 +195,7 @@
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/cc_Reversing_Transaction_2.png"
-                           contentwidth="9.38in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="Bengt Thuree"/>
               </imageobject>
               <caption>
@@ -232,7 +232,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_accounts.png"
-                         contentwidth="6.25in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -262,7 +262,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_purchases.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -286,7 +286,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_refund.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -310,7 +310,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_interest.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -338,7 +338,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_reconcile_init.png"
-                         contentwidth="2.44in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="2.44in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
           </mediaobject>
@@ -354,7 +354,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_reconcile.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -381,7 +381,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_payment.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -401,7 +401,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_final.png"
-                         contentwidth="6.25in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
           </mediaobject>

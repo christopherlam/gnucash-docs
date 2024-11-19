@@ -12,29 +12,41 @@
 <xsl:import href="../../xsl/general-customization.xsl"/>
 
 
-<xsl:template match="imagedata[@autoscale-screenshot='1']">
-  <xsl:variable name="postprocess">
+<xsl:template match="imagedata[@screenshot-physicalwidth]">
+  <xsl:variable name="maxwidth">
+    <xsl:value-of select="10" />
+  </xsl:variable>
+  <xsl:variable name="scalefactor">
+    <xsl:value-of select="0.82" />
+  </xsl:variable>
+  <xsl:variable name="physicalwidth">
+    <xsl:value-of select="number(substring-before(@screenshot-physicalwidth, 'in'))" />
+  </xsl:variable>
+  <xsl:variable name="preferredwidth">
+    <xsl:choose>
+      <xsl:when test="$physicalwidth * $scalefactor > $maxwidth">
+        <xsl:value-of select="$maxwidth" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$physicalwidth * $scalefactor" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+  <xsl:variable name="fragnode">
     <fragment>
       <imagedata>
-        <xsl:copy-of select="@*"/>
-        <xsl:if test="@contentwidth">
-          <xsl:attribute name="contentwidth">
-            <xsl:variable name="bestwidth"><xsl:value-of select="number(substring-before(@contentwidth, 'in'))*0.8" /></xsl:variable>
-            <xsl:value-of select="concat(string($bestwidth),'in')" />
-          </xsl:attribute>
-        </xsl:if>
+        <xsl:copy-of select="@*[not(name(.) = 'screenshot-physicalwidth')]"/>
+        <xsl:attribute name="contentwidth">
+          <xsl:value-of select="concat(string($preferredwidth), 'in')" />
+        </xsl:attribute>
       </imagedata>
     </fragment>
   </xsl:variable>
-  <xsl:apply-templates select="exsl:node-set($postprocess)/*[1]"/>
+  <xsl:apply-templates select="exsl:node-set($fragnode)/*[1]"/>
 </xsl:template>
 
 <xsl:template match="fragment">
   <xsl:apply-templates />
-</xsl:template>
-
-<xsl:template match="fragment/imagedata">
-  <xsl:apply-imports />
 </xsl:template>
 
 </xsl:stylesheet>

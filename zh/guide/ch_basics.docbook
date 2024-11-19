@@ -441,7 +441,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/basics_TipOfDay.png"
-                         contentwidth="4.17in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="4.17in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -467,7 +467,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/basics_Accounts.png"
-                         contentwidth="6.25in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -505,7 +505,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/basics_CheckAccount.png"
-                         contentwidth="9.38in" autoscale-screenshot="1"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
 
@@ -829,7 +829,7 @@ Translators:
                   <mediaobject>
                     <imageobject>
                       <imagedata fileref="figures/basics_SaveXML.png"
-                                 contentwidth="6.96in" autoscale-screenshot="1"
+                                 screenshot-physicalwidth="6.96in"
                                  srccredit="Cristian Marchi"/>
                     </imageobject>
 
@@ -1250,7 +1250,7 @@ Translators:
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup.png"
-                           contentwidth="9.38in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1278,7 +1278,7 @@ Translators:
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_NewBookOpts.png"
-                           contentwidth="9.38in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="Frank H. Ellenberger"/>
               </imageobject>
 
@@ -1304,7 +1304,7 @@ Translators:
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_currency.png"
-                           contentwidth="9.38in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1330,7 +1330,7 @@ Translators:
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_Accounts.png"
-                           contentwidth="9.38in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1352,7 +1352,7 @@ Translators:
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_Setup.png"
-                           contentwidth="9.38in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1374,7 +1374,7 @@ Translators:
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_Finish.png"
-                           contentwidth="9.38in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
@@ -1398,7 +1398,7 @@ Translators:
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_EmptyAccounts.png"
-                           contentwidth="6.25in" autoscale-screenshot="1"
+                           screenshot-physicalwidth="6.25in"
                            srccredit="Frank H. Ellenberger"/>
               </imageobject>
             </mediaobject>
