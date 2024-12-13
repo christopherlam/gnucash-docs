@@ -5458,76 +5458,65 @@
 
     <itemizedlist>
       <listitem>
-        <para><emphasis role="bold">Name:</emphasis> The full name of the commodity is a recognizable name such as
-          <emphasis>US Dollars</emphasis> or <emphasis>IBM Common Stock</emphasis>.
+        <para><emphasis role="bold">Full name</emphasis>: The full
+        name of the commodity is a recognizable name such
+        as <emphasis>US Dollars</emphasis> or <emphasis>IBM Common
+        Stock</emphasis>.
         </para>
       </listitem>
 
       <listitem>
-        <para><emphasis role="bold">Symbol:</emphasis> Indicates the symbol or abbreviation for the commodity.
-          This is usually the ticker symbol (for stocks) or other unique abbreviation for the
-          commodity. If the commodity is traded on any public exchange, it is important to use the
-          same identifier used on that exchange. For national currencies the symbol is the ISO-4217
-          currency code.
+        <para><emphasis role="bold">Symbol/abbreviation</emphasis>:
+          Indicates the symbol or abbreviation for the commodity.
+          This is usually the ticker symbol (for stocks) or other
+          unique abbreviation for the commodity. If the commodity is
+          traded on any public exchange, it is important to use the
+          same identifier used on that exchange. For national
+          currencies the symbol is the ISO-4217 currency code.
+        </para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="bold">Display symbol</emphasis>: This
+        optional field allows the user to specify a symbol to use in
+        the GUI display. It's primarily there to allow users to
+        override the hard-coded symbol for currencies but it might
+        also be useful for displaying a different symbol from the one
+        used to retrieve price quotes.
         </para>
       </listitem>
 
       <listitem>
-        <para><emphasis role="bold">Type:</emphasis> Categories for organizing securities. &app; has the following
-          built in:
-          <itemizedlist>
-            <listitem>
-              <para><guilabel>CURRENCY</guilabel> or <guilabel>ISO4317</guilabel>: These are used for national
-                currencies and are not editable with the <guilabel>Security Editor</guilabel>.
-              </para>
-            </listitem>
-
-            <listitem>
-              <para><guilabel>FUND</guilabel>: Ordinarily used for open-ended mutual funds, i.e., those that one
-                purchases from and sells to only the issuing company and that are priced daily at
-                their net asset value.
-              </para>
-            </listitem>
-
-            <listitem>
-              <para><guilabel>AMEX</guilabel>, <guilabel>ASX</guilabel>, <guilabel>EUREX</guilabel>,
-                <guilabel>NASDAQ</guilabel>, and <guilabel>NYSE</guilabel>: These represent a few of
-                the exchanges on which stocks, closed-end mutual funds, and exchange-traded funds
-                are traded.
-              </para>
-            </listitem>
-
-            <listitem>
-              <para><guilabel>Template</guilabel>: This is a reserved word. It will not normally appear in the
-                <guilabel>Security Editor</guilabel> unless you type it in, and if you do it will
-                cause problems. Don&apos;t use it.
-              </para>
-            </listitem>
-          </itemizedlist>
-        </para>
-
-        <para>If your investment doesn&apos;t fit into one of these categories, for example if you trade stocks on
-          the DAX or LSE, you can easily create your own type simply by typing it into the field.
-          The type of security has no meaning to Gnucash (except <guilabel>Template</guilabel>,
-          don&apos;t use that!), it&apos;s there only to make it easier for you to find the security
-          from the selection lists.
+        <para><emphasis role="bold">Namespace</emphasis>: An optional
+        field to allow you to create categories for your
+        securities. You may use any string you like
+        except <emphasis role="bold">Currency</emphasis>
+        and <emphasis role="bold">Template</emphasis>: Those are
+        reserved for &app;'s use.
         </para>
       </listitem>
 
       <listitem>
-        <para><emphasis role="bold">Code:</emphasis> This is any numeric or alphanumeric code that is used to
-          identify the commodity. The <acronym>ISIN</acronym> code is an international unique
-          identifying numeric string that is associated with every stock, bond or mutual fund, and
-          most kinds of traded options, futures and commodities. There are also regional valid codes
-          available like <acronym>CUSIP</acronym> in the North America, <acronym>WKN</acronym> in
-          DE, … This code is not required.
+        <para><emphasis role="bold">ISIN, CUSIP, or other
+        code</emphasis>: This optional entry may be any informative
+        code for the commodity. If present it is used only for
+        display. An <acronym>ISIN</acronym>
+        or <emphasis role="bold">International Security Identification
+        Number</emphasis> is associated with every stock, bond or
+        mutual fund, and most kinds of traded options, futures and
+        commodities. <acronym>CUSIP</acronym>
+        (<emphasis role="bold">Commitee on Uniform Securies
+        Identification Procedures</emphasis>) is a similar code used
+        in the North America. Other regions have similar codes, for
+        example Germany's <acronym>WKN</acronym>
+        (<emphasis role="bold">Wertpapierkennnummer</emphasis>).
         </para>
       </listitem>
 
       <listitem>
-        <para><emphasis role="bold">Fraction:</emphasis> This is the smallest traded unit of the commodity,
-          expressed as a fraction of a single nominal unit. This unit is used by &app; accounts as
-          the default fraction for trades in the commodity.
+        <para><emphasis role="bold">Fraction traded</emphasis>: This
+        is the smallest traded unit of the commodity, expressed as a
+        fraction of a single nominal unit. &app; rounds entered and
+        calculated amounts and values to this fraction.
         </para>
       </listitem>
     </itemizedlist>
