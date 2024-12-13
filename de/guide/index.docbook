@@ -94,6 +94,17 @@
 
     <revhistory>
       <revision>
+        <revnumber>&appname; Kurs und Konzepte 5.10</revnumber>
+        <date>15 Decpember 2024</date>
+        <revdescription>
+          <para role="author">Mehrere Autoren
+          </para>
+          <para role="publisher">&appname; Documentation Team
+          </para>
+        </revdescription>
+      </revision>
+
+      <revision>
         <revnumber>&appname; Kurs und Konzepte 5.9</revnumber>
         <date>29 September 2024</date>
         <revdescription>
