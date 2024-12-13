@@ -817,7 +817,7 @@
   maintainers,  etc. Commented out by default.
   Note: Do not use the addess tag, if you do not want to be contacted
         with user questions over decades. -->
-<!-- 
+<!--
   <para>This - still incomplete - translation was created by the
     Latin &appname; translation team, which included until now
     <othercredit role="translator">
@@ -858,8 +858,6 @@
   txf-ategories.docbook
 -->
   <xi:include href="ch_Finance-Quote.docbook" />
-
-  <xi:include href="tips-appendix.docbook" />
 
   <xi:include href="fdl-appendix.docbook" />
 </book>

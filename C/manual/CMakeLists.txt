@@ -14,8 +14,7 @@ set (entities
         chartofaccts.docbook
         legal.docbook
         txf-categories.docbook
-        fdl-appendix.docbook
-        tips-appendix.docbook)
+        fdl-appendix.docbook)
 
 set (figures
         figures/AccountReg_Screen.png

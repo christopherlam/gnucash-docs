@@ -965,7 +965,7 @@ Translators:
         <title>See also:</title>
 
         <listitem>
-          <para><xref linkend="fq-sources"/>,
+          <para><ulink url="&url-wiki;Online_Quotes#Finance::Quote_Sources">wiki:Online_Quotes#Finance::Quote_Sources</ulink>,
           </para>
         </listitem>
 
@@ -2555,7 +2555,7 @@ Translators:
         instructions in the <ulink url="&url-wiki-L12N-tax;">wiki</ulink>.
       </para>
     </note>
-<!-- Translators: you can stop here to translate. After you created or got a 
+<!-- Translators: you can stop here to translate. After you created or got a
       localized taxtable describe the options, which your report requires.  -->
     <para>The <guilabel>Income Tax Information</guilabel> dialog is used to set Tax Report Options. The
       settings on accounts in this dialog are used by the <acronym>TXF</acronym> Export function in
