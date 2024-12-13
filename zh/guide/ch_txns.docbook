@@ -11,6 +11,7 @@
   	Updated	Bengt Thuree <bengt@thuree.com>
   Originally written by Carol Champagne.
   Translators:
+               Xinhang Xu <xuxinhang4567@outlook.com>
                (translators put your name and email here)
 -->
 <sect1 id="chapter_txns">
@@ -43,7 +44,7 @@
       <para>科目账簿和<emphasis>标题栏</emphasis>显示了科目名称。标题栏之下，<emphasis>菜单栏</emphasis>显示了能够在科目账簿中使用的菜单项，<emphasis>工具栏</emphasis>包含方便操作科目账簿的常用功能按钮。</para>
 
       <para>在科目账簿窗口的左下方，&app;会随窗口中鼠标移动而显示有用的帮助消息。在右侧，可以看到当前科目余额和已结清分录的总计。</para>
-      <!-- ToDoZ: cleared 不应翻译为已核实，词典里没有这个义项，PO文件也要对应修改 -->
+      <!-- ToDoZ,ToDoP: cleared 不应翻译为已核实，词典里没有这个义项，PO文件也要对应修改 -->
     </sect3>
 
     <sect3 id="txns-regstyle1">
@@ -88,6 +89,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_registersplit4.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -106,6 +108,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_registersplit5.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -126,6 +129,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_registersplit6.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -318,6 +322,7 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/txns_registersplit2.png"
+                       screenshot-physicalwidth="9.38in"
                        srccredit="Bengt Thuree" />
           </imageobject>
           <caption>
@@ -342,7 +347,8 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/txns_registersplit3.png"
-              srccredit="Bengt Thuree" />
+                       screenshot-physicalwidth="9.38in"
+                       srccredit="Bengt Thuree" />
           </imageobject>
           <caption>
             <para>此图展示了跳转到<emphasis>收入:薪资</emphasis>科目后的界面。
@@ -370,6 +376,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_register_2account.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -391,6 +398,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_register_2account2.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -423,6 +431,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_register_multiaccount.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -438,7 +447,7 @@
 
     <para>&app;会一直跟踪每个交易的对账状态，交易的对账状态在账簿中使用对账<guilabel>R</guilabel>列指示：<emphasis>y</emphasis>表示交易已经对账，<emphasis>n</emphasis>表示还没有对账，<emphasis>c</emphasis>表示已结清但没有对账。标记为已结清的分录表示得到了金融机构已接受指令的确认信息（比如，你拿到了使用信用卡付款的餐厅收据）。你可以点击<guilabel>R</guilabel>列在<emphasis>n</emphasis>和<emphasis>c</emphasis>间切换对账状态，也可以根据<xref linkend="txns-reconcile-window2" />置为<emphasis>y</emphasis>。</para>
 
-    <para>在科目窗口底部，有两个实时更新的余额（分别是<guilabel>已结清</guilabel>和<guilabel>已对账</guilabel>余额），以及<guilabel>总计<!-- ToDoZ --></guilabel>余额。前者代表银行认为你的账户中有多少钱，而后者包含了未结清的交易。</para>
+    <para>在科目窗口底部，有两个实时更新的余额（分别是<guilabel>已结清</guilabel>和<guilabel>已对账</guilabel>余额），以及<guilabel>总计<!-- ToDoZ,ToDoP --></guilabel>余额。前者代表银行认为你的账户中有多少钱，而后者包含了未结清的交易。</para>
 
     <para>举个例子，当你支付某些费用时，你应该向&app;录入交易。交易的对账<guilabel>R</guilabel>列初始为<guilabel>n</guilabel> （新添加）。新录入的交易会更新到<guilabel>总计</guilabel>余额中。随后，如果你收到了有关支付已被接受的确认信息，你可以点击交易的<guilabel>R</guilabel>列，将之更改为<emphasis>c</emphasis>（已结清）。在进行此操作后，<guilabel>已结清</guilabel>余额会更新，将此金额包括进去。在收到银行账单后，你可以打开对账窗口，对比银行账单和已在&app;中录入的交易，随后，你能够将<guilabel>R</guilabel>列更改为<emphasis>y</emphasis>（已对账）。</para>
 
@@ -457,8 +466,8 @@
       <!-- but also to get a better idea of outstanding transactions, e.g. uncashed checks. -->
       </para>
 
-      <para>要，从科目树中选择一个科目并点击<menuchoice>
-          <guimenu>功能</guimenu> <guimenuitem>对账</guimenuitem>
+      <para>要使用对账窗口，在科目树中选择一个科目并点击<menuchoice>
+          <guimenu>功能</guimenu><guimenuitem>对账</guimenuitem>
         </menuchoice>打开对账窗口，如下所示，可以在此处输入对账信息。</para>
 
       <figure>
@@ -467,6 +476,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_reconcile_window1.png"
+                         screenshot-physicalwidth="2.44in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
           </mediaobject>
@@ -541,7 +551,7 @@
             <para>点击此按钮会打开新窗口，可以为要对账的科目输入利息交易。</para>
 
             <tip>
-              <para><guilabel>利息付款</guilabel>窗口可能会在为<emphasis>银行</emphasis>、<emphasis>信用卡</emphasis>、<emphasis>共同基金</emphasis>、<emphasis>资产</emphasis>、<emphasis>应收账款</emphasis>、<emphasis>应付账款</emphasis>和<emphasis>负债</emphasis>科目启动对账时自动打开。如果你想为所有先前的科目禁用此行为，前往<guilabel>&appname;首选项</guilabel>的<guilabel>账簿</guilabel>标签页，取消勾选<guilabel>自动利息转账<!-- ToDoZ --></guilabel>选项。另外，如果只是为选择的科目禁用此行为，可在<guilabel>利息付款</guilabel>窗口中点击<guibutton>此科目无需自动利息支付<!-- ToDoZ --></guibutton>按钮。
+              <para><guilabel>利息付款</guilabel>窗口可能会在为<emphasis>银行</emphasis>、<emphasis>信用卡</emphasis>、<emphasis>共同基金<!-- ToDoZ: 是否使用“投资基金”(wiki.mbalib.net) --></emphasis>、<emphasis>资产</emphasis>、<emphasis>应收账款</emphasis>、<emphasis>应付账款</emphasis>和<emphasis>负债</emphasis>科目启动对账时自动打开。如果你想为所有先前的科目禁用此行为，前往<guilabel>&appname;首选项</guilabel>的<guilabel>账簿</guilabel>标签页，取消勾选<guilabel>自动利息转账<!-- ToDoP --></guilabel>选项。另外，如果只是为选择的科目禁用此行为，可在<guilabel>利息付款</guilabel>窗口中点击<guibutton>此科目无需自动利息转账<!-- ToDoP --></guibutton>按钮。
               </para>
             </tip>
           </listitem>
@@ -557,6 +567,7 @@
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/txns_reconcile_window2.png"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="Cristian Marchi"/>
               </imageobject>
               <caption>
@@ -598,7 +609,7 @@
       </para>
 
       <note>
-        <para>某些情况下，找出科目为什么账目不符很困难甚至不可能。如果不能修正账簿与银行账单之间的差异，可以使用<emphasis>工具栏</emphasis>上的<guibutton>平衡<!-- ToDoZ: 修正PO --></guibutton>按钮，自动用不平衡的金额创建交易来确保两者余额相符。
+        <para>某些情况下，找出科目为什么账目不符很困难甚至不可能。如果不能修正账簿与银行账单之间的差异，可以使用<emphasis>工具栏</emphasis>上的<guibutton>结平<!-- ToDoP --></guibutton>按钮，自动用不平衡的金额创建交易来确保两者余额相符。
         </para>
 
         <para>要使用此功能，尽量对账（将所有你能够辨识的交易标记为已对账）后，点击<guibutton>平衡</guibutton>按钮。&app;会使用<emphasis>特殊科目:孤立的-XXX</emphasis>科目（其中“XXX”代表你的货币）根据仍存在的差额创建余额平衡交易项。此时<guilabel>对账</guilabel>窗口会关闭。重新打开对账窗口后，可以检查新创建的余额平衡交易并结束对账过程。</para>
@@ -620,6 +631,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_reconcile_window3.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -652,6 +664,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger1.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -670,6 +683,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger2.png"
+                         screenshot-physicalwidth="6.96in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -685,6 +699,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger3.png"
+                         screenshot-physicalwidth="5.79in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -701,6 +716,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_ledger4.png"
+                         screenshot-physicalwidth="5.79in"
                          srccredit="Bengt Thuree" />
             </imageobject>
           </mediaobject>
@@ -719,7 +735,7 @@
           <guimenu>功能</guimenu><guisubmenu>计划交易</guisubmenu>
           <guimenuitem>计划交易编辑器</guimenuitem>
         </menuchoice>。<guilabel>计划交易</guilabel>标签页会在当前&app;窗口中打开，如下图所示：
-      </para><!-- ToDoZ: PO -->
+      </para><!-- ToDoP -->
 
       <figure>
         <title>空白的计划交易标签页</title>
@@ -727,6 +743,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-2.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
             <caption>
@@ -744,12 +761,9 @@
         <title><guilabel>编辑计划交易</guilabel>窗口的<guilabel>概览</guilabel>标签页</title>
         <screenshot id="txns-sxn-editor-3-overview">
           <mediaobject>
-            <imageobject role="html">
+            <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-3-overview.png"
-                         srccredit="Cristian Marchi" width="&img-w;"/>
-            </imageobject>
-            <imageobject role="fo">
-              <imagedata fileref="figures/txns_sxn_editor-3-overview.png"
+                         screenshot-physicalwidth="9.14in"
                          srccredit="Cristian Marchi" />
             </imageobject>
             <caption>
@@ -811,8 +825,8 @@
         </varlistentry>
       </variablelist>
         
-      <!-- ToDoZ: Occurence 循环X 执行 -->
-      <para><guilabel>执行</guilabel>面板中的选项可以告诉&app;计划交易不会永远持续下去。例如，如果你在偿还贷款，你可以输入还款结束日期或贷款剩余期数。
+      <!-- ToDoC: Occurence typo -->
+      <para><guilabel>执行<!-- ToDoP --></guilabel>面板中的选项可以告诉&app;计划交易不会永远持续下去。例如，如果你在偿还贷款，你可以输入还款结束日期或贷款剩余期数。
       </para>
 
       <para>现在选择<guilabel>编辑计划交易</guilabel>窗口中的<guilabel>频率</guilabel>选项卡。此处可以设置与时间相关的选项。
@@ -822,12 +836,9 @@
         <title><guilabel>编辑计划交易</guilabel>窗口的<guilabel>频率</guilabel>标签页</title>
         <screenshot id="txns-sxn-editor-3-frequency">
           <mediaobject>
-            <imageobject role="html">
+            <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-3-frequency.png"
-                         srccredit="Cristian Marchi" width="&img-w;"/>
-            </imageobject>
-            <imageobject role="fo">
-              <imagedata fileref="figures/txns_sxn_editor-3-frequency.png"
+                         screenshot-physicalwidth="9.14in"
                          srccredit="Cristian Marchi" />
             </imageobject>
             <caption>
@@ -901,12 +912,9 @@
         <title><guilabel>编辑计划交易</guilabel>窗口的<guilabel>交易模板</guilabel>标签页</title>
         <screenshot id="txns-sxn-editor-3-template">
           <mediaobject>
-            <imageobject role="html">
+            <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-3-template.png"
-                         srccredit="Cristian Marchi" width="&img-w;"/>
-            </imageobject>
-            <imageobject role="fo">
-              <imagedata fileref="figures/txns_sxn_editor-3-template.png"
+                         screenshot-physicalwidth="9.14in"
                          srccredit="Cristian Marchi" />
             </imageobject>
             <caption>
@@ -926,6 +934,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor-4.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Cristian Marchi" />
             </imageobject>
           </mediaobject>
@@ -954,6 +963,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_sxn_editor_slr.png"
+                         screenshot-physicalwidth="6.67in"
                          srccredit="Cristian Marchi" />
             </imageobject>
          </mediaobject>
@@ -999,6 +1009,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_puttoget_Charts.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -1047,6 +1058,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_puttoget_Charts1.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -1132,6 +1144,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/txns_puttoget_Charts2.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>

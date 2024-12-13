@@ -103,11 +103,10 @@
     <para>当你使用信用卡为商品或服务付款时，你就是在告诉信用卡公司替你向对方付费。这项交易会增加你在信用卡公司的欠款，即信用卡科目余额增加。这些交易的另一端大多是费用科目。例如，如果你使用信用卡在商店花50元买了一件衣服，则相当于将钱由信用卡科目转账到<emphasis>费用:服装</emphasis>。
     </para>
 
-    <para>将这些交易录入&app;有助于你随时掌握欠信用卡公司多少钱，也会提供全体科目更完整的画像。这样做还可以帮助你随时了解账户状态，确保避免诈骗。<!-- ToDoZ: 避免诈骗？美国信用卡骗子很多吗？ -->
+    <para>将这些交易录入&app;有助于你随时掌握目前欠信用卡公司多少钱，也有助于你更清楚地了解各科目的整体情况。这样做还可以帮助你跟踪账户状态，确保避免盗刷。
     </para>
 
     <para>向信用卡科目添加交易很像在其它科目中添加交易。你可以手动录入交易，或通过兼容的格式从信用卡公司导入交易。
-      import format.
     </para>
 
     <para>有关如何录入交易，请查看&app;帮助手册第6章和<xref linkend="chapter_txns"></xref>。
@@ -117,7 +116,7 @@
   <sect1 id="cc-enterpay1">
     <title>记录还款</title>
     <!-- ToDoZ: balance 待还款额/欠款/欠债额 pay 还款 -->
-    <para>偿还信用卡账单大多录入为由银行科目（资产）到信用卡科目（负债）的转账。你在偿还月账单时，就是从银行科目取款以冲抵信用卡欠款。此交易同时减少银行科目余额和信用卡负债额。
+    <para>偿还信用卡账单往往录入为由银行科目（资产）到信用卡科目（负债）的转账。偿还月账单时，你就是在从银行科目取款，以冲抵信用卡欠款。此交易同时减少银行科目余额和信用卡负债额。
     </para>
 
     <para>当你退货时，你的信用卡会收到退款。这是另一种形式的还款，它会减少你的信用卡欠款。你如果将原先的购买交易录入为由信用卡科目到费用科目的转账，现在则简单地将那项交易反转过来：将钱从费用科目转回信用卡科目。此交易同时减少费用科目余额和信用卡科目余额。例如，如果你原先录入了一笔使用信用卡付款的服装购买，交易是从信用卡科目到服装费用科目的转账。你如果之后退掉衣服，收到退款，则简单地将钱从服装费用科目转回信用卡科目。
@@ -153,14 +152,14 @@
 
         <itemizedlist>
           <listitem>
-            <para>录入与当初购买时相同的交易，但在信用卡科目账簿的<guilabel><!-- ToDoG -->还款</guilabel>处，而非<guilabel><!-- ToDoG -->付款</guilabel>处输入金额。
+            <para>录入与当初购买时相同的交易，但在信用卡科目账簿的<guilabel>还款</guilabel><!-- ToDoP -->处，而非<guilabel><!-- ToDoP -->付款</guilabel>处输入金额。
             </para>
           </listitem>
 
           <listitem>
             <para>选择想要退款的购买交易（这个例子中也就是购买牛仔裤的交易），并选择
               <menuchoice>
-                <guimenu>交易</guimenu><guisubmenu><!-- ToDoZ: -->对冲交易</guisubmenu>
+                <guimenu>交易</guimenu><guisubmenu><!-- ToDoP -->冲销交易</guisubmenu>
               </menuchoice>
               。按需修改日期。
             </para>
@@ -176,7 +175,8 @@
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/cc_Reversing_Transaction_1.png"
-                             srccredit="Bengt Thuree"/>
+                           screenshot-physicalwidth="9.38in"
+                           srccredit="Bengt Thuree"/>
               </imageobject>
               <caption>
                 <para>此图展示了对冲购买交易后的<emphasis>负债:信用卡</emphasis>科目账簿。
@@ -195,7 +195,8 @@
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/cc_Reversing_Transaction_2.png"
-                             srccredit="Bengt Thuree"/>
+                           screenshot-physicalwidth="9.38in"
+                           srccredit="Bengt Thuree"/>
               </imageobject>
               <caption>
                 <para>此图展示了对冲购买交易后的<emphasis>费用:服装</emphasis>科目账簿。
@@ -216,7 +217,7 @@
   <sect1 id="cc-together1">
     <title>步步为营</title>
 
-    <para>现在我们已经介绍了在跟踪信用卡账目所需创建的交易背后的基本思想。现在来研究一个例子。在这个例子中，我们将使用信用卡买东西，退还两样购买的商品，支付由未还款额产生的利息<!-- ToDoZ: get charged interest on the unpaid balance -->，为信用卡科目对账，最后偿还部分信用卡欠款。
+    <para>现在我们已经介绍了在跟踪信用卡账目所需创建的交易背后的基本思想。现在来研究一个例子。在这个例子中，我们将使用信用卡买东西，退还两样购买的商品，缴纳由未还款额产生的利息，为信用卡科目对账，最后偿还部分信用卡欠款。
     </para>
 
     <sect2 id="cc-puttoget-openfile">
@@ -231,7 +232,8 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_accounts.png"
-                       srccredit="Bengt Thuree"/>
+                         screenshot-physicalwidth="6.25in"
+                         srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
               <para>在这个步步为营例子中跟踪信用卡账目前的初始科目结构。
@@ -260,6 +262,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_purchases.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -283,6 +286,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_refund.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -295,7 +299,7 @@
     </sect2>
 
     <sect2 id="cc-together-interest2">
-      <title>收取利息</title>
+      <title>缴纳利息</title>
 
       <para>在几个月的消费后，你收到了寄来的信用卡账单或在网上看到了账单。很不幸，由于你上个月的部分欠款拖到了现在，你在4月的最后一天被收取了20元的利息。这笔利息要作为费用录入到信用卡科目。
       </para>
@@ -306,6 +310,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_interest.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -333,6 +338,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_reconcile_init.png"
+                         screenshot-physicalwidth="2.44in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
           </mediaobject>
@@ -348,6 +354,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_reconcile.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -374,6 +381,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_payment.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
             <caption>
@@ -393,6 +401,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cc_final.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
           </mediaobject>

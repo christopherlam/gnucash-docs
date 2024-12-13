@@ -13,6 +13,7 @@
 Originally written by
              Carol Champagne
 Translators:
+       Xinhang Xu <xuxinhang4567@outlook.com>
        (translators put your name and email here)
 -->
 <sect1 id="chapter_accts">
@@ -232,6 +233,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/accts_DefaultIncomeAccounts.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -247,6 +249,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/accts_DefaultExpenseAccounts.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -287,12 +290,10 @@ Translators:
 
       <para>一开始，从菜单中选择<menuchoice>
           <guimenu>文件</guimenu>
-
           <guimenuitem>新建</guimenuitem>
-        </menuchoice>创建空白的&app;文件。<guilabel>新建层级科目</guilabel>向导会启动。点击<guibutton>取消</guibutton>关闭向导，因为我们不想使用任何一种预定义的科目结构。我们将依照自己的想法自行构建基本初始科目结构。在空白的&app;窗口中选择菜单<menuchoice>
+        </menuchoice>创建空白的&app;文件。<guilabel>创建科目结构</guilabel>向导会启动。点击<guibutton>取消</guibutton>关闭向导，因为我们不想使用任何一种预定义的科目结构。我们将依照自己的想法自行构建基本初始科目结构。在空白的&app;窗口中选择菜单<menuchoice>
           <guimenu>查看</guimenu>
-
-          <guimenuitem>新科目页面<!-- ToDoZ: 账簿多开是什么翻译 --></guimenuitem>
+          <guimenuitem>打开新的科目标签页<!-- ToDoZ,ToDoP: 账簿多开是什么翻译 --></guimenuitem>
         </menuchoice>，随后将打开<guilabel>科目</guilabel>标签页。再选择<menuchoice>
           <guimenu>功能</guimenu>
 
@@ -314,6 +315,7 @@ Translators:
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/accts_CreateAssetsAccount.png"
+                             screenshot-physicalwidth="3.74in"
                              srccredit="Cristian Marchi"/>
                 </imageobject>
 
@@ -353,6 +355,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/accts_toplevel.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -459,6 +462,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/accts_tree.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 

@@ -58,7 +58,7 @@
 
           <listitem>
             <para>代表拥有某家企业部分所有权的证券。这就是你在公开市场上<quote>买入公司股票</quote>时所得到的。有时也称为<emphasis>股本</emphasis>。
-              <!-- ToDoZ: 怎样翻译 capital stock -->
+            <!-- ToDoZ: 怎样翻译 capital stock -->
             </para>
           </listitem>
         </varlistentry>
@@ -236,22 +236,22 @@
     </para>
 
     <note>
-      <para>请注意，不论怎样组织科目层次，总能将来再随意移动这些科目，同时已经录入的信息不会丢失。所以，一开始建立科目层次无需一步到位。
+      <para>请注意，不论怎样组织科目层次结构，总能将来再随意移动这些科目，同时已经录入的信息不会丢失。所以，一开始建立科目层次无需一步到位。
       </para>
     </note>
 
     <sect2 id="invest_predefined2">
       <title>使用预置的投资科目</title>
 
-      <para><guilabel>新建科目层次结构</guilabel>向导中的<guilabel>投资科目</guilabel>选项会自动为你创建基本的投资科目层次结构。要使用预置的投资科目层次结构，首先打开&app;文件，切换到<guilabel>科目</guilabel>标签页，选择
+      <para><guilabel>建立科目结构</guilabel>向导中的<guilabel>投资科目</guilabel>选项会自动为你创建基本的投资科目层次结构。要使用预置的投资科目层次结构，首先打开&app;文件，切换到<guilabel>科目</guilabel>标签页，选择
         <menuchoice>
-          <guimenu>功能</guimenu><guimenuitem>新建科目层次结构</guimenuitem>
+          <guimenu>功能</guimenu><guimenuitem>建立科目结构</guimenuitem>
         </menuchoice>
-        。此菜单期项会启动<guilabel>新建科目层次结构</guilabel>向导，引导你选择要新添加到层次结构中的科目。选择<guilabel>投资科目</guilabel>选项（也可一并选择你感兴趣的其它科目结构）。假设这里只选择了投资科目，则此向导创建的科目结构如下所示。
+        。此菜单期项会启动<guilabel>建立科目结构</guilabel>向导，引导你选择要新添加到层次结构中的科目。选择<guilabel>投资科目</guilabel>选项（也可一并选择你感兴趣的其它科目结构）。假设这里只选择了投资科目，则此向导创建的科目结构如下所示。
       </para>
 
       <tip>
-        <para>你也可以通过创建新的&app;文件运行<guilabel>新建科目层次结构</guilabel>向导。
+        <para>你也可以通过创建新的&app;文件运行<guilabel>建立科目结构</guilabel>向导。
         </para>
       </tip>
 
@@ -280,7 +280,7 @@
     <sect2 id="invest_creating2">
       <title>手动创建投资科目</title>
 
-      <para>当然也可以自行建立投资科目层次。处理投资事宜常常需要创建几个相关联的科目：用于跟踪投资资金自身的资产科目、用于跟踪分红明细的收入科目，以及用于记录投资手续费的费用科目。
+      <para>当然也可以自行建立投资科目层次结构。处理投资事宜常常需要创建几个相关联的科目：用于跟踪投资资金自身的资产科目、用于跟踪分红明细的收入科目，以及用于记录投资手续费的费用科目。
       </para>
 
       <para>在典型的科目结构中，证券科目是资产科目的子科目，代表在某一经纪公司处开立的一个账户。经纪账户以本位货币计价，其下包括与每种在该经纪公司处交易的证券相对应的子科目。
@@ -578,7 +578,7 @@
 
           <itemizedlist>
             <listitem>
-              <para><emphasis>选择证券/货币</emphasis> - 点击<guilabel>证券/货币</guilabel>行一侧的<guibutton>选择…</guibutton>按钮，弹出<guilabel>选择证券</guilabel>对话框。必须将证券由默认选项（最初设置的默认货币）改为特定的股票。
+              <para><emphasis>选择证券/货币</emphasis> - 点击<guilabel>证券/货币</guilabel>行一侧的<guibutton>选择…</guibutton>按钮，弹出<guilabel>选择证券</guilabel>对话框。必须将证券由默认选项（最初设置的本位币）改为特定的股票。
               </para>
             </listitem>
 
@@ -615,8 +615,8 @@
                 </listitem>
 
                 <listitem>
-                  <!-- ToDoP: 简称 -->
-                  <para><guilabel>简称</guilabel>：这里是<userinput>浪潮信息</userinput>。简称会提供给报价数据源（往下几行）。
+                  <!-- 翻译提示：汉语没有Symbol或abbreviation的概念，翻译为“简称” -->
+                  <para><guilabel>简称<!-- ToDoP --></guilabel>：这里是<userinput>浪潮信息</userinput>。简称会提供给报价数据源（往下几行）。
                     <note>
                       <para>不同的报价数据源可能会对同一支股票使用不同的简称。
                       </para>
@@ -640,8 +640,8 @@
                 </listitem>
 
                 <listitem>
-                  <!-- ToDoP: 报价数据源 -->
-                  <para><quote>获取在线报价</quote>复选框、报价数据源和时区：应选择以指定在线更新报价的数据源。参见<xref linkend="invest-stockprice-auto2" />。
+                  
+                  <para><quote>获取在线报价<!-- ToDoP --></quote>复选框、报价数据源和时区：应选择以指定在线更新报价的数据源。参见<xref linkend="invest-stockprice-auto2" />。
                   </para>
 
                   <note>
@@ -668,7 +668,7 @@
 
                 <listitem>
                   <para><emphasis>保存证券</emphasis> - 点击<guibutton>确定</guibutton>按钮保存新创建的证券，<guilabel>新建证券</guilabel>窗口会关闭，并返回<guilabel>选择证券</guilabel>窗口。
-                  <!-- ToDoC: 并返回<guilabel>选择证券</guilabel>窗口。 -->
+                  <!-- ToDoC: <guilabel> -->
                   </para>
                 </listitem>
               </itemizedlist>
@@ -696,8 +696,8 @@
         </listitem>
 
         <listitem>
-          <!-- ToDoP: Tax Related -->
-          <para><emphasis>应税</emphasis> - 如果此科目的交易涉及缴纳所得税，则前往
+          <!-- ToDoZ,ToDoP: Tax Related -->
+          <para><emphasis>应税</emphasis> - 如果此科目的交易涉及所得税，则前往
             <menuchoice>
               <guimenu>编辑</guimenu> <guimenuitem>税务报表选项</guimenuitem>
             </menuchoice>
@@ -711,7 +711,7 @@
         </listitem>
 
         <listitem>
-          <!-- ToDoC: -->
+          <!-- ToDoC: guibutton -->
           <para><emphasis>完成</emphasis> - 现在回到了<guilabel>新建科目</guilabel>对话框，其中<guilabel>证券</guilabel>一行已设为<quote>浪潮信息</quote>。点击<guibutton>确定</guibutton>按钮保存新创建的股票科目。
           </para>
         </listitem>
@@ -1754,7 +1754,7 @@
 
                 <row>
                   <entry>
-                    资产:股票:符号
+                    资产:股票:简称
                   </entry>
 
                   <entry>
@@ -1776,7 +1776,7 @@
 
                 <row>
                   <entry>
-                    资产:股票:符号
+                    资产:股票:简称
                   </entry>
 
                   <entry>
@@ -2044,7 +2044,7 @@
                   <entry></entry>
 
                   <entry>
-                    净卖出总额 <!-- TODO: 使用不同的字体 上下同 英文也是 -->
+                    净卖出总额 <!-- ToDoS,ToDoC: 使用不同的字体 上下同 英文也是 -->
                   </entry>
 
                   <entry></entry>
@@ -2068,7 +2068,7 @@
 
                 <row>
                   <entry>
-                    资产:股票:符号 <!-- TODO: 怎样处理SYMBOL -->
+                    资产:股票:简称
                   </entry>
 
                   <entry>
@@ -2128,7 +2128,7 @@
 
                 <row>
                   <entry>
-                    资产:股票:符号
+                    资产:股票:简称
                   </entry>
 
                   <entry>
@@ -2450,7 +2450,7 @@
 
                 <row>
                   <entry>
-                    资产:股票:符号
+                    资产:股票:简称
                   </entry>
 
                   <entry>
@@ -2510,7 +2510,7 @@
 
                 <row>
                   <entry>
-                    资产:股票:符号
+                    资产:股票:简称
                   </entry>
 
                   <entry>
@@ -2927,7 +2927,7 @@
       <sect3 id="invest-sellChgCapGainsAcct">
 
       <title>将孤立的收益-CCC更改为损益科目</title>
-        <!-- TODO: 孤立收益还是利得 -->
+        <!-- ToDoZ,ToDoP: 孤立收益还是利得 -->
         <para>由对消创建的资本损益交易时，因为不知道应该用哪个资本损益账户，所以使用自动创建的通用<emphasis>孤立的收益-CCC</emphasis>账户（其中CCC是为证券交易货币）。执行对消后，应编辑<emphasis>孤立的收益-CCC</emphasis>交易分录，将科目重新指定为有意义的收入或费用类损益科目（如，<emphasis>收入:长期资本利得:浪潮信息</emphasis>）。
         </para>
 
@@ -3795,7 +3795,7 @@
     <!-- 翻译提示：https://www.zhihu.com/question/568992591 -->
     <!-- 翻译提示：https://englishsou.com/what-is-reverse-stock-split-stock-consolidation-stock-merge -->
 
-	<!-- TODO: 提示不适合中国大陆的情况 -->
+	<!-- ToDoZ: 提示不适合中国大陆的情况 -->
 
     <para>企业可能会出于各种各样的理由实行股票拆分，即拆股，但最常见的原因还是股票价格已经上涨得比管理部门认为对许多投资者合理的价格还要高。一些拆股是简单的置换，如，1换2、2换3。但还有一些情况由于涉及现金分配而更加复杂。如果置换比例反转，股票拆分也会使持有的份额减少，即合股，如，3换1、1换0.75。
     </para>
@@ -3828,7 +3828,7 @@
         </screenshot>
       </figure>
 
-      <para>第一页是介绍。点击<guibutton>前进</guibutton>浏览并选择要拆分的科目和股票。需要为每对当前持有的<emphasis>科目:股票</emphasis>组合创建条目。<!-- TODO: 啥意思 -->
+      <para>第一页是介绍。点击<guibutton>前进</guibutton>浏览并选择要拆分的科目和股票。需要为拆股前后的每对<emphasis>科目:股票</emphasis>创建条目。
       </para>
 
       <figure>
@@ -3885,10 +3885,10 @@
         </varlistentry>
 
         <varlistentry>
-          <term>新价格</term> <!-- TODO: -->
+          <term>拆股后价格</term><!-- 翻译提示：翻译为“新价格”有点奇怪 -->
 
           <listitem>
-            <simpara>如果需要，可以填入拆分后股票的新价格。
+            <simpara>如果需要，可以填入拆分后股票的最新价格。
             </simpara>
           </listitem>
         </varlistentry>
@@ -3968,9 +3968,9 @@
     </sect2>
 
     <sect2 id="invest-merger1">
-      <title>较为复杂的合股<!-- TODO: Moderately Complex Stock Merger --></title>
+      <title>较为复杂的合股</title>
 
-      <!-- 翻译提示：《中国南车、中国北车合并实施情况报告书（全文）》 -->
+      <!-- 翻译提示：参照《中国南车、中国北车合并实施情况报告书（全文）》 -->
 
       <para>此示例中，假定在2015年5月20日中国南车对中国北车并购案期间持有中国北车股票。你已于2015年4月1日买入了中国北车股票，后续分红均以现金支付，因此没有影响中国北车的股票账簿。
       </para>

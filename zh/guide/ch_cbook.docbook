@@ -34,7 +34,7 @@
     <para>管理活期账户的第一步就是创建必要的科目。你既可以使用默认的&app;科目，也可以自行创建。有关创建新科目的具体步骤，请参考<xref linkend="accts-examples-toplevel2"></xref>。有关由其它软件导入科目结构的方法，请参考&app;帮助手册。
     </para>
 
-    <para>现在先来创建接下来要用到的的银行账户科目。你需要为每个想要跟踪的实际银行账户创建一个&app;银行类型科目。不论是自行创建科目还是使用&app;的默认科目，确保每个银行科目都拥有一项期初余额交易。最简单的方法就是直接使用最近一张银行账单的余额作为期初余额。你可以在<guilabel>新建科目层次结构</guilabel>向导的科目信息窗口中输入期初余额，也可以直接在科目中手动录入交易。手动录入的交易应设为从<guilabel>期初余额</guilabel>科目（科目类型为所有者权益）向银行科目的转账。
+    <para>现在先来创建接下来要用到的的银行账户科目。你需要为每个想要跟踪的实际银行账户创建一个&app;银行类型科目。不论是自行创建科目还是使用&app;的默认科目，确保每个银行科目都拥有一项期初余额交易。最简单的方法就是直接使用最近一张银行账单的余额作为期初余额。你可以在<guilabel>建立科目结构</guilabel>向导的科目信息窗口中输入期初余额，也可以直接在科目中手动录入交易。手动录入的交易应设为从<guilabel>期初余额</guilabel>科目（科目类型为所有者权益）向银行科目的转账。
     </para>
 
     <para>你要跟踪的银行科目一般有：</para>
@@ -64,15 +64,15 @@
 
     <tip>
       <!-- ToDoZ:（译注：本段内容可能不适用于中国大陆地区个人纳税人）-->
-      <para>记得检查纳税信息<!-- ToDoZ: Tax-Related box -->，并在建立应税收入科目时在<guilabel>收入纳税信息</guilabel>对话框（
+      <para>确保核对纳税申报单，并在建立应税收入科目时在<guilabel>收入纳税信息</guilabel>对话框（
       <menuchoice>
-        <guimenu>编辑</guimenu><guimenuitem>报税选项<!-- ToDoG --></guimenuitem>
+        <guimenu>编辑</guimenu><guimenuitem>报税选项<!-- ToDoP --></guimenuitem>
       </menuchoice>
-      ）中指定适合的纳税类型。一些收入类型，如礼品收入，可能不视为应税的，所以请查阅适合的税务法规确定某项收入是否应税。跟踪资本利得<!-- ToDoZ: -->的方法请参考<xref linkend="chapter_capgain"></xref>。
+      ）中指定适合的纳税类型。一些收入类型，如礼品收入，可能算作应税的，所以请查阅适合的税务法规确定某项收入是否应税。跟踪资本利得收入的方法请参考<xref linkend="chapter_capgain"></xref>。
       </para>
     </tip>
 
-    <para>在着手录入工资存款时，请想清楚你想要记录得有多细。最基本的是录入你的净工资，就像你会在纸制账簿上记录的那样。这是最简单的记录方式，不过你如果录入包含扣除额的毛工资，则可以使用&app;分析出更多信息。录入扣除额是要花点工夫，但你在录入整年的预扣税信息后，可以随时在&app;中生成实用的税务状况报表。<!-- ToDoZ: tax status reports是什么 -->。这些报表能够帮助你确定你是否足额纳税，也可以帮助你预估税单。如果你不确定记录的细致程度，则可以先从录入净工资开始。你如果想要更详细的信息，总是可以回头编辑这些交易。
+    <para>在着手录入工资存款时，请明确记录的细致程度。最基本的是录入你的净工资，就像你会在纸制账簿上记录的那样。这是最简单的记录方式，不过你如果录入包含扣除额的毛工资，则可以使用&app;分析出更多信息。录入扣除额是要花点工夫，但你在录入整年的预扣税信息后，可以随时在&app;中生成实用的税务状况报告。这些报表能够帮助你确定是否已足额纳税，也可以帮助预估税单。如果你不确定记录的细致程度，则可以先从录入净工资开始。你如果想记录更详细的信息，随时可以回头编辑这些交易。
     </para>
   </sect1>
 
@@ -133,6 +133,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cbook_gcashdata4.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -159,6 +160,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_transferin.png"
+                             screenshot-physicalwidth="9.38in"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -181,6 +183,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_checkexamp.png"
+                             screenshot-physicalwidth="9.38in"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -203,6 +206,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_atm.png"
+                             screenshot-physicalwidth="9.38in"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -245,7 +249,7 @@
               <guimenu>功能</guimenu> <guimenuitem>对账</guimenuitem>
             </menuchoice>
             ，期末余额填写1451.79元。点击
-            <guibutton>确认</guibutton>开始为此科目对账。勾选<!-- ToDoZ: check off -->出现在银行账单中的条目。在所有条目均勾选后，对账窗口将如下图所示：
+            <guibutton>确认</guibutton>开始为此科目对账。勾选出现在银行账单中的条目。在所有条目均被勾选后，对账窗口将如下图所示：
           </para>
 
 <!-- ToDo: unshrink -->
@@ -255,6 +259,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_reconexamp.png"
+                             screenshot-physicalwidth="9.38in"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -280,6 +285,7 @@
                 <mediaobject>
                   <imageobject>
                     <imagedata fileref="figures/cbook_servch.png"
+                               screenshot-physicalwidth="9.38in"
                                srccredit="Bengt Thuree" />
                   </imageobject>
                   <caption>
@@ -292,7 +298,7 @@
         </listitem>
 
         <listitem>
-          <para>回到对账窗口，你应该会看到服务费现已在<guilabel>转出</guilabel>下列出。点击此项标记为已对账，可见下方的差额现在变成了<guilabel>0.00</guilabel>。点击<emphasis>工具栏</emphasis>上的<guibutton>完成</guibutton>按钮完成对账。在<emphasis>活期</emphasis>科目账簿中表示对账状态的<guilabel>R<!-- ToDoZ: C --></guilabel>列下，刚才对账过的每笔交易现在都应该显示为<guilabel>y</guilabel>。同时，底部状态栏现在会显示<guilabel>已对账：CNY 1451.79</guilabel>。
+          <para>回到对账窗口，你应该会看到服务费现已在<guilabel>转出</guilabel>下列出。点击此项标记为已对账，可见下方的差额现在变成了<guilabel>0.00</guilabel>。点击<emphasis>工具栏</emphasis>上的<guibutton>完成</guibutton>按钮完成对账。在<emphasis>活期</emphasis>科目账簿中表示对账状态的<guilabel>对<!-- ToDoP --></guilabel>列下，刚才对账过的每笔交易现在都应该显示为<guilabel>y<!-- ToDoP --></guilabel>。同时，底部状态栏现在会显示<guilabel>已对账：CNY 1451.79</guilabel>。
           </para>
 
 <!-- ToDo: unshrink -->
@@ -302,6 +308,7 @@
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/cbook_reconciledCheckAct.png"
+                             screenshot-physicalwidth="9.38in"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>
@@ -328,6 +335,7 @@
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/cbook_chartaccts5.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>

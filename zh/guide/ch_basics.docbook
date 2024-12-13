@@ -4,18 +4,19 @@
 (Do not remove this comment block.)
 Version: 2.0.0
 Last modified: 2014-08-28 (fell)
-modified: October 25th 2010
-modified: January 12th 2007
-modified: July 9th 2006
+     modified: October 25th 2010
+     modified: January 12th 2007
+     modified: July 9th 2006
 Maintainers:
-Cristian Marchi <cri.penta@gmail.com>
-Chris Lyttle <chris@wilddev.net>
+    Cristian Marchi <cri.penta@gmail.com>
+    Chris Lyttle <chris@wilddev.net>
 Author:
-Jon Lapham <lapham@extracta.com.br>
-Updated	Bengt Thuree <bengt@thuree.com>
+    Jon Lapham <lapham@extracta.com.br>
+    Updated	Bengt Thuree <bengt@thuree.com>
 Originally written by Carol Champagne.
 Translators:
-(translators put your name and email here)
+    Xinhang Xu <xuxinhang4567@outlook.com>
+    (translators put your name and email here)
 -->
 <chapter id="chapter_basics">
   <title>基础</title>
@@ -30,7 +31,7 @@ Translators:
     <sect2 id="basics-accounting52">
       <title>五类基本科目</title>
 
-      <para>基本会计规则将财务上的所有事物分为五类基本<quote>科目</quote>类型。也就是说，会计要处理的一切事物都属于这五类科目之一：</para>
+      <para>基本会计规则将财务上的所有事项分为五类基本<quote>科目</quote>类型。也就是说，会计要处理的一切事项均属于这五类科目之一：</para>
 
       <variablelist>
         <title>账户类型</title>
@@ -86,19 +87,18 @@ Translators:
         </varlistentry>
       </variablelist>
 
-      <para>很明显，你可以将财务中一切事物分为五组。例如，你银行账户中的现金是资产，你的房贷是负债，你的工资是收入，昨天晚饭的开销是费用。</para>
+      <para>很明显，你可以将财务中一切事项分为五组。例如，银行账户现金是资产，房屋贷款是负债，工资是收入，昨天晚饭的开销是费用。</para>
     </sect2>
 
     <sect2 id="basics-accountingequation2">
       <title>会计等式</title>
 
-      <para>现在有了五类基本科目，但它们之间的关系是什么？其中一类科目怎样影响其它科目？
-      首先，定义一个包含资产和负债的等式：你的净值等于你的资产减去负债。</para>
+      <para>现在有了五类基本科目，但它们之间的关系是什么？其中一类科目怎样影响其它科目？首先，定义一个包含资产和负债的等式：净值等于资产减去负债。</para>
 
       <equation id="accounting_equation_static">
         <title>静态会计等式</title>
 
-        <mathphrase>资产 - 负债 = 所有者权益</mathphrase>
+        <mathphrase>资产 － 负债 ＝ 所有者权益</mathphrase>
       </equation>
 
       <para>另外，收入可以增加净值，费用可以减少净值。这当然有道理，当你得到工资你就变得<quote>更富有</quote>，当你为晚饭付钱你就变得<quote>更贫穷</quote>。这就以数学的方式表达了一个被人们称为会计等式的关系：</para>
@@ -106,7 +106,7 @@ Translators:
       <equation id="accounting_equation_dynamic">
         <title>动态会计等式</title>
 
-        <mathphrase>资产 - 负债 = 所有者权益 + (收入 - 费用)</mathphrase>
+        <mathphrase>资产 － 负债 ＝ 所有者权益 ＋ (收入 － 费用)</mathphrase>
       </equation>
 
       <para>此等式应当永远成立，这意味着只有同时变动多个科目的金额时才能满足要求。例如，如果以收入的形式得到了一笔钱，则必须等额地增加资产科目的金额。又如，如果负债科目的金额增加，则应当同时增加资产科目的金额。</para>
@@ -143,15 +143,15 @@ Translators:
       <equation id="accounting_equation_rearranged">
         <title>重新排列后的会计等式</title>
 
-        <mathphrase>资产 + 费用 = 负债 + 所有者权益 + 收入</mathphrase>
+        <mathphrase>资产 ＋ 费用 ＝ 负债 ＋ 所有者权益 ＋ 收入</mathphrase>
       </equation>
 
       <para>此形式的会计等式中，等号左边的科目称为<emphasis>借方科目</emphasis>，记<emphasis>借</emphasis>的分录会增加这些科目的余额。相反，记贷的分录会减少这些科目的余额。</para>
 
       <para>类似地，在等号右边的科目也被称为<emphasis>贷方科目</emphasis>，即这些科目的余额由记<emphasis>贷</emphasis>的分录增加。同样地，这些科目中记借的分录会减少科目的余额。</para>
       
-      <warning><!-- @在英文中添加这一段 -->
-          <para><emphasis>借</emphasis>与<emphasis>贷</emphasis>是专用的会计术语，会计工作中这两个字的含义与日常生活中的用法可能并不一致。</para>
+      <warning><!-- ToDoC: 在英文中添加这一段 -->
+          <para><emphasis>借</emphasis>与<emphasis>贷</emphasis>是专用的会计术语，这两个字在会计工作中的含义与日常生活中的用法并不一致。</para>
       </warning>
 
       <table frame="all" id="basics-debits-credits-effect-tbl">
@@ -224,27 +224,26 @@ Translators:
 
       <note>
         <para>这些会计术语可能会令新用户感到困惑，因此&app;默认使用更常见的术语<guilabel>存入</guilabel>
-        和<guilabel>取出</guilabel>。如果你希望使用正规的会计术语，可以在<guilabel>首选项</guilabel>（更多有关设置首选项的信息请查阅&app;帮助手册）中的<guilabel>科目</guilabel>选项卡进行设置。</para>
+        和<guilabel>取出</guilabel>。如果你希望使用正式的会计术语，可以在<guilabel>首选项</guilabel>（更多有关设置首选项的信息请查阅&app;帮助手册）中的<guilabel>科目</guilabel>选项卡进行设置。</para>
       </note>
 
       <warning>
         <para>在日常生活中，<emphasis>借</emphasis>与<emphasis>贷</emphasis>这两个字的用法和会计工作中的用法并不一致。在日常使用中，<emphasis>贷</emphasis>通常有增加的意思；在会计工作中，<emphasis>贷</emphasis>意味着<emphasis>影响某一科目分类账表的右列</emphasis>。这与资产和费用科目的<emphasis>减少</emphasis>相关，与收入、负债和所有者权益科目的<emphasis>增加</emphasis>相关。</para>
 
-        <para>详细信息可参阅<ulink
-        url="https://zh.wikipedia.org/wiki/Debits_and_credits"/>。</para>
+        <para>详细信息可参阅<ulink url="https://zh.wikipedia.org/wiki/Debits_and_credits"/>。</para>
       </warning>
     </sect2>
   </sect1>
 
   <sect1 id="basics-entry1">
-    <title>数据录入概念</title>
+    <title>数据记录概念</title>
 
     <para>在&app;中录入数据时，你应当了解&app;用于分隔数据的三级组织结构：文件、科目和交易。这几个层级按其复杂性排序列出，一个文件包含许多科目，一个科目包含许多交易。认识这种分隔方法是理解怎样使用&app;的基础。</para>
 
     <sect2 id="basics-files2">
       <title>文件</title>
 
-      <para>&app;以文件形式存储最高层级的信息。一个文件可以以单个<acronym>XML</acronym>文件（在所有版本的
+      <para>&app;以文件形式存储最高层级的信息。一个文件以单个<acronym>XML</acronym>文件（在所有版本的
       &app;上）或<acronym>SQL</acronym>数据库（2.4或更高版本的&app;上）的形式存储在你的计算机上。</para>
 
       <note>
@@ -255,11 +254,11 @@ Translators:
 
       <para>使用<acronym>SQL</acronym>存储时，&app;会在你选择的数据库软件（SQLite3、MySQL或PostgreSQL）中把数据存储至 <acronym>SQL</acronym>数据库中。</para>
 
-      <para>你需要为你正在处理的一组科目准备主文件或数据库。要了解怎样创建和管理&app;文件，可参见 <xref
+      <para>你需要为你正在处理的一组科目准备主文件或数据库。要了解怎样创建和管理&app;文件，参见<xref
       linkend="basics-files1"/>。</para>
 
       <note>
-        <para>你如果认为需要多于一组的科目，则应在处理账目前咨询专业会计师。大多数用户仅需一个数据文件。</para>
+        <para>你如果认为一组科目不能满足需求，则应在处理账目前咨询专业会计师。大多数用户仅需一个数据文件。</para>
       </note>
 
       <para>备份文件和日志文件由&app;适时自动生成。备份文件和日志文件会在<xref
@@ -272,11 +271,11 @@ Translators:
       <title>科目</title>
 
       <para><glossterm
-      linkend="gnc-gl_account">科目</glossterm>跟踪你拥有的、欠别人的、你花费的或你得到的东西。每个&app;文件可包含任意数量的科目，每个科目又可包含许多子科目，层数不限。正如下文所述，这个简单的特性使&app;能够管理你的财务的方方面面。</para>
+      linkend="gnc-gl_account">科目</glossterm>跟踪你拥有的、你欠别人的、你花费的或你得到的东西。每个&app;文件可包含任意数量的科目，每个科目又可包含许多子科目，层数不限。正如下文所述，这个简单的特性使&app;能够管理你的财务的方方面面。</para>
 
-      <para>例如，科目可以包括：活期账户、储蓄账户、信用卡账户、房屋贷款和其它贷款。每个&app;科目跟踪对应的<quote>真实</quote>账户的活动，便于你了解其状态。</para>
+      <para>例如，科目可以包括：活期账户、储蓄账户、信用卡账户、房屋贷款和其它贷款。每个&app;科目跟踪对应的<quote>实际</quote>账户的活动，便于了解其状态。</para>
 
-      <para>此外，科目也可以把你收到或花出的钱分类。例如，你可以创建费用科目来记录你为公共服务和食品杂货付的钱。就算这些科目并不对应于会收到账单的实际账户，也可以使你了解在各个方面花了多少钱。</para>
+      <para>此外，科目也可以把你收到或花出的钱分类。例如，你可以创建费用科目记录为公共服务和食品杂货付的钱。即便这些科目并不对应于能收到账单的实际账户，也仍可使你了解在各个方面花了多少钱。</para>
 
       <para>本指南会在<xref linkend="chapter_accts"/>中更详细地介绍科目。</para>
     </sect2>
@@ -286,12 +285,12 @@ Translators:
     <sect2 id="basics-transactions2">
       <title>交易</title>
 
-      <para><firstterm>交易</firstterm>代表金额在科目间的转移。任何在你花出或收到钱，或在账户间转账的时候，都会产生交易。</para>
+      <para><firstterm>交易</firstterm>代表资金在科目间的转移。任何你花出或收到钱，或在账户间转账的时候，都会产生交易。</para>
 
-      <para>例如，交易可以是：支付手机话费、把钱从储蓄账户转到活期账户、买烧饼、取出现金和存入工资。<xref
+      <para>例如，交易可以是：支付手机话费、把钱从储蓄账户转账到活期账户、买烧饼、取出现金和存入工资。<xref
       linkend="chapter_txns"/>会更深入地介绍怎样录入交易。</para>
 
-      <para>在<link linkend="basics-accountingdouble2">复式记账</link>中，交易总是至少涉及两个科目——一个付款科目，一个收款科目。根据这一规则，&app;会在交易中对每个受影响的科目各插入一行，并在每一行中记录涉及的金额。交易中记录涉及的科目与金额的行称为分录。每个交易可以包含任意数量的分录。</para>
+      <para>在<link linkend="basics-accountingdouble2">复式记账</link>中，交易总是至少涉及两个科目——一个付款科目，一个收款科目。根据这一规则，&app;会在交易中为每个受影响的科目各插入一行，并在每一行中记录涉及的金额。交易中记录涉及的科目与金额的行称为分录。每项交易包含的分录数量不限。</para>
 
       <note>
         <para>交易分录会在<xref linkend="txns-registers-multiaccount2"/>详细介绍。</para>
@@ -315,13 +314,11 @@ Translators:
     <sect2 id="basics-welcome-to-gnucash">
       <title><guilabel>欢迎使用&appname;</guilabel>对话框</title>
 
-      <para>最初打开&app;你会看到<guilabel>欢迎使用&appname;</guilabel>对话框，其中包含三个选项：</para>
-
-      <!-- ToDoZ: Recommend screen shot here of Welcome to GnuCash! dialog -->
+      <para>最初打开&app;你会看到<guilabel>欢迎使用&appname;<!-- ToDoP --></guilabel>对话框，其中包含三个选项：</para>
 
       <itemizedlist id="welcome-screen-options">
         <listitem>
-          <para><guilabel>创建一组新的科目</guilabel> —— 运行<guilabel>新建层次科目<!--ToDoZ--></guilabel>向导（参考<xref linkend="basics-acct-hierarchy"/>）。如果你想在&app;的帮助下创建一组新科目，请选择此选项。</para>
+          <para><guilabel>创建一组新科目</guilabel> —— 运行<guilabel>建立科目结构</guilabel>向导（参考<xref linkend="basics-acct-hierarchy"/>）。如果你想在&app;的帮助下创建一组新科目，请选择此选项。</para>
         </listitem>
 
         <listitem>
@@ -334,41 +331,39 @@ Translators:
       </itemizedlist>
 
       <note>
-        <para>在离开此对话框后，你仍然可以使用其中的每一项功能，但<guilabel>欢迎使用&appname;</guilabel>不会再次显示。要创建一组新的科目，参见<xref linkend="basics-acct-hierarchy"/>。要导入QIF文件，参见<xref linkend="importing-qif"/>。</para>
+        <para>离开此对话框后，你仍然可以使用其中列出的各项功能，但<guilabel>欢迎使用&appname;</guilabel>不会再次显示。要创建一组新的科目，参见<xref linkend="basics-acct-hierarchy"/>。要导入QIF文件，参见<xref linkend="importing-qif"/>。</para>
       </note>
     </sect2>
 
     <sect2 id="basics-acct-hierarchy">
-      <title>新建层级科目</title>
+      <title>建立科目结构</title>
 
-      <para><emphasis>新建层级科目</emphasis>向导能够帮助你创建一组新的&app;科目。如果在<guilabel>欢迎使用&appname;</guilabel>中选择<guibutton>创建一组新的科目</guibutton>，或选择
+      <para><emphasis>建立科目结构</emphasis>向导能够帮助你创建一组新的&app;科目。如果在<guilabel>欢迎使用&appname;</guilabel>中选择<guibutton>创建一组新的科目</guibutton><!-- ToDoS -->，或选择
       <menuchoice>
           <shortcut>
             <keycombo>
               <keycap>Ctrl</keycap>
-
               <keycap>N</keycap>
             </keycombo>
           </shortcut>
-            <!-- ToDoZ:这个排版怎么搞的 -->
+          <!-- ToDoS -->
           <guimenu>文件(<accel>F</accel>)</guimenu>
 
           <guimenuitem>新建(<accel>N</accel>)</guimenuitem>
-        </menuchoice> 时，该向导会启动。你也可以从<guilabel>科目</guilabel>页面选择<menuchoice>
-          <guimenu>功能(<accel>A</accel>)</guimenu>
-
-          <guimenuitem>新建层级科目…</guimenuitem>
-        </menuchoice>来使用该向导向现有账簿添加部分科目。</para>
+        </menuchoice> 时，该向导会启动。你也可以在<guilabel>科目</guilabel>页面中选择<menuchoice>
+          <guimenu>操作(<accel>A</accel>)</guimenu>
+          <guimenuitem>建立科目结构…</guimenuitem>
+        </menuchoice>启动向导往现有账簿添加一系列科目。</para>
 
       <para>该向导会指引你创建<emphasis>会计科目表</emphasis>。此向导包含几个步骤，简要介绍如下：</para>
 
       <orderedlist>
         <listitem>
-          <para>第一个页面简要介绍了此向导的功能。</para>
+          <para>第一个页面简要介绍了该向导的功能。</para>
         </listitem>
 
         <listitem>
-          <para><guilabel>新建账簿选项</guilabel>只在创建新账簿时出现。你可以在此设置许多账簿属性。此页面包含四个选项卡：科目、预算、商业和计数器。 这几项内容在本指南的其它部分会展开介绍，可以随时使用
+          <para><guilabel>新建账簿选项</guilabel>只在创建新账簿时出现。你可以在此设置许多账簿属性。此页面包含四个选项卡：<guilabel>科目</guilabel>、<guilabel>预算</guilabel>、<guilabel>企业</guilabel>和<guilabel>计数器</guilabel>。这些条目会在本指南的其它部分中展开介绍，可以随时使用
           <menuchoice>
               <shortcut>
                 <keycombo>
@@ -382,53 +377,53 @@ Translators:
             </menuchoice> 修改。</para>
         </listitem>
 
-        <listitem><!-- ToDoZ: 币种还是货币 功能菜单？ -->
-          <para><guilabel>选择货币</guilabel>设置根科目和新建科目的默认货币。此选项的默认值根据计算机的区域设置确定。请认真设置此选项，因为它不仅会成为新建科目的默认货币，也会成为整个账簿的主货币，还会是所有股票价格和外币汇率的默认货币。尽管可以通过<guimenu>功能</guimenu>菜单重新运行<guilabel>新建层级科目</guilabel>向导进行更改，但这样操作后你已经创建的交易可能会损坏。</para>
+        <listitem>
+          <para><guilabel>选择货币</guilabel>设置根科目和新建科目的本位币。该选项的默认值根据计算机的区域设置确定。请认真设置此选项，因为它不仅会设定新建科目的默认货币，也会成为整个账簿的主货币，还会是所有股票价格和外币汇率的默认货币。尽管可以通过<guimenu>操作</guimenu>菜单重新运行<guilabel>建立科目结构</guilabel>向导进行更改，但这样操作后你已经创建的交易可能会损坏。</para>
           </listitem>
 
         <listitem>
-          <para><guilabel>选择要创建的科目</guilabel>提供了多种可添加到账簿的会计模板。此处主要有两个面板：左侧是模板列表，每一项旁边有一个复选框；右侧显示将要由选中的模板添加到账簿的科目。</para>
+          <para><guilabel>选择要创建的科目</guilabel>提供了多种可添加到账簿的会计模板。这里主要有两个面板：左侧是模板列表，每一项旁边有一个复选框；右侧显示将要由选中的模板添加到账簿的科目。</para>
 
-          <para>在<guilabel>模板</guilabel>列表上方，是两个下拉框，其中一个是语言代码，另一个是国家代码。初始选择同样基于你的计算机区域设置确定。你可以根据需要选择任何语言和国家的组合。</para>
+          <para>在<guilabel>模板</guilabel>列表上方，是两个下拉框，其中一个是语言代码，另一个是国家代码。初始选中项同样根据计算机区域设置确定。你可以根据需要选择任何语言和国家的组合。</para>
 
           <note>
-            <para><guilabel>新建层级科目</guilabel>向导中，不能一次选择多个区域，因此如果你需要从多个区域中选择多项（可能是由于你首选区域的模板需要使用来自其它国家的模板进行拓展），可以从<guimenu>功能</guimenu>菜单多次运行此向导。</para>
+            <para><guilabel>建立科目结构</guilabel>向导中，不能一次同时选择多个区域下的模板，因此如果你需要从多个区域中选择多项（可能是因为打算在首选区域的模板之上使用来自其它国家的模板进行拓展），则可以从<guimenu>操作</guimenu>菜单多次运行此向导。</para>
           </note>
         </listitem>
 
         <listitem>
-          <para><guilabel>设置选择的科目</guilabel>会以树状形式列出在<guilabel>选择要创建的科目</guilabel>中所选模板的科目。根据你是否正在创建新的账簿，列表可能有四列或五列。
+          <para><guilabel>设置选择的科目</guilabel>会以树状结构列出由在<guilabel>选择要创建的科目</guilabel>中选中的模板所给出的科目。根据你是否正在创建新的账簿，列表可能有四列或五列。
           <itemizedlist>
               <listitem>
-                <para><guilabel>科目名称</guilabel>可编辑，只需在其内点击，或选中该行并按<keycap>Enter</keycap>。</para>
+                <para><guilabel>科目名称</guilabel>可编辑，只需点击内容文本，或选中该行按下<keycap>Enter</keycap>。</para>
               </listitem>
 
               <listitem>
-                <para><guilabel>类型</guilabel>不可编辑。此项显示了科目类型。</para>
+                <para><guilabel>类型</guilabel>不可编辑。此项指示科目类型。</para>
               </listitem>
 
               <listitem>
-                <para><guilabel>占位符</guilabel>科目（只能在其下建立子科目而自身不能添加交易的科目）。你可以勾选此项使科目成为占位符，或取消勾选使科目为常规科目。</para>
+                <para><guilabel>占位符</guilabel>科目。占位符科目指只能在其下建立子科目而自身不能添加交易的科目。你可以勾选此项使科目成为占位符，或取消勾选使科目为常规科目。</para>
               </listitem>
 
               <listitem>
-                <para><guilabel>期初余额</guilabel>可以为非<emphasis>所有者权益</emphasis>的非占位科目设置余额，因为一个已经存在的账户早就存在余额，占位符科目不能存储交易，且所有者权益不能设置期初余额。
-                <note><!-- ToDoZ: guibutton -->
-                    <para><guilabel>期初余额</guilabel>输入框只有点击后才可见。你必须点击别处将光标移出输入框或在点击<guibutton>前进</guibutton>按钮之前按<keycap>Tab</keycap>或<keycap>Enter</keycap>，否则输入的内容会丢失。</para>
+                <para><guilabel>期初余额</guilabel>可以为非<emphasis>所有者权益</emphasis>的非占位符科目设定余额，因为已经存在的账户早就存在余额，占位符科目不能存储交易，且所有者权益科目没有期初余额。
+                <note>
+                    <para><guilabel>期初余额</guilabel>输入框只有点击后才可见。你必须点击别处将光标移出输入框，或在点击<guibutton>前进</guibutton>按钮之前按<keycap>Tab</keycap>或<keycap>Enter</keycap>，否则输入的内容会丢失。</para>
                   </note></para>
               </listitem>
 
               <listitem>
-                <para><guilabel>使用已有科目</guilabel>只会在从<guimenu>功能</guimenu>菜单启动<guilabel>新建层级科目</guilabel>向导时才会出现。它指示科目是否已经存在。此项不可编辑。</para>
+                <para><guilabel>使用已有科目</guilabel>只会在从<guimenu>操作</guimenu>菜单启动<guilabel>建立科目结构</guilabel>向导时才会出现。它指示科目是否已经存在。此项不可编辑。</para>
               </listitem>
             </itemizedlist></para>
         </listitem>
 
         <listitem>
-          <para><guilabel>完成科目设置</guilabel> 是最后一个页面，给你最后的机会取消此过程，回头更改一些设置，或点击<guibutton>应用</guibutton>确认你的选择。如果你正在新建账簿，&app;会弹出对话框，提示选择存储格式，可以输入文件名存储到你的计算机中，如果&app;内含存储至数据库的功能且已经安装了必要的软件依赖，也可以输入数据库服务器地址、数据库名和认证信息以创建MySQL或PostgreSQL数据库。</para>
+          <para><guilabel>完成科目设置</guilabel>是最后一个页面，给你最后的机会取消此过程，回头更改一些设置，或点击<guibutton>应用</guibutton>确认你的选择。如果你正在新建账簿，&app;会弹出对话框，提示选择存储格式，可以是用以保存账簿的文件，另外如果&app;内含存储至数据库的功能且已经安装了必要的软件依赖，也可以输入数据库服务器地址、数据库名和认证信息以创建MySQL或PostgreSQL数据库。</para>
 
           <warning>
-            <para>如果你选择取消，你至此做出的任何选择都会丢失。</para>
+            <para>你如果选择取消，则至此做出的任何选择都会丢失。</para>
           </warning>
         </listitem>
       </orderedlist>
@@ -446,6 +441,7 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/basics_TipOfDay.png"
+                         screenshot-physicalwidth="4.17in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -456,21 +452,22 @@ Translators:
         </screenshot>
       </figure>
 
-      <para>这些提示对初学者很有帮助。请单击<guibutton>前进</guibutton>继续浏览更多提示。如果不希望在启动时看到此屏幕，请取消选择旁边的<guilabel>启动时显示每日提示</guilabel>复选框。浏览完提示后，点击<guibutton>关闭</guibutton>以关闭<guilabel>每日提示</guilabel>屏幕。</para>
+      <para>这些提示对初学者很有帮助。可单击<guibutton>前进</guibutton>继续浏览更多提示。如果不希望在启动时看到此屏幕，请取消勾选旁边的<guilabel>启动时显示每日提示</guilabel>复选框。浏览完这些有用的提示后，点击<guibutton>关闭</guibutton>按钮关闭<guilabel>每日提示</guilabel>屏幕。</para>
     </sect2>
 
     <sect2 id="basics-main2">
       <title>科目树窗口</title>
 
-      <para>你现在应该看到了<guilabel>科目</guilabel>窗口，如下所示。具体显示的科目依赖于你在<guilabel>新建层级科目</guilabel>中选择了哪些默认科目。此处的示例展示了<guilabel>默认科目</guilabel>。</para>
+      <para>你现在应该看到了<guilabel>科目</guilabel>窗口，如下所示。科目树的具体结构依赖于你在<guilabel>建立科目结构</guilabel>中选择了哪些默认科目。此处示例列出的是<guilabel>常用科目</guilabel>。</para>
 
       <figure pgwide="1">
-        <title>基本科目关系</title>
+        <title>基本科目关系<!-- ToDoZ --></title>
 
         <screenshot id="basics-Accounts">
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/basics_Accounts.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Cristian Marchi"/>
             </imageobject>
 
@@ -481,25 +478,25 @@ Translators:
         </screenshot>
       </figure>
 
-      <para>科目树窗口（也称为科目汇总表或科目表）汇总了当前文件中的数据，包含科目名称列表和当前余额。</para>
+      <para>科目树窗口（也称为科目表）汇总了当前文件所含数据，包含科目名称列表和其当前余额。</para>
 
-      <para>在此窗口中，你可以双击科目名称、右击科目名称并从菜单中选择<guilabel>打开账户</guilabel>或使用工具栏上的<guibutton>打开</guibutton>按钮打开科目账簿。可以在&app;中打开任意数量的科目账簿。参见<xref linkend="basics-register2"/>了解使用科目账簿的更多信息。</para>
+      <para>在此窗口中，你可以双击科目名称，或者右击科目名称并从菜单中选择<guilabel>打开账户</guilabel>，以及使用工具栏上的<guibutton>打开</guibutton>按钮打开科目账簿。可以在&app;中打开任意数量的科目账簿。参见<xref linkend="basics-register2"/>了解使用科目账簿的更多信息。</para>
 
       <tip>
-        <para>如果科目下存在子科目，可以点击科目名称旁边的小三角显示其子科目。</para>
+        <para>如果科目下存在子科目，可以点击科目名称左侧的小三角展开显示其子科目树。</para>
       </tip>
 
-      <para>窗口顶端是<emphasis>标题栏</emphasis>，显示此组账户的文件名。其下是<emphasis>菜单栏</emphasis>，可以点击菜单标题或使用快捷建（参见<xref linkend="basics-shortcut2"/>）访问菜单条目。接下来是<emphasis>工具栏</emphasis>，包含调用常用功能的按钮。</para>
+      <para>窗口顶端是<emphasis>标题栏</emphasis>，保存文件后就会显示此组科目保存的文件名。下方是<emphasis>菜单栏</emphasis>，可以点击菜单标题或使用快捷建（参见<xref linkend="basics-shortcut2"/>）访问菜单项。再下面是<emphasis>工具栏</emphasis>，包含调用常用功能的按钮。</para>
 
-      <para>科目树显示在<emphasis>工具栏</emphasis>下方。一旦你创建了科目，科目名称就会显示在科目树中。你可以通过科目树右上方的小箭头自定义显示哪些表头。</para>
+      <para>科目树显示在<emphasis>工具栏</emphasis>下方。在你创建科目后，科目名称就会显示在科目树中。你可以使用科目树上方最右侧的小箭头设置要显示的表头。</para>
 
-      <para>底部是<emphasis>状态栏</emphasis>，展示有关净资产和利润的信息。</para>
+      <para>底部是<emphasis>状态栏</emphasis>，告知有关你拥有多少财产（净资产）和你赚到了多少钱（利润）的信息。</para>
     </sect2>
 
     <sect2 id="basics-register2">
       <title>科目账簿窗口</title>
 
-      <para>科目账簿窗口用于输入并编辑科目数据。恰如其名，科目账簿窗口看起来就像是支票簿。</para>
+      <para>科目账簿窗口用于输入和编辑科目数据。恰如其名，科目账簿窗口看起来就像是纸制记账本。</para>
 
       <figure pgwide="1">
         <title>活期账户的账簿</title>
@@ -508,22 +505,23 @@ Translators:
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/basics_CheckAccount.png"
+                         screenshot-physicalwidth="9.38in"
                          srccredit="Bengt Thuree"/>
             </imageobject>
 
             <caption>
-              <para>此图展示了已经录入几笔交易后的活期账户的账簿。</para>
+              <para>此图展示了已经录入几笔交易后的活期账户账簿。</para>
             </caption>
           </mediaobject>
         </screenshot>
       </figure>
 
-      <para><xref linkend="chapter_txns"/>将进一步介绍科目账簿窗口和向其中输入数据的方法。科目账簿窗口的各部分类似于科目树窗口的各部分。顶部的标题栏显示科目名。下方，菜单栏包含与科目账簿相关的菜单选项。使用工具栏按钮可以方便地使用各项输入数据的功能。窗口底部的状态栏显示了科目余额，会在<xref linkend="chapter_txns"/>详细介绍。科目账簿窗口底部显示有关当前光标位置的一些信息。</para>
+      <para><xref linkend="chapter_txns"/>将进一步介绍科目账簿窗口和向里面录入数据的方法。这里，请注意科目账簿窗口的有些区域类似于科目树窗口。顶部的标题栏显示科目名。下方，菜单栏包含与科目账簿相关的菜单项。使用工具栏按钮可以快捷地访问常用的数据录入功能。窗口底部的状态栏显示当前科目余额，会在<xref linkend="chapter_txns"/>详细介绍。科目账簿窗口底部显示有关当前光标位置的信息。</para>
 
       <note>
-        <para>在账簿窗口中，可以调整&app;显示的多个列的尺寸，但要注意“描述”和“余额”列和行为与其它列不同。</para>
+        <para>在账簿窗口中，可以调整&app;显示的各列尺寸，但要注意<guilabel>描述</guilabel>和<guilabel>余额</guilabel>列的调整方法与其它列不同。</para>
 
-        <para><guilabel>描述</guilabel>列设计成自动扩展以填充所有未使用的水平空间。因此应当在设置描述列的宽度之前设置所有其它列的宽度。</para>
+        <para><guilabel>描述</guilabel>列设计为自动扩展以填充所有未使用的水平空间。因此在设置<guilabel>描述</guilabel>列宽之前应当设置所有其它列的宽度。</para>
 
         <!-- ToDoZ: 不太对吧 -->
         <!-- <para>The <guilabel>Balance</guilabel> column must be resized by
@@ -534,7 +532,7 @@ Translators:
     <sect2 id="basics-toolbar2">
       <title>工具栏按钮</title>
 
-      <para>科目树窗口和科目账簿窗口均提供工具栏按钮。使用这些按钮可以快速执行例如科目树窗口中的<guibutton>保存</guibutton>、<guibutton>打开</guibutton>和科目账簿窗口中的<guibutton>保存</guibutton>、<guibutton>删除</guibutton>等常用功能。如果你不确定一个按钮会执行什么操作，可以将鼠标指针移动到按钮上，就会出现对此功能的描述。</para>
+      <para>科目树窗口和科目账簿窗口均提供工具栏按钮。借助这些按钮可以快速执行像是科目树窗口中的<guibutton>保存</guibutton>、<guibutton>打开</guibutton>，以及科目账簿窗口中的<guibutton>保存</guibutton>、<guibutton>删除</guibutton>等常用功能。如果你不清楚一个按钮会执行什么操作，可以将鼠标指针移动到按钮上，就会弹出对此功能的描述。</para>
 
       <para>下面总结了科目树窗口中各按钮的功能：</para>
 
@@ -566,25 +564,25 @@ Translators:
           <guibutton>新建</guibutton>、<guibutton>删除</guibutton></term>
 
           <listitem>
-            <para>这些是与科目相关的功能，将在<xref linkend="chapter_accts"/>讨论。</para>
+            <para>这些功能与科目相关，将在<xref linkend="chapter_accts"/>讨论。</para>
           </listitem>
         </varlistentry>
       </variablelist>
 
-      <para>科目账簿相关的按钮将在<xref linkend="chapter_txns"/>介绍。</para>
+      <para>有关科目账簿的按钮将在<xref linkend="chapter_txns"/>介绍。</para>
     </sect2>
 
     <sect2 id="basics-tabbar">
       <title>标签栏</title>
 
-      <para>&app;使用标签式的设计，允许同时打开多个科目账簿和报表。每个打开的窗口（包括科目账簿、报表和计划交易窗口）都对应标签栏中的一个标签页，可以点击标签页查看不同的窗口。标签栏可以在<guilabel>首选项</guilabel>中配置为沿&app;窗口的任意一边显示。</para>
+      <para>&app;使用标签式的设计，允许同时打开多个科目账簿和报表。每个打开的窗口（可以是科目账簿、报表或计划交易窗口，等等）都会在标签栏中分配一个标签页，可以点击标签页查看对应窗口。可以在<guilabel>首选项</guilabel>中设置标签栏沿&app;窗口的任意一边显示。</para>
 
-      <para>要查看标签的全名，可以将鼠标指针移动到标签之上。如果打开的标签比窗口能够显示的要多，部分标签可能不会显示。</para>
+      <para>将鼠标指针悬停在标签上可以查看标签页的全名。如果打开的标签比整个窗口能显示的要多，部分标签可能不会显示。</para>
 
       <tip>
         <orderedlist>
-          <listitem><!-- ToDoZ: 排版有些问题 -->
-            <simpara>可以点击标签栏两侧的箭头浏览全部标签页。</simpara>
+          <listitem><!-- ToDoS -->
+            <simpara>点击标签栏两侧的箭头可以浏览全部标签页。</simpara>
           </listitem>
 
           <listitem>
@@ -592,7 +590,7 @@ Translators:
           </listitem>
 
           <listitem>
-            <simpara>标签页的完整列表可以右击标签栏查看，点击菜单项可切换至任一标签页。 </simpara>
+            <simpara>可以右击标签栏查看标签页的完整列表，然后点击选择任一标签页。 </simpara>
           </listitem>
         </orderedlist>
       </tip>
@@ -601,24 +599,24 @@ Translators:
     <sect2 id="basics-options2">
       <title>菜单项</title>
 
-      <para>科目树窗口和科目账簿窗口在菜单栏处均包含数个菜单标题。点击菜单标题会弹出与之对应的菜单项。</para>
+      <para>科目树窗口和科目账簿窗口在菜单栏处均包含相应的菜单标题。点击菜单标题会弹出与之对应的菜单项。</para>
 
-      <para>你可以点击科目树菜单标题再将鼠标指针移动到菜单项上了解相应的功能。将鼠标指针移动到菜单项上时，菜单项的功能描述会出现在窗口的左下角（在<emphasis>状态栏</emphasis>内）。点击以选择一个菜单项。</para>
+      <para>你可以点击科目树菜单标题，再将鼠标指针移动到菜单项上了解相应的功能。在鼠标指针移动到菜单项上时，菜单项的功能描述会出现在窗口的左下角（在<emphasis>状态栏</emphasis>内）。点击可以选择菜单项。</para>
 
-      <para>你也可以在窗口中的任何地方右击鼠标，访问最常用的菜单项。在科目树窗口中，会弹出与科目相关的菜单项。在科目账簿窗口中，会弹出与交易相关的菜单项。</para>
+      <para>你也可以在窗口中的任何地方右击鼠标，访问最常用的菜单项。在科目树窗口中，会弹出与一列科目相关的菜单项。在科目账簿窗口中，会弹出一列与交易相关的菜单项。</para>
 
-      <para>也可以通过快捷键访问菜单项，快捷键的用法将在下面详细介绍。</para>
+      <para>访问菜单项的其它方式还有快捷键和访问键，下面将介绍。</para>
     </sect2>
 
     <sect2 id="basics-shortcut2">
-      <title>菜单访问键和快捷键</title>
+      <title>菜单的访问键与快捷键</title>
 
-      <para>所有菜单项都拥有访问键，访问键是在菜单项名称中使用下划线标记出的字符。按下<keycap>Alt</keycap>键和菜单标题中标有下划线的字符，就会弹出相应菜单标题的菜单项。菜单项显示之后，在键盘上按下菜单项中标有下划线的字符来选择菜单项。例如，在主窗口中按下<keycombo>
+      <para>所有菜单项都分配了访问键，由菜单名称中的下划线字符标出。按下<keycap>Alt</keycap>键和菜单标题中标有下划线的字符，就会弹出菜单标题相应的菜单项。菜单项弹出后，在键盘上按下菜单项中标有下划线的字符以选择菜单项。例如，在主窗口中按下<keycombo>
         <keycap>Alt</keycap>
         <keycap>F</keycap>
-      </keycombo>弹出<guimenu>文件</guimenu>菜单，然后按下<keycap>S</keycap>会保存文件。访问键是固定的，用户无法修改。</para>
+      </keycombo>会弹出<guimenu>文件</guimenu>菜单，再按下<keycap>S</keycap>会保存文件。访问键是固定的，无法由用户更改。</para>
 
-      <para>一部分常用的菜单项也具有快捷键。使用快捷键，无需在菜单中层层寻找即可直接执行命令。快捷键一般配合使用<keycap>Ctrl</keycap>键，不过快捷键可以是任意按键的组合。菜单快捷键显示在每个菜单项的右端。</para>
+      <para>部分更为常用的菜单项也分配了快捷键。使用快捷键，无需在菜单中层层寻找即可直接执行命令。虽说快捷键可以是任意按键的组合，但这些快捷键往往会使用<keycap>Ctrl</keycap>键。菜单快捷键显示在每个菜单项的右端。</para>
     </sect2>
   </sect1>
 
@@ -631,7 +629,7 @@ Translators:
       <para>&app;提供了几种格式存储财务数据。默认的文件存储格式是<acronym>XML</acronym>，而SQL存储在SQLite、MySQL和PostgreSQL格式中可用。对于新文件，用户可以通过<menuchoice>
         <guimenu>文件</guimenu>
         <guimenuitem>保存</guimenuitem>
-      </menuchoice>对话框选择文件格式，对于存在的文件，可以通过<menuchoice>
+      </menuchoice>对话框选择文件格式；对于存在的文件，则通过<menuchoice>
           <guimenu>文件</guimenu>
           <guimenuitem>另存为…</guimenuitem>
         </menuchoice>对话框选择文件格式。</para>
@@ -639,27 +637,28 @@ Translators:
       <para><acronym>XML</acronym>存储格式是一种默认压缩存储的文本文件，是否压缩可以通过<menuchoice>
           <guimenu>编辑</guimenu>
           <guimenuitem>首选项</guimenuitem>
-        <guilabel>常规</guilabel> <guilabel>压缩文件</guilabel></menuchoice>设置。也可以使用SQLite存储，会像<acronym>XML</acronym>格式一样，将你的数据存储为系统中的单个文件。然而，在程序内部，一个SQLite文件会作为数据库进行管理。MySQL和PostgreSQL存储选项需要连接到数据库服务器，并在你的计算机上安装额外的数据库驱动程序。</para>
+        <guilabel>常规</guilabel> <guilabel>压缩文件</guilabel></menuchoice>设置。也可以使用SQLite存储，像<acronym>XML</acronym>格式一样，它将你的数据存储为系统中的单个文件。然而，在程序内部，SQLite文件会作为数据库进行管理。MySQL和PostgreSQL存储选项需要连接到MySQL或PostgreSQL数据库服务器，以及在计算机上额外安装的数据库驱动程序。</para>
 
       <tip>
         <para>用户可以随时使用<menuchoice>
             <guimenu>文件</guimenu>
             <guimenuitem>另存为…</guimenuitem>
-          </menuchoice>更改存储格式，并以选定的格式创建数据文件的副本。</para>
+          </menuchoice>更改存储格式。这会以选定的格式创建数据文件的副本。</para>
       </tip>
     </sect2>
 
     <sect2 id="basics-files-storage-comparison">
       <title>存储压缩及有关建议</title>
 
-      <para>每种存储格式各有优缺点，用户需要结合自身的需求和能力进行考虑。可参见下文的<link
+      <para>每种存储格式各有优缺点，用户需要结合自身的需求和能力进行考虑。参见下文的<link
       endterm="basics-storage-comparison-tbltitle"
       linkend="basics-storage-comparison-table"/>了解详细信息。</para>
 
-      <para><acronym>XML</acronym>格式是最为稳定成熟的，因此建议大多数用户选择此格式。<acronym>SQL</acronym>格式于2.4版添加，在用户中成为了越发受欢迎的选择。SQLite格式让用户无需花功夫安装并管理完整的<acronym>DBMS</acronym>就可以享受SQL存储的优点。MySQL和PostgreSQL选项分别要求安装MySQL和PostgreSQL <acronym>DBMS</acronym>，这些<acronym>DBMS</acronym>最好由经验丰富的数据库管理员维护。</para>
+      <para><acronym>XML</acronym>格式是最为稳定成熟的，因此建议大多数用户选择此格式。<acronym>SQL</acronym>格式于2.4版添加，在用户中成为了越发受欢迎的选择。SQLite格式让用户无需花功夫安装并管理完整的数据库管理软件（<acronym>DBMS</acronym>）就可以享受SQL存储的优势。MySQL和PostgreSQL选项分别要求安装MySQL和PostgreSQL数据库管理软件（<acronym>DBMS</acronym>），这些数据库管理软件最好由经验丰富的数据库管理员维护。</para>
 
       <note>
-        <para>&app;对<acronym>SQL</acronym>存储后端的支持意味着&app;已经完全实现了<acronym>DBMS</acronym>特性，包括多用户和增量数据操作。然而，&app;当前并没有实现这些特性，不过这是开发组的长期目标。</para>
+        <para>&app;对<acronym>SQL</acronym>存储后端的支持意味着&app;现在完全兼容数据库管理软件（<acronym>DBMS</acronym>）中的许多特性，包括多用户和增量数据操作。然而，&app;当前并没有实现这些功能，不过这是开发组的长期目标。</para>
+        <!-- ToDoZ: 什么意思 -->
       </note>
     </sect2>
 
@@ -712,7 +711,7 @@ Translators:
               <entry align="center" nameend="c3sqlite"
               namest="c2xml">gnucash</entry>
 
-              <entry align="center" nameend="c5pgsql" namest="c4mysql">N/A
+              <entry align="center" nameend="c5pgsql" namest="c4mysql">无
               <footnote>
                   <para>MySQL 和 PostgreSQL 将数据存储在它们自己的存储系统中。</para>
                 </footnote></entry>
@@ -751,9 +750,9 @@ Translators:
             <row>
               <entry namest="c1item">文件保存</entry>
 
-              <entry align="center" namest="c2xml">在执行保存命令时</entry>
+              <entry align="center" namest="c2xml">执行保存命令时</entry>
 
-              <entry align="center" nameend="c5pgsql" namest="c3sqlite">在提交时</entry>
+              <entry align="center" nameend="c5pgsql" namest="c3sqlite">提交时</entry>
             </row>
 
             <row>
@@ -782,12 +781,11 @@ Translators:
           <para>从&app;<emphasis>菜单栏</emphasis>选择
           <menuchoice>
               <guimenu>文件</guimenu>
-
               <guimenuitem>新建</guimenuitem>
-            </menuchoice>。<guilabel>新建层级科目</guilabel>向导将启动。</para>
+            </menuchoice>。<guilabel>建立科目结构</guilabel>向导将启动。</para>
 
           <note>
-            <para>如果是首次运行&app;，将显示<guilabel>欢迎使用&appname;！</guilabel>屏幕。此屏幕会在&app;帮助手册详细介绍。</para>
+            <para>如果是首次运行&app;，将显示<guilabel>欢迎使用&appname;</guilabel>屏幕。此屏幕会在&app;帮助手册详细介绍。</para>
           </note>
         </listitem>
 
@@ -813,9 +811,9 @@ Translators:
 
         <listitem>
           <para>从下拉列表中选择文件的<guilabel>数据格式</guilabel>。 默认选择的是
-          <guilabel>xml</guilabel>，如果你已经设置了数据库后端可以更改为相应的格式。</para>
+          <guilabel>XML</guilabel><!-- ToDoP -->，如果你已经设置了数据库后端可以更改为相应的格式。</para>
 
-          <para>依据你选择的<guilabel>数据格式</guilabel>，窗口会按下文所述发生变化。</para>
+          <para>根据你选择的<guilabel>数据格式</guilabel>，窗口会发生如下变化。</para>
         </listitem>
 
         <listitem>
@@ -831,17 +829,19 @@ Translators:
                   <mediaobject>
                     <imageobject>
                       <imagedata fileref="figures/basics_SaveXML.png"
+                                 screenshot-physicalwidth="6.96in"
                                  srccredit="Cristian Marchi"/>
                     </imageobject>
 
                     <caption>
-                      <para>此图展示了选择<guilabel>数据格式</guilabel>为<guilabel>xml</guilabel>或<guilabel>sqlite3</guilabel>时的<guilabel>保存</guilabel>对话框。</para>
+                      <para>此图展示了<guilabel>数据格式</guilabel>选为<guilabel>xml</guilabel>或<guilabel>sqlite3</guilabel>时的<guilabel>保存</guilabel>对话框。</para>
                     </caption>
                   </mediaobject>
                 </screenshot>
               </figure>
 
-              <para>在<guilabel>名称</guilabel>文本框中输入文件名，无需指定扩展名。&app;会自动向文件名添加拓展名<filename>.gnucash</filename>。</para>
+              <para>在<guilabel>名称</guilabel>文本框中输入文件名，不必指定扩展名。&app;会自动向文件添加拓展名<filename>.gnucash</filename>。</para>
+              <!-- 翻译提示：古早版本相关内容不翻译了 -->
               <!--
               <note>
                 <para><filename>.gnucash</filename> extension was
@@ -855,7 +855,7 @@ Translators:
               </note>
               -->
 
-              <para>在下方区域中通过浏览目录选择文件保存路径。</para>
+              <para>在下方区域中浏览目录选择文件保存路径。</para>
 
               <tip>
                 <para>点击<guibutton>创建文件夹</guibutton>按钮在选择的路径下以指定的名称创建文件夹。</para>
@@ -863,20 +863,20 @@ Translators:
             </listitem>
 
             <listitem>
-              <para>如果你选择了<guilabel>mysql</guilabel>或<guilabel>postgres</guilabel><guilabel>文件格式</guilabel>你会看到像这样的对话框：</para>
+              <para>如果你选择了<guilabel>mysql</guilabel>或<guilabel>postgres</guilabel>你会看到如下对话框：</para>
 
               <figure>
                 <title>选择<guilabel>mysql</guilabel>或<guilabel>postgres</guilabel>时的保存对话框</title>
 
                 <screenshot id="basics-SaveSQL">
                   <mediaobject>
-                    <imageobject role="fo">
+                    <imageobject>
                       <imagedata fileref="figures/basics_SaveSQL.png"
                                  srccredit="Cristian Marchi"/>
                     </imageobject>
 
                     <caption>
-                      <para>此图展示了选择<guilabel>数据格式</guilabel>为<guilabel>mysql</guilabel>或<guilabel>postgres</guilabel>时的<guilabel>保存</guilabel>对话框。</para>
+                      <para>此图展示了<guilabel>数据格式</guilabel>选为<guilabel>mysql</guilabel>或<guilabel>postgres</guilabel>时的<guilabel>保存</guilabel>对话框。</para>
                     </caption>
                   </mediaobject>
                 </screenshot>
@@ -885,7 +885,7 @@ Translators:
               <para>在此窗口中输入<guilabel>数据库连接</guilabel>信息：<guilabel>主机</guilabel>、<guilabel>数据库</guilabel>、<guilabel>用户名</guilabel>和<guilabel>密码</guilabel>。</para>
 
               <warning>
-                <para>保存至<guilabel>mysql</guilabel>或<guilabel>postgres</guilabel>需要合适的数据库权限，即需要拥有使用给定的数据库名称创建新数据库的权限，或具有给定数据库名称的现有数据库的写入权限。</para>
+                <para>保存至<guilabel>mysql</guilabel>或<guilabel>postgres</guilabel>需要合适的数据库权限，即需要拥有使用给定的数据库名称创建新数据库的权限，或向具有给定数据库名称的现有数据库进行写入的权限。</para>
               </warning>
             </listitem>
           </itemizedlist>
@@ -896,7 +896,7 @@ Translators:
         </listitem>
       </orderedlist>
 
-      <para>你如果正在跟踪家庭财务状况，则只需要一个文件。但如果你同时还在管理企业财务，或出于某种原因希望将数据分离存储，则需要多于一个文件。</para>
+      <para>你如果正在跟踪家庭财务状况，则只需要一个文件。但如果你同时还在管理企业财务，或出于某种原因希望将数据分离存储，则不只需要一个文件。</para>
 
       <para>在结束每次&app;会话前，确保使用<menuchoice>
           <guimenu>文件</guimenu>
@@ -905,13 +905,13 @@ Translators:
       <emphasis>工具栏</emphasis>按钮保存数据更改。
       
       <note>
-          <para>经常保存数据以防止由于任何原因丢失是相当重要的，所以&app;可以每隔一段时间自动保存打开的文件。保存的间隔时间可以在<menuchoice>
+          <para>经常保存数据以避免由任何原因导致的数据丢失是相当重要的，所以&app;能够每隔一段时间自动保存打开的文件。保存间隔时间可以在<menuchoice>
               <guimenu>编辑</guimenu>
               <guimenuitem>首选项</guimenuitem>
-            </menuchoice>（&mac;上的<menuchoice>
+            </menuchoice>（&mac;上为<menuchoice>
               <guimenu>GnuCash</guimenu>
               <guimenuitem>首选项</guimenuitem>
-            </menuchoice>）中的<guilabel>通用</guilabel>选项卡下设置。注意此选项只有在你以<acronym>XML</acronym>格式保存时才有意义。如果你正在使用数据库，则做出的更改会立即保存，因此<guibutton>保存</guibutton>按钮和<guimenuitem>保存</guimenuitem>菜单项呈灰色。</para>
+            </menuchoice>）中的<guilabel>通用</guilabel>选项卡下设置。注意此选项只有在你以<acronym>XML</acronym>格式保存时才有意义。如果你正在使用数据库存储，则做出的更改会即时保存，所以<guibutton>保存</guibutton>按钮和<guimenuitem>保存</guimenuitem>菜单项呈灰色。</para>
         </note></para>
     </sect2>
 
@@ -925,27 +925,27 @@ Translators:
       <guilabel>数据格式</guilabel>。如果你选择了<guilabel>文件</guilabel>，则在下方的面板浏览文件夹选择你想打开的文件；否则，输入所需的<guilabel>数据库连接</guilabel>信息。</para>
 
       <tip>
-        <para>&app;记录最近打开的文件列表。打开<guilabel>文件</guilabel>菜单，菜单内列出了最近打开过的文件名称。点击以载入你想打开的文件。</para>
+        <para>&app;会记录最近打开的文件列表。打开<guilabel>文件</guilabel>菜单，可以看到菜单内列出了最近打开过的文件名称。点击就可以载入你想要打开的文件。</para>
       </tip>
     </sect2>
 
     <sect2 id="basics-expt-acct">
       <title>复制科目层次结构</title>
 
-      <para>某些情况下，将现有数据文件的结构复制到新文件可能很有用。例如，你可能会想在不破坏实际会计数据的情况下尝试新的会计技能，或是需要根据会计准则在年末终结当前账簿并以空白账簿开始新一年的会计工作。</para>
+      <para>某些情况下，将现有数据文件的结构复制到新文件可能很有用。例如，你可能会想在不破坏实际会计数据的情况下尝试新的会计技能，或是需要根据会计准则在年末了结当前账簿并拿空白账簿开始新一年的会计工作。</para>
 
-      <para>&app;能够创建科目树的空白副本，只需选择：<menuchoice>
+      <para>&app;能够创建科目树的空白副本，只需选择<menuchoice>
           <guimenu>文件</guimenu>
           <guisubmenu>导出</guisubmenu>
           <guimenuitem>导出科目</guimenuitem>
-        </menuchoice>。选择此命令后，&app;会要求你提供新的空白文件的名称，随后&app;会创建一个新的数据文件，其中仅包含科目层次结构（即不含交易数据）。一旦保存，新文件就能像其它&app;数据文件一样以上文所述的方法打开。</para>
+        </menuchoice>。选择此命令后，&app;会要求你提供新的空白文件的名称，随后&app;会创建一个新的数据文件，其中仅包含科目层次结构（即不含交易数据）。一旦保存，这个新文件就能像其它&app;数据文件一样以上文所述的方法打开。</para>
     </sect2>
   </sect1>
 
   <sect1 id="basics-backup1">
     <title>备份与恢复数据</title>
 
-    <para>&app;会创建多种类型的文件，帮助你确保数据不会丢失。你如果查看保存的文件的所在文件夹，可能会看到由&app;生成的具有以下扩展名的其他文件：<filename>.gnucash</filename>、<filename>.log</filename>、<filename>.LCK</filename>、<filename>.LNK</filename>。每种文件的作用如下：</para>
+    <para>&app;会创建多种类型的文件，帮助你确保数据不会丢失。如果查看保存的文件的所在文件夹，可能会看到由&app;生成的具有以下扩展名的其他文件：<filename>.gnucash</filename>、<filename>.log</filename>、<filename>.LCK</filename>、<filename>.LNK</filename>。每种文件的作用如下：</para>
 
     <note>
       <para>下文仅当你以<acronym>XML</acronym>格式保存时才适用：</para>
@@ -965,11 +965,12 @@ Translators:
     </programlisting>
 
     <sect2 id="basics-backupxac2">
-      <title>备份文件（<filename>.gnucash</filename>）</title><!-- ToDoZ: 改到英文版中 -->
+      <title>备份文件（<filename>.gnucash</filename>）</title><!-- ToDoC: 改到英文版中 -->
 
       <para>每当你保存数据文件时，一个扩展名为<filename>.YYYYMMDDHHMMSS.gnucash</filename>的备份副本也会保存。此备份文件是先前数据文件的完整副本，文件命名格式涉及数据文件名称、年、月、日和备份时间。例如，文件名<filename>myfile.gnucash.20100414185747.gnucash</filename>表明这是在2010年4月14日下午6:57:47保存的文件<filename>myfile</filename>的备份副本。</para>
 
-      <para>要恢复旧的备份文件，只需打开具有所需的日期的<filename>.YYYYMMDDHHMMSS.gnucash</filename>文件，再以不同的文件名保存此文件。</para>
+      <para>要恢复之前备份的文件，只需打开具有希望回溯到的日期的<filename>.YYYYMMDDHHMMSS.gnucash</filename>文件，再以不同的文件名保存该文件。</para>
+      <!-- 翻译提示：古早版本相关内容不翻译了 -->
       <!--
       <note>
         <para><filename>.YYYYMMDDHHMMSS.xac</filename> instead of the actual
@@ -985,9 +986,9 @@ Translators:
     <sect2 id="basics-backuplog2">
       <title>日志文件（<filename>.log</filename>）</title>
 
-      <para>每次在&app;中打开并编辑文件，&app;就会创建日志文件，记录对数据文件做出的修改。日志文件使用与备份文件相似的命名格式：<filename>.YYYYMMDDHHMMSS.log</filename>。日志文件不是对数据文件的完整备份，而只是简单地记录在当前&app;会话中对数据文件作出的修改。</para>
+      <para>每次在&app;中打开并编辑文件，&app;就会创建日志文件，其中记录对数据文件做出的修改。日志文件使用与备份文件相似的命名格式：<filename>.YYYYMMDDHHMMSS.log</filename>。日志文件不是对数据文件的完整备份，而只是简单地记录在当前&app;会话中对数据文件作出的更改。</para>
 
-      <para>在你无意之中退出&app;的情况下，可能是由于断电或操作系统崩溃，你可以使用日志文件恢复自最后一次保存&app;文件之后的大部分修改。过程如下：</para>
+      <para>在你无意间退出&app;的情况下，可能是由于断电或操作系统崩溃，你可以使用日志文件恢复在最后一次保存&app;文件后的做出的大部分修改。过程如下：</para>
 
       <orderedlist>
         <listitem>
@@ -1013,16 +1014,17 @@ Translators:
     <sect2 id="basics-backuplock2">
       <title>锁定文件（<filename>.LNK</filename>和<filename>.LCK</filename>）</title>
 
-      <para>你可能会偶然看到<filename>.LNK</filename>和<filename>.LCK</filename>文件出现。它们不存储任何数据，仅用于防止多个用户在同一时刻打开同一个文件。这些文件是在打开文件时自动创建的，当关闭&app;会话或打开另一个文件时，&app;会删除<filename>.LNK</filename>和<filename>.LCK</filename>文件以解锁前一个数据文件。</para>
+      <para>你可能会偶然看到<filename>.LNK</filename>和<filename>.LCK</filename>文件出现。它们不存储任何数据，但会被创建用于防止多个用户在同一时刻打开同一个文件。这些锁定文件是在打开数据文件时自动创建的，当关闭&app;会话或打开另一个文件时，&app;会删除<filename>.LNK</filename>和<filename>.LCK</filename>文件以解锁前一个数据文件。</para>
 
-      <para>如果在你已经打开了数据文件时&app;崩溃了，<filename>.LCK</filename>和<filename>.LNK</filename>文件不会被删除。在下一次尝试打开&app;时，会弹出警告消息提示文件已被锁定。之所以弹出警告消息是由于<filename>.LNK</filename>和<filename>.LCK</filename>文件仍然存在于目录中。此时选择<guibutton>是</guibutton>打开文件是安全的，但你应该删除<filename>.LCK</filename>文件。一旦文件被删除，将不会弹出警告消息，除非&app;再次崩溃。</para>
+      <para>如果在已经打开了数据文件时，&app;崩溃了，则<filename>.LCK</filename>和<filename>.LNK</filename>文件不会被删除。下一次尝试打开&app;时，&app;会弹出警告消息提示文件已被锁定。之所以弹出警告消息是由于目录中仍然存在<filename>.LNK</filename>和<filename>.LCK</filename>文件。此时选择<guibutton>是</guibutton>打开文件是安全的，但你应当删除<filename>.LNK</filename>和<filename>.LCK</filename>文件。删除这些文件后，你将不再看到警告消息，除非&app;再次崩溃。</para>
     </sect2>
 
     <sect2 id="basics-backupmanage2">
       <title>文件管理</title>
 
-      <para>所以到底应该保留哪个文件呢？当然是保留你的主数据文件。保留部分最近的<filename>.YYYYMMDDHHMMSS.gnucash</filename>备份文件也是妥当的做法，不过可以安全地删除<filename>.log</filename>文件，因为它们不是数据的完整副本。 </para>
+      <para>所以到底应该保留哪些文件呢？当然是保留你的主数据文件。保留部分最近的<filename>.YYYYMMDDHHMMSS.gnucash</filename>备份文件也是妥当的做法，不过你可以安全地删除<filename>.log</filename>文件，因为它们不是数据的完整副本。 </para>
 
+      <!-- 翻译提示：古早版本相关内容不翻译了 -->
       <!--
       <note>
         <para>如果你将&app;从先前版本升级到2.4版本，你可能也有旧<filename>.xac</filename>格式的备份文件。
@@ -1032,11 +1034,11 @@ Translators:
       </note>
       -->
 
-      <para>你也应该在关闭&app;后删除任何<filename>.LCK</filename>和<filename>.LNK</filename>文件 。如果你决定手动将数据文件备份到另一个磁盘，只备份主数据文件就足够了，无需处理<filename>.YYYYMMDDHHMMSS.gnucash</filename>备份文件。</para>
+      <para>你也应该在关闭&app;后删除任何看到的<filename>.LCK</filename>和<filename>.LNK</filename>文件 。如果你决定将数据文件手动备份到另一个磁盘，则只备份主数据文件就足够了，无需关心<filename>.YYYYMMDDHHMMSS.gnucash</filename>备份文件。</para>
 
       <note>
-        <para>一般情况下&app;会自动删除任何30天以前的<filename>.log</filename>和
-        <filename>.YYYYMMDDHHMMSS.gnucash</filename>备份文件。可以在<menuchoice>
+        <para>一般情况下&app;会自动删除任何30天以前的
+        <filename>.YYYYMMDDHHMMSS.gnucash</filename>和<filename>.log</filename>备份文件。可以在<menuchoice>
             <guimenu>编辑</guimenu>
             <guimenuitem>首选项</guimenuitem>
           </menuchoice>（&mac; 上的<menuchoice>
@@ -1050,14 +1052,14 @@ Translators:
   <sect1 id="basics-migrate-settings">
     <title>迁移&app;数据</title>
 
-    <para>有时，你可能需要将你的财务数据和&app;移动到另一台计算机。例如，当你购置了一台新的计算机的时候。</para>
+    <para>有时，你可能需要将财务数据和&app;移动到另一台计算机。典型情况有，当你购置了一台新计算机的时候，或者在双引导计算机中想要在两个不同的操作系统间共用同一份设置的时候。</para>
 
     <sect2 id="migrate-financial">
       <title>迁移财务数据</title>
 
-      <para>迁移&app;的财务数据很简单，如果你知道<filename>.gnucash</filename>文件的保存位置，只需要使用文件管理器把它复制过去。你如果不记得把它保存到哪里了，可以直接在&app;中打开它，在&app;中将它保存到你需要的路径下。</para>
+      <para>迁移&app;的财务数据很简单，如果你知道<filename>.gnucash</filename>文件的保存位置，只需要使用文件管理器把它复制过去。你如果不记得把它保存到哪里了，可以直接在&app;中打开它，再在&app;中将它保存到你需要的路径下。</para>
 
-      <para>文件夹中其它所有文件是备份文件或日志文件。一同把它们复制过去不会有什么危害，但也没什么必要。</para>
+      <para>文件夹中其它所有文件是备份文件或日志文件。把它们一起复制过去不会有什么危害，但也没什么必要。</para>
     </sect2>
 
     <sect2 id="migrate-prefs">
@@ -1065,12 +1067,11 @@ Translators:
 
       <para>首选项存储在三处不同的位置：一处用于&app;首选项，一处用于报告，一处用于网上银行设置。应用首选项由<application>gsettings</application>管理，报告由&app;自身管理，网上银行由<application>aqbanking</application>管理。如果你不使用网上银行功能，计算机中不会存在相应的文件夹。</para>
 
-      <para>&app;首选项的存储位置随操作系统的不同而不同（参见<xref linkend="App-sett-loc"/>、<xref
-      linkend="Report-loc"/>和<xref linkend="OB-sett-loc"/>）。要备份并移动你的整个安装，你必须同时复制这些首选项。</para>
+      <para>&app;首选项的存储位置在不同的操作系统下不尽相同（参见<xref linkend="App-sett-loc"/>、<xref
+      linkend="Report-loc"/>和<xref linkend="OB-sett-loc"/>）。要备份并迁移整个已安装的&app;，你必须一并复制这些首选项。</para>
 
       <table id="App-sett-loc">
-        <title>应用首选项的位置</title>
-        <!-- ToDoZ: 英文首选项vs应用首选项 -->
+        <title>应用设置的存储位置</title>
 
         <tgroup align="left" cols="2">
           <thead>
@@ -1104,7 +1105,7 @@ Translators:
                 &win;
               </entry>
 
-              <entry>首选项存储在&win;注册表中的
+              <entry>首选项存储于&win;注册表
               <filename
               class="directory">HKEY_CURRENT_USER/software/GSettings</filename></entry>
             </row>
@@ -1113,7 +1114,7 @@ Translators:
       </table>
 
       <table id="Report-loc">
-        <title>已保存报告的位置</title>
+        <title>已保存报告的存储位置</title><!-- ToDoS -->
 
         <tgroup align="left" cols="2">
           <thead>
@@ -1163,7 +1164,7 @@ Translators:
       </table>
 
       <table id="OB-sett-loc">
-        <title>网上银行设置的位置</title>
+        <title>网上银行设置的存储位置</title>
 
         <tgroup align="left" cols="2">
           <thead>
@@ -1208,7 +1209,7 @@ Translators:
       </table>
 
       <note>
-        <para>在Unix和&mac;上，这些文件夹通常不会显示在文件管理器中。为了看到这些文件夹，必须设置文件管理器以显示隐藏的文件和文件夹。</para>
+        <para>在Unix和&mac;<!-- ToDoS -->上，这些文件夹通常不会显示在文件管理器中。为了看到这些文件夹，必须设置文件管理器显示隐藏的文件和文件夹。</para>
       </note>
 
       <tip>
@@ -1221,19 +1222,19 @@ Translators:
     <title>步步为营</title>
 
     <note>
-      <para>这一部分开启了贯穿整部指南的教程。在每一章的结束，你都会看到<guilabel>步步为营</guilabel>一节，它会带领你通过实际操作形象地体会前文介绍的相关概念。每节<guilabel>步步为营</guilabel>都会在前一部分的基础上更进一步，所以请将你的文件保存到方便访问的地方。</para>
+      <para>这一部分开启了贯穿整部指南的教程。在每一章的结束，你都会看到<guilabel>步步为营</guilabel>一节，它会带领你通过各种例子形象地体会各章节介绍的概念。每节<guilabel>步步为营</guilabel>都会在前一部分的基础上更进一步，所以请将你的文件保存到方便访问的地方。</para>
     </note>
 
-    <para>现在开始！</para>
+    <para>就从这里开始吧！</para>
 
     <orderedlist>
       <listitem>
         <para>首先，创建一个文件，用于保存你的数据。打开&app;并从菜单栏选择<menuchoice>
             <guimenu>文件</guimenu>
-
             <guimenuitem>新建</guimenuitem>
-          </menuchoice>。这会启动<guilabel>新建层级科目</guilabel>向导，能够一次创建数个科目。</para><!-- ToDoZ: 新建层级科目不行 -->
+          </menuchoice>，会启动<guilabel>建立科目结构</guilabel>向导，其中能够一次创建数个科目。</para>
 
+        <!-- ToDoZ：这是个什么东西 -->
         <!--
         <note>
           <para>如果你是第一次运行&app;，你会 you will be
@@ -1243,28 +1244,24 @@ Translators:
         -->
 
         <figure pgwide="1">
-          <title>新建层级科目：介绍</title>
+          <title>建立科目结构：介绍</title>
 
           <screenshot id="basics-NewAccountHierarchySetup">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup.png"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
               <caption>
-                <para>此图显示了<guilabel>新建层级科目</guilabel>向导的第一个页面。</para>
+                <para>此图展示了<guilabel>建立科目结构</guilabel>向导的第一个页面。</para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>向导的第一个页面描述了其功能。点击<guibutton>前进</guibutton>按钮进入到下一个页面。</para>
+        <para>向导的第一个页面描述了其功能。点击<guibutton>前进</guibutton>按钮进入下一个页面。</para>
       </listitem>
 
       <listitem>
@@ -1272,20 +1269,21 @@ Translators:
             <guimenu>文件</guimenu>
 
             <guimenuitem>属性</guimenuitem>
-          </menuchoice>修改这些选项。这些选项的详细介绍，可见&app;用户手册中“自定义GnuCash 账簿选项” 一章。</para>
+          </menuchoice>修改这些选项。要详细了解这些选项，参见&app;用户手册中“自定义GnuCash：账簿选项” 一章。</para>
 
         <figure pgwide="1">
-          <title>新建层级科目：账簿选项</title>
+          <title>建立科目结构：账簿选项</title>
 
           <screenshot id="basics-NewBookOptions">
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_NewBookOpts.png"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="Frank H. Ellenberger"/>
               </imageobject>
 
               <caption>
-                <para>此图显示了<guilabel>新建层级科目</guilabel>向导的第二个页面，其中可设置<guilabel>账簿选项</guilabel>。</para>
+                <para>此图展示了<guilabel>建立科目结构</guilabel>向导的第二个页面，此处可调整<guilabel>账簿选项</guilabel>。</para>
               </caption>
             </mediaobject>
           </screenshot>
@@ -1296,26 +1294,22 @@ Translators:
         <para>在第三个页面，从下拉列表中选择要用于新科目的货币，然后点击<guibutton>前进</guibutton>按钮。</para>
 
         <note>
-          <para>在此处选择的货币会被指定为所有由此向导创建的科目所使用的货币。</para>
+          <para>此处选择的货币会被指定到所有由此向导创建的科目。</para>
         </note>
 
         <figure pgwide="1">
-          <title>新建层级科目：货币选择</title>
+          <title>建立科目结构：货币选择</title>
 
           <screenshot id="basics-NewAccountHierarchySetup-currency">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_currency.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup_currency.png"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
               <caption>
-                <para>此图显示了<guilabel>新建层级科目</guilabel>向导的第三个页面，此处可选择<guilabel>货币</guilabel>。</para>
+                <para>此图展示了<guilabel>建立科目结构</guilabel>向导的第三个页面，此处可选择<guilabel>货币</guilabel>。</para>
               </caption>
             </mediaobject>
           </screenshot>
@@ -1323,29 +1317,25 @@ Translators:
       </listitem>
 
       <listitem>
-        <para>在第四个页面中，在<guilabel>模板</guilabel>面板中选择<guilabel>通用科目</guilabel>科目组。再点击<guibutton>前进</guibutton>按钮进入下一页面。</para>
+        <para>在第四个页面中，勾选<guilabel>模板</guilabel>面板下<guilabel>常用科目</guilabel>科目组。再点击<guibutton>前进</guibutton>按钮继续。</para>
 
         <note>
-          <para>若需要，可在此选择一个或多个预定义的科目模板。有关科目类型的更多信息可见<xref linkend="accts-types1"/>。</para>
+          <para>若需要，可在此选择更多预定义的科目组。有关科目类型的更多信息可见<xref linkend="accts-types1"/>。</para>
         </note>
 
         <figure pgwide="1">
-          <title>新建层级科目：科目选择</title>
+          <title>建立科目结构：科目选择</title>
 
           <screenshot id="basics-NewAccountHierarchySetup-Accounts">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_Accounts.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup_Accounts.png"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
               <caption>
-                <para>此图展示了<guilabel>新建层级科目</guilabel>向导的第四个页面，此处可选择多个<guilabel>科目</guilabel>。</para>
+                <para>此图展示了<guilabel>建立科目结构</guilabel>向导的第四个页面，此处可选择各种<guilabel>科目</guilabel>。</para>
               </caption>
             </mediaobject>
           </screenshot>
@@ -1353,25 +1343,21 @@ Translators:
       </listitem>
 
       <listitem>
-        <para>在第五个页面，可以设置每一科目的<guilabel>期初余额</guilabel>，并指定科目是否为<guilabel>占位符</guilabel>。这些功能将在下一章介绍，当前先不必更改这些选项。接下来点击<guibutton>前进</guibutton>按钮进入此向导的最后一个页面。</para>
+        <para>在第五个页面，可以设置每一科目的<guilabel>期初余额</guilabel>，并指定科目是否为<guilabel>占位符</guilabel>。这些功能将在下一章详细介绍，这里先不更改这些选项。下面点击<guibutton>前进</guibutton>按钮进入此向导的最后一个页面。</para>
 
         <figure pgwide="1">
-          <title>新建层级科目：科目设置</title>
+          <title>建立科目结构：科目设置</title>
 
           <screenshot id="basics-NewAccountHierarchySetup-Setup.png">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_Setup.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup_Setup.png"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
               <caption>
-                <para>此图展示了<guilabel>新建层级科目</guilabel>向导的第五个页面，此处可设置<guilabel>期初余额</guilabel>。</para>
+                <para>此图展示了<guilabel>建立科目结构</guilabel>向导的第五个页面，此处可设置<guilabel>期初余额</guilabel>。</para>
               </caption>
             </mediaobject>
           </screenshot>
@@ -1379,25 +1365,21 @@ Translators:
       </listitem>
 
       <listitem>
-        <para>在向导的最后一个页面中，点击<guibutton>应用</guibutton>创建所有科目并离开向导。</para>
+        <para>在向导的最后一个页面中，点击<guibutton>应用</guibutton>创建所有科目并结束向导。</para>
 
         <figure pgwide="1">
-          <title>新建层级科目：完成</title>
+          <title>建立科目结构：完成</title>
 
           <screenshot id="basics-NewAccountHierarchySetup-Finish">
             <mediaobject>
-              <imageobject role="html">
+              <imageobject>
                 <imagedata fileref="figures/basics_NewAccountHierarchySetup_Finish.png"
-                           srccredit="John Ralls" width="800px"/>
-              </imageobject>
-
-              <imageobject role="fo">
-                <imagedata fileref="figures/basics_NewAccountHierarchySetup_Finish.png"
+                           screenshot-physicalwidth="9.38in"
                            srccredit="John Ralls"/>
               </imageobject>
 
               <caption>
-                <para>此图展示了<guilabel>新建层级科目</guilabel>向导的最后一个页面。</para>
+                <para>此图展示了<guilabel>建立科目结构</guilabel>向导的最后一个页面。</para>
               </caption>
             </mediaobject>
           </screenshot>
@@ -1405,18 +1387,18 @@ Translators:
       </listitem>
 
       <listitem>
-        <para>在之前的窗口点击<guibutton>应用</guibutton>按钮后，会弹出保存对话框。选择<acronym>XML</acronym><guilabel>数据格式</guilabel>，文件<guilabel>名称</guilabel>为<filename>gcashdata_1</filename>，选择要保存文件的文件夹（请记下这里选择的保存位置，因为这份数据文件还会在本指南后续教程中继续使用），最后点击<guibutton>保存</guibutton>按钮。</para>
+        <para>在之前的窗口点击<guibutton>应用</guibutton>按钮后，会弹出保存对话框。选择<acronym>XML</acronym><guilabel>数据格式</guilabel>，文件<guilabel>名称</guilabel>为<filename>gcashdata_1</filename>，选择要保存文件的文件夹（请记下这里选择的保存位置，因为这份数据文件会在整份指南后续教程中继续使用），最后点击<guibutton>保存</guibutton>按钮。</para>
 
-        <para>现在，主窗口如下所示：</para>
+        <para>现在，主窗口应该如下图所示：</para>
 
         <figure pgwide="1">
-          <title>教程：数据文件的初始科目窗口</title>
-          <!-- ToDoZ: 对应英文 -->
+          <title>教程：初始示例文件的科目页面</title>
 
           <screenshot id="basics-EmptyAccounts">
             <mediaobject>
               <imageobject>
                 <imagedata fileref="figures/basics_EmptyAccounts.png"
+                           screenshot-physicalwidth="6.25in"
                            srccredit="Frank H. Ellenberger"/>
               </imageobject>
             </mediaobject>

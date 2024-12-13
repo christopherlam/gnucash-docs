@@ -13,35 +13,42 @@
     Revised 2020: David Cousens <davidcousens@bigpond.com>
   Originally designed by Carol Champagne.
   Translators:
+    Xinhang Xu <xuxinhang4567@outlook.com>
     (translators put your name and email here)
 -->
-<chapter id="chapter_currency">
-  <title>Multiple Currencies</title>
 
-  <para>This chapter will show how to set up &app; accounts to use multiple currencies.
+<!--
+  翻译提示：
+  - default currency 翻译为“本位币”。
+  - foreign currency 翻译为“外币”，local currency 翻译为“本币”。
+  - currency transfer 怎样翻译？“外币转账”？
+  - 避免使用“外汇”，使用“外币”强调英文原文中currency的概念。
+  - 需要进一步仔细考虑：“贸易科目”改称为“兑汇科目”。
+  - 虽然在中国通过银行购汇不收取（台面上的）手续费，但行文中仍然保留收手续费的设定。
+  - 不要因直译滥用“配置”这个词。如“银行科目配置”意译为“银行科目结构”。
+-->
+
+<chapter id="chapter_currency">
+  <title>多货币</title>
+
+  <para>本章会介绍怎样配置&app;科目管理多种货币。
   </para>
 
   <sect1 id="currency_concepts1">
-    <title>Basic Concepts</title>
+    <title>基本概念</title>
 
-    <para>&app; supports over a hundred currencies, from the Andorran Franc to the Zimbabwe Dollar. For
-      example, you can have a bank account set up in Euros, and another using Hong Kong Dollars.
+    <para>GnuCash支持从安道尔法郎到津巴布韦元在内的100多种货币。例如，您可以使用欧元建立一个银行科目，而使用港元建立另一个银行科目。
     </para>
 
-    <para>Some of the issues which arise when using multiple currencies are as follows:
+    <para>管理多种货币时，你的脑海中或许会浮现出一些疑问：
     <itemizedlist>
-        <listitem><simpara>How do you transfer funds between accounts with different currencies?</simpara></listitem>
-        <listitem><simpara>How do you calculate the overall value when you have mixed currency accounts?</simpara></listitem>
-        <listitem><simpara>How do reports deal with mixed currencies?</simpara></listitem>
+        <listitem><simpara>怎样在使用不同货币的科目之间转账？</simpara></listitem>
+        <listitem><simpara>怎样计算使用不同货币的科目的总金额？</simpara></listitem>
+        <listitem><simpara>怎样浏览包含不同货币的报表？</simpara></listitem>
       </itemizedlist>
     </para>
 
-    <para>You can either deal with multiple currencies using manually entered transactions to record currency
-      gains and losses as described in <xref linkend="currency_manual" /> or you can utilize
-      currency trading accounts introduced with &app; version 2.3.14 to automatically record the
-      gains and losses on transactions between currencies as described in the subsequent section.
-      Trading accounts are not enabled by default in &app; and must be explicitly enabled as
-      described in <xref linkend="currency_trading_accts" />.
+    <para>你既可以按<xref linkend="currency_manual" />所述，手动录入交易记录多种货币的兑汇损益；也可以按随后的章节所述，利用&app;在2.3.14版本中引入的外币贸易科目自动记录兑汇损益。&app;的贸易科目功能默认不启用，必须按<xref linkend="currency_trading_accts" />手动启用。
     </para>
 <!-- TODO: add sections
     <para>The following sections are common to both manually recording gains
@@ -51,85 +58,60 @@ TODO -->
   </sect1>
 
   <sect1 id="currency_manual">
-    <title>Manually Recording Currency Transaction</title>
+    <title>手动记录外币交易</title>
 
     <sect2 id="currency_acct1">
-      <title>Account Setup</title>
+      <title>建立科目</title>
 
-      <para>Your default account currency is set in the <guilabel>Account</guilabel> tab under
+      <para>本位币由
         <menuchoice>
-          <guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem>
+          <guimenu>编辑</guimenu><guimenuitem>首选项</guimenuitem>
         </menuchoice>
-        (
+        (&mac;中为
         <menuchoice>
-          <guimenu>&appname;</guimenu><guimenuitem>Preferences</guimenuitem>
+          <guimenu>&appname;</guimenu><guimenuitem>首选项</guimenuitem>
         </menuchoice>
-        on &mac;).
+        )下的<guilabel>科目</guilabel>标签页设定。
       </para>
 
-      <para>Similarly, &app; offers an option to set your preferred currency for displaying reports (like the
-        balance sheet and income statement). The option is called <guilabel>Default Report
-        Currency</guilabel>, and is in the <guilabel>Reports</guilabel> tab of the
-        <guilabel>&appname; Preferences</guilabel> screen. You&rsquo;ll want to set both options
-        when you start using &app; because if (for example) your accounts are all in Canadian
-        Dollars but the generated reports are all in US Dollars, the reports will just say that
-        there are <quote><computeroutput>no data/transactions (or only zeroes) for the selected time period</computeroutput></quote>.
+      <para>类似地，&app;也提供选项设置用于展示报表的首选货币，称为<guilabel>默认报表货币</guilabel>，位于<guilabel>&appname;首选项</guilabel>窗口中的<guilabel>报表</guilabel>标签页下。建议开始使用&app;时就将这两个选项都设置好，例如假设科目均以港元记账，而生成的报表都显示为人民币，报表就会提示<quote>所选时段内没有交易数据或交易金额为零</quote>。 
+      </para>
+      <!-- ToDoC: 不懂。可能是指在没有录入汇率数据时会显示为零。 -->
+
+      <para>创建新科目时，可以选择用作科目记账单位的商品。可以为以货币为单位的科目指定任何&app;支持的货币，只需在货币商品列表中选择需要的货币。默认选中的货币为该新建科目的父科目使用的货币。
       </para>
 
-      <para>When you create a new account, you have the option to define the commodity in which that account is
-        denominated. For accounts denominated in a currency, you can specify any of the currencies
-        supported by &app; by simply selecting it from the currency commodity list. You will notice
-        that the default currency is the currency that is defined for the parent account of the new
-        account.
-      </para>
-
-      <para>As an example, let&rsquo;s set up a bank account scenario where you mostly work in US Dollars, but
-        do also have a European bank account using the Euro currency, as well as one bank account in
-        Hong Kong using Hong Kong Dollars. So, set up 3 bank accounts, one denominated in US
-        Dollars, one using Euros, and the third in Hong Kong Dollars. One possible account structure
-        for this would be:
+      <para>例如，现在创建一套银行科目，你大多使用人民币记账，但也拥有使用欧元的欧洲银行账户，以及使用港元的香港银行账户。因此需要建立 三个银行科目，一个科目单位为人民币，一个为欧元，而第三个为港元。一种适用此情况的科目结构可以是：
       </para>
 <screen>
--Assets (USD)
-   -Current Assets (USD)
-      -US Bank (USD)
-      -European Bank (EUR)
-      -HK Bank (HKD)
--Equity (USD)
-   -Opening Balances (USD)
-      -USD (USD)
-      -EUR (EUR)
-      -HKD (HKD)</screen>
+-资产 (CNY)
+   -流动资产 (CNY)
+      -中国银行 (CNY)
+      -欧洲银行 (EUR)
+      -香港银行 (HKD)
+-所有者权益 (CNY)
+   -期初余额 (CNY)
+      -人民币 (CNY)
+      -欧元 (EUR)
+      -港元 (HKD)</screen>
       <note>
-        <para>The currency of each account is shown in parenthesis.
+        <para>每个科目使用的货币标注在括号里。
         </para>
       </note>
 
-      <para>Since in this example you mostly work in USD, all of the parent accounts are set to USD. Of course,
-        if you mostly work in Euros, you could change the currency of these parent accounts to EUR.
-        The totals shown in the account tree window will always be converted to the currency of each
-        particular account. Notice, we also set up 3 Opening Balances equity accounts, used to
-        initially populate the 3 banks.
+      <para>由于这个示例中大多使用人民币记账，所以父科目均设为人民币（CNY）。自然，你如果大多使用欧元记账，则可将这些父科目的货币更换为欧元。在科目树窗口中显示的总额都会换算为相应科目的货币。注意，这里也建立了三个期初余额所有者权益科目，用于向三个银行科目添加初始金额。
       </para>
 
       <note>
-        <para>You could also set up just a single Opening Balance account and use a currency transfer to populate
-          the <quote>different currency</quote> accounts. However, this is more advanced option,
-          which is explained in a later section (<xref linkend="currency_purchase2" />).
+        <para>也可以只建立一个期初余额科目，再通过跨货币转账向使用不同货币的科目添加初始交易，然而这是更进阶的做法，后文<xref linkend="currency_purchase2" />会详细介绍。
         </para>
       </note>
 
-      <para>Below you see the result of this example, in which you start with 10,000 USD, 10,000 EUR as well as
-        10,000 HKD in the three bank accounts. Notice that the total of the parent accounts only
-        shows the value of the currency of sub-accounts with matching currencies. In other words,
-        the Total Assets and Total Equity values only reflect USD amounts, because &app; has no way
-        of evaluating the value of EUR or HKD yet. Once you set up exchange rates between the
-        currencies, the parent accounts will calculate the converted value of all sub-accounts. See
-        the later section (<xref linkend="currency_howto1" />) on ways to do this.
+      <para>下面展示了按该示例得到的结果。你在三个银行科目中最初各有10,000元人民币、10,000欧元，以及10,000港元。注意，父科目总金额只包含与之货币相同的子科目金额。换句话说，资产总额和所有者权益总额只体现人民币金额，因为&app;目前还无法换算欧元或港元的金额。一旦设定了货币间的汇率，父科目就会换算出所有子科目的金额。具体操作方法见后文<xref linkend="currency_howto1" />。
       </para>
 
       <figure pgwide="1">
-        <title>Initial multi currency Account Bank Setup</title>
+        <title>最初建立的多货币银行科目</title>
         <screenshot id="currency_main1">
           <mediaobject>
             <imageobject>
@@ -137,89 +119,61 @@ TODO -->
                          srccredit="Frank H. Ellenberger" />
             </imageobject>
             <caption>
-              <para>Initial setup of 3 bank accounts with different currencies.
+              <para>最初建立的三个银行科目，货币各不相同。
               </para>
             </caption>
           </mediaobject>
         </screenshot>
       </figure>
 
-      <para>Notice that the <guilabel>Total (Report)</guilabel> column is being displayed. This is configured in the column header
-        row, select <guibutton>Arrow down</guibutton> and select <guilabel>Total(USD)</guilabel>.
+      <para>注意此处显示了<guilabel>合计(CNY)</guilabel>列，可以在表头点击<guibutton>下箭头</guibutton>并勾选<guilabel>合计(CNY)</guilabel>。
       </para>
 
       <sect3 id="currency_acct_user2">
-        <title>User-Defined Currencies</title>
+        <title>自定义货币</title>
 
-        <para>Usually when we talk about currencies, we mean government-backed currencies (or more precisely,
-          currencies defined in <ulink url="&url-wp-en;ISO_4217">ISO 4217</ulink>). &app;
-          does not allow you to create your own currencies. If you want to track
-          non-<acronym>ISO</acronym> currencies, you can use either of two workarounds, depending on
-          which fits your needs better.
+        <para>我们谈到货币的时候，通常是指由政府提供信用担保的通货，或者更准确地说，是<ulink url="&url-wp-en;ISO_4217">ISO 4217</ulink>中定义的货币。&app;不允许你创建自己的货币。要记录非ISO货币，有两种变通方法可供使用，你可以选择更符合需求的一种。</para>
 
         <orderedlist>
-        <title>User-Defined Currencies Workarounds</title>
-        <para>Let&rsquo;s say for example that you want to track loyalty points you&rsquo;ve earned by buying from
-            a certain group of businesses. The account which tracks your loyalty points will be
-            <emphasis>Assets:Other:LoyaltyPoints</emphasis>.
+        <title>自定义货币的变通方法</title>
+        <!-- ToDoZ: a certain group of businesses -->
+        <para>假设你想跟踪在某一企业集团购物时获得的会员积点。记录会员积点的科目为<emphasis>资产:其它:会员积点</emphasis>
         </para>
+
         <listitem><simpara>
-            Treat these as if they were a security&mdash;that is, like a stock or mutual fund.
-            </simpara>
+            将会员积分视为证券——就像股票或基金一样。</simpara>
 	        <para>
-            In this workaround, you define a new security, of type <guilabel>FUND</guilabel>, called
-            LoyalityPoints. This is pretty straightforward&mdash;when you create the new
-            <emphasis>LoyaltyPoints</emphasis> account, just set the account type to
-            <guilabel>Stock</guilabel> or <guilabel>Mutual Fund</guilabel>, click the
-            <guibutton>Select...</guibutton> button next to the
-            <guilabel>Security/currency:</guilabel> box, and click <guibutton>New</guibutton> to
-            define a new security of type <guilabel>FUND</guilabel>.
+            在这种变通方法中，要定义一种新的证券，类型为<guilabel>基金</guilabel>，叫做会员积点。思路很简单：创建新的<emphasis>会员积点</emphasis>科目时，只需将科目类型设为<guilabel>股票</guilabel>或<guilabel>基金</guilabel>，点击<guilabel>证券/货币:</guilabel>输入框旁的<guibutton>选择...</guibutton>按钮，再点击<guibutton>新建</guibutton>，添加一种类型为<guilabel>基金</guilabel>的新证券。
             </para>
             <para>
-            This is not really what the stock and mutual fund account types are meant for, but &app; will allow
-            it. The downside is that you&rsquo;ll have to enter a <quote>price</quote> for every
-            transaction involving this account, because &app; needs the prices to figure out the
-            monetary value of the points and treat them as one of your assets.
+            这其实不是股票和基金科目类型的本意，但&app;还是允许这样做。缺点是每项涉及该科目的交易都需要输入<quote>价格</quote>，因为&app;需要价格信息算出积点的货币价值，即将这些积点视为资产的一部分。
             </para>
         </listitem>
 
         <listitem><simpara>
-            Use one of the <quote>dummy</quote> currencies for them.
+            使用一种<quote>伪货币</quote>记录会员积点。
             </simpara>
-            <para>In this workaround, you use one of the dummy currencies to
-            track the loyalty points. These currencies are <quote>XTS (Code for testing
-            purposes)</quote> and <quote>XXX (No currency)</quote>. If you use one of these for your
-            LoyaltyPoints account, you can enter transactions into the account without
-            having to enter share prices for every transaction. And, you can keep using the same two
-            dummy currencies to track all sorts of amounts&mdash;vacation dollars earned and used so
-            far this year, vacation hours earned and used, health insurance benefits allowance used
-            and remaining, and so on.
+            <para>在这种变通方法中，你使用一种伪货币记录会员积点。这些货币是<quote>XTS (测试用代码)</quote>和<quote>XXX (无货币)</quote>。如果将其中一种用于会员积点科目，则当向科目录入交易时无需每次都输入份额价格。另外，可以一直使用这两种伪货币跟踪各种数量，目前本年已获得和已使用的的休假津贴、已获得和已使用的年假时长、已用和剩余的医疗保险额度，诸如此类。
+            <!-- 翻译提示: 中国没有vacation dollars这种东西，近似翻译 -->
             </para>
-            <para>The drawback with this workaround is that you cannot define exchange rates for the dummy
-            currencies to convert them to <acronym>ISO</acronym> currencies. If you want to do that,
-            you really should use the first workaround.
+            <para>这种变通方法的缺点在于你无法定义伪货币的汇率，以将之换算为<acronym>ISO</acronym>货币。如果想实现这一功能，就应该使用第一种变通方法。
             </para>
         </listitem>
         </orderedlist>
-        </para>
-
       </sect3>
     </sect2>
 
     <sect2 id="currency_howto1">
-      <title>Recording and Updating Currency Exchange Rates</title>
+      <title>记录并更新货币汇率</title>
 
-      <para>&app; allows you to update the Currency Exchange Rates both manually and automatically. This process
-        is essentially the same as setting share prices for investments (see
-        <xref linkend="invest-stockprice1"/>). In the following two sections we will work through
-        both methods.
+      <para>你可以在&app;中更新货币汇率，手动或自动皆可，操作上与设定投资份额价格（详见<xref linkend="invest-stockprice1"/>）几乎相同。下面两小节会分别介绍两种方法。
       </para>
 
-      <para>Before we start, let&rsquo;s have a quick look at the Chart of Accounts.
+      <para>开始前，先简单看一下科目表。
       </para>
 
       <figure pgwide="1">
-        <title>Initial multi currency Account Bank Setup</title>
+        <title>最初建立的多货币银行科目</title>
         <screenshot id="currency_main1a">
           <mediaobject>
             <imageobject>
@@ -227,28 +181,26 @@ TODO -->
                          srccredit="Frank H. Ellenberger" />
             </imageobject>
             <caption>
-              <para>Initial set up of 3 bank accounts with different currencies.
+              <para>最初建立的三个银行科目，使用的货币各不相同。
               </para>
             </caption>
           </mediaobject>
         </screenshot>
       </figure>
 
-      <para>As you see, the overall balances do not yet reflect any value for EUR or HKD holdings. Adding
-        currency exchange rates will fix this.
+      <para>如图所示，总余额没有反映目前持有的欧元或港元的价值。添加货币汇率会解决这个问题。
       </para>
 
       <sect3 id="currency_howto_Manual">
-        <title>Manually Updating Exchange Rates</title>
+        <title>手动更新汇率</title>
 
-        <para>Open the <guilabel>Price Database</guilabel> by going to
-          <menuchoice>
-            <guimenu>Tools</guimenu><guimenuitem>Price Database</guimenuitem>
-          </menuchoice>.
+        <para>点击<menuchoice>
+            <guimenu>工具</guimenu><guimenuitem>价格数据库</guimenuitem>
+          </menuchoice>打开<guilabel>价格数据库</guilabel>。
         </para>
 
         <figure pgwide="1">
-          <title>The Price Database Window—Still Empty</title>
+          <title>价格数据库窗口目前仍然为空</title>
           <screenshot id="currency_peditor">
             <mediaobject>
               <imageobject>
@@ -259,12 +211,11 @@ TODO -->
           </screenshot>
           </figure>
 
-        <para>Click on the <guibutton>Add</guibutton> button to add a new currency exchange rate. A window will
-          appear in which you can set up a new exchange rate. This window should appear like this:
+        <para>点击<guibutton>添加</guibutton>按钮添加一条新的货币汇率记录。可以在弹出的窗口中设定新汇率，如下图所示：
         </para>
 
         <figure pgwide="1">
-          <title>Setup Of Euro Exchange Rate</title>
+          <title>设定欧元汇率</title>
           <screenshot id="currency_addcurr">
             <mediaobject>
               <imageobject>
@@ -272,22 +223,25 @@ TODO -->
                            srccredit="Frank H. Ellenberger" />
               </imageobject>
               <caption>
-                <para>Add Price Database Window
+                <para>添加价格记录窗口
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>Set the <guilabel>Namespace</guilabel> to <guilabel>CURRENCY</guilabel> and the <guilabel>Security</guilabel> to <guilabel>EUR
-          (Euro)</guilabel>. Then set the exchange rate between the selected security and the selected
+        <para>将<guilabel>命名空间</guilabel>设为<guilabel>货币</guilabel>，<guilabel>证券</guilabel>设为<guilabel>EUR
+          (欧元)</guilabel>。然后设定选择的“证券”与选择的“货币”之间的汇率。在<guilabel>价格</guilabel>输入框设定购买一个单位的外币需花费多少个单位的本币。在这个情况下，就是指多少元人民币能够买入1欧元。在本例中，将汇率设为1欧元兑7.8元人民币。
+          
+          
+          Then set the exchange rate between the selected security and the selected
           currency. The <guilabel>Price</guilabel> box defines how many units of currency are required to purchase one
           unit of the security. In this case, how many dollars it will take to purchase on 1 Euro. In
           this example, you will set the exchange rate to 1 EUR for 1 USD.
         </para>
 
         <figure pgwide="1">
-          <title>The Price Database window after setting the exchange rate between Euros and US Dollars</title>
+          <title>设定欧元与人民币汇率后的价格数据库窗口</title>
           <screenshot id="currency_manualpriceadded">
             <mediaobject>
               <imageobject role="html">
@@ -303,7 +257,7 @@ TODO -->
         </figure>
 
         <figure pgwide="1">
-          <title>Chart of Accounts After Setting The Exchange Rate Between Euro And US Dollar</title>
+          <title>设定欧元与人民币汇率后的科目表</title>
           <screenshot id="currency_main2">
             <mediaobject>
               <imageobject>
@@ -314,26 +268,23 @@ TODO -->
           </screenshot>
         </figure>
 
-        <para>Observe that since you have no exchange rate for HKD, &app; doesn&rsquo;t convert the HKD accounts
-          to USD. This will be added in the next section.
+        <para>注意到由于没有录入港元汇率，&app;不会将港元科目余额换算为人民币。下一节会添加港元汇率。
         </para>
       </sect3>
 
       <sect3 id="currency_howto_Auto">
-        <title>Automatic Updating Exchange Rates (How-To)</title>
+        <title>自动更新汇率</title>
 
-        <para>In the previous section you saw how to manually define a new currency exchange rate, but &app;
-          includes an automatic price update feature, which will now be described.
+        <para>上一节介绍了怎样手动添加新的货币汇率，但&app;也具备自动更新报价的功能，下面进行介绍。
         </para>
 
-        <para>Open the <guilabel>Price Database</guilabel> by going to
-          <menuchoice>
-            <guimenu>Tools</guimenu><guimenuitem>Price Database</guimenuitem>
-          </menuchoice>.
+        <para>点击<menuchoice>
+            <guimenu>工具</guimenu><guimenuitem>价格数据库</guimenuitem>
+          </menuchoice>打开<guilabel>价格数据库</guilabel>。
         </para>
 
         <figure pgwide="1">
-          <title>Price Database Before Obtaining Online Quotes</title>
+          <title>获取在线报价前的价格数据库</title>
           <screenshot id="currency_BeforeGetOnline">
             <mediaobject>
               <imageobject role="html">
@@ -348,20 +299,19 @@ TODO -->
           </screenshot>
         </figure>
 
-        <para>Click on the <guibutton>Get Quotes</guibutton> button to automatically load the various exchange
-          rates you need.
+        <para>点击<guibutton>获取报价</guibutton>按钮即可自动加载需要的多项汇率数据。
         </para>
 
         <note>
-          <para>If the <guibutton>Get Quotes</guibutton> button is disabled, that means that the
-            <application>Perl</application> module &app-fq; is not
-            installed. For information on how to install it, please see
-            <xref linkend="invest-stockprice-auto2" />.
+          <para>如果<guibutton>获取报价</guibutton>按钮不可用，则表明尚未安装
+            <application>Perl</application>模块 &app-fq;。
+            有关如何安装该模块的信息参见
+            <xref linkend="invest-stockprice-auto2" />。
           </para>
         </note>
 
         <figure pgwide="1">
-          <title>The Price Database After Obtaining Online Quotes</title>
+          <title>获取在线报价后的价格数据库</title>
           <screenshot id="currency_AfterGetOnlineQuotes">
             <mediaobject>
               <imageobject role="html">
@@ -376,19 +326,14 @@ TODO -->
           </screenshot>
         </figure>
 
-        <para>&app; downloads exchange rates for all currencies that are in use in your various accounts. This
-          will happen every time you click on <guibutton>Get Quotes</guibutton> or request &app; to
-          download quotes as per <xref linkend="invest-stockprice-auto2" />.
+        <para>每次点击<guibutton>获取报价</guibutton>或如<xref linkend="invest-stockprice-auto2" />所述配置&app;按要求下载报价的时候，&app;就会下载各科目使用的所有货币的汇率数据。
         </para>
 
-        <para>Now when you check the main Chart of Accounts you will see that &app; has automatically converted
-          the HKD amount to USD amount on the parent accounts that are in USD, as well as on the
-          <guilabel>Total (USD)</guilabel> column. Also the Euro accounts have been been updated with the latest exchange
-          rate.
+        <para>现在查看主科目表，可以看到&app;已经自动将港元金额换算为人民币金额，并计入以人民币记账的父科目中，也就是<guilabel>总计(CNY)</guilabel>中给出的金额。欧元科目也已经同样按最新的汇率更新了金额。
         </para>
 
         <figure pgwide="1">
-          <title>The Chart of Accounts After Obtaining Online Quotes</title>
+          <title>获取在线报价后的科目表</title>
           <screenshot id="currency_main3.png">
             <mediaobject>
               <imageobject>
@@ -401,89 +346,82 @@ TODO -->
       </sect3>
 
       <sect3 id="currency_howto_disable">
-        <title>Disabling Exchange Rate Retrieval</title>
+        <title>禁用汇率获取<!-- ToDoZ: Disabling Exchange Rate Retrieval --></title>
 
-        <para>Whenever you create an account that uses a non-default currency, exchange rate retrieval will be
+        <para>一旦创建了使用非本位币的科目，&app;就会自动开启该货币的汇率获取功能。然而，如果你之后删除那个科目，&app;不会自动停用该货币的汇率获取功能。
+        
+        Whenever you create an account that uses a non-default currency, exchange rate retrieval will be
           automatically enabled for that currency. However, if you later delete that account, &app;
           will not automatically disable exchange rate retrieval for that currency.
         </para>
 
-        <para>If you have deleted the last account for a particular currency, and you do not wish to retrieve
-          exchange rates for that currency anymore, do the following:
+        <para>你如果已经删除了最后一个使用某货币的科目，并且以后不想再获取该货币的汇率，则需进行如下操作：
         </para>
 
         <procedure>
-          <step><simpara>Open the Securities window by selecting <menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Security Editor</guimenuitem></menuchoice>.</simpara>
+          <step><simpara>点击<menuchoice><guimenu>工具</guimenu><guimenuitem>证券编辑器</guimenuitem></menuchoice>打开证券窗口。
+          </simpara>
           </step>
 
-          <step><simpara>Make sure the <guilabel>Show National Currencies</guilabel> box is selected.</simpara></step>
+          <step><simpara>确定已勾选<guilabel>显示国家货币</guilabel>。</simpara></step>
 
-          <step><simpara>Expand the <guilabel>CURRENCY</guilabel> row.</simpara></step>
+          <step><simpara>展开<guilabel>货币</guilabel>行。</simpara></step>
 
-          <step><simpara>Double click on the currency for which you want to disable exchange rate retrieval.</simpara></step>
+          <step><simpara>双击希望停用汇率获取的货币。</simpara></step>
 
-          <step><simpara>Deselect the <guilabel>Get Online Quotes</guilabel> box and click <guibutton>OK</guibutton>.</simpara></step>
+          <step><simpara>取消勾选<guilabel>获取在线报价</guilabel>并点击<guibutton>确定</guibutton>。</simpara></step>
         </procedure>
       </sect3>
     </sect2>
 
     <sect2 id="currency_purchase1">
-      <title>Recording Purchases in a Foreign Currency</title>
+      <title>记录通过外币的购买</title>
 
-      <para>Purchases in a foreign currency can be managed in two different options.
+      <para>使用外币的购买交易可以通过两种不同的方式处理。
       
         <orderedlist numeration="upperalpha">
             <listitem><para>    
-                Use &app;'s built-in currency exchange functions when you do your transactions. This is mainly
-                used for one-time transactions, and nothing which happens regularly.
+                使用&app;内置的货币兑换功能录入交易。这主要用于单次交易，不会定期产生其它交易。
                 </para>
             </listitem>
 
             <listitem id="currency_purchase1.ol.2"><para>
-	           Use separate accounts to track transactions, where all involved accounts use the same currency.
-               This is the recommended method, since it allows much better tracking and follow up. In this
-               way, you do one currency exchange transaction, and after that you do normal transactions in
-               the native currency.
+               使用单独的科目跟踪交易，所有涉及到的科目使用同种货币。这样跟踪和追加起来简单得多，因此是推荐的做法。使用这种方式时，先进行一次货币兑换交易，然后再使用本位币录入正常的交易。
             </para></listitem>
         </orderedlist>
       </para>
 
-      <para>The rest of this section will explain more based upon option <quote><xref linkend="currency_purchase1.ol.2" /></quote>.
+      <para>本节接下来将主要基于<quote><xref linkend="currency_purchase1.ol.2" /></quote>方式介绍操作流程。
       </para>
 
       <sect3 id="currency_purchase2">
-        <title>Purchase of an Asset with Foreign Currency</title>
+        <title>使用外币买入资产</title>
 
-        <para>You are using USD as your default currency. But, you decide to purchase a boat in Jamaica. To do
-          this, you opened a bank account in Jamaica, moved some money from the US, and then
-          purchased your boat.
+        <para>你使用的本位币为人民币，但你决定在越南买一艘船。相应地，你需要打开越南的银行科目，从中国转进一些钱，然后买下你的船。
         </para>
 
-        <para>To record this in &app; we use the following basic account structure:
+        <para>要在&app;中记录这项交易，可以使用如下基本科目结构：
         </para>
 <screen>
--Assets (USD)
-   -Current Assets (USD)
-      -US Bank (USD)
-      -Jamaican Bank (JMD)
-   -Fixed Assets (USD)
-      -Boat (JMD)
--Equity (USD)
-   -Opening Balances (USD)
-      -USD (USD)</screen>
+-资产 (CNY)
+   -流动资产 (CNY)
+      -中国银行 (CNY)
+      -越南银行 (VND)
+   -固定资产 (CNY)
+      -船 (VND)
+-所有者权益 (CNY)
+   -期初余额 (CNY)
+      -人民币 (CNY)</screen>
         <note>
-          <para>The currency of each account is shown in parenthesis.
+          <para>每个科目使用的货币标在了括号中。
           </para>
         </note>
 
-        <para>First you need to transfer 10,000 USD to Jamaica, and you use your US bank account (with a
-          balance of 100,000 USD) for that. The bank gives you an exchange rate of 1 USD = 64 JMD, but
-          charges you 150 USD to transfer the money.
+        <para>首先，你需要向越南转账10,000元，使用的是中国银行科目（余额100,000元人民币）。银行给出的汇率是1 CNY = 3505 JMD，但收取了150元人民币的兑汇手续费。
         </para>
 
         <figure pgwide="1">
-          <title>Transaction <quote>Currency Transfer To Jamaica</quote></title>
+          <title><quote>外币转账至越南</quote></title>
           <screenshot id="currency_purchase_MoveMoney.png">
             <mediaobject>
               <imageobject>
@@ -494,12 +432,11 @@ TODO -->
           </screenshot>
         </figure>
 
-        <para>Select the Jamaica transaction line (9,850.00 USD), right click and select <guilabel>Edit Exchange
-          Rate</guilabel>
+        <para>选中兑换越南盾的交易行（9,850.00元），右击选择<guilabel>编辑汇率</guilabel>。
         </para>
 
         <figure pgwide="1">
-          <title>Edit Exchange Rate</title>
+          <title>编辑汇率</title>
           <screenshot id="currency_purchase_SetExchangeRate.png">
             <mediaobject>
               <imageobject>
@@ -507,20 +444,18 @@ TODO -->
                            srccredit="Bengt Thuree" />
               </imageobject>
               <caption>
-                <para>In this dialog the exchange rate of a currency transaction is specified.
+                <para>在这个对话框中指定外币交易的汇率。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>As Exchange Rate, you enter 1 USD = 64 JMD, since this is the rate your bank gave. Press ok in the
-          Transfer Funds (Edit Exchange Rate) window, and then save this split transaction. Below is
-          how it now looks in the main Chart of Accounts.
+        <para>你输入 1 CNY = 3505 VND 为汇率，因为这个汇率是银行给定的。在资金转账（编辑汇率）窗口中点击<guilabel>确定</guilabel>，保存分录交易。科目表中现在应当如下所示。
         </para>
 
         <figure pgwide="1">
-          <title>Chart of Accounts before purchasing the boat</title>
+          <title>购入船只前的科目表</title>
           <screenshot id="currency_purchase_BeforeBoat.png">
             <mediaobject>
               <imageobject>
@@ -531,14 +466,11 @@ TODO -->
           </screenshot>
         </figure>
 
-        <para>You choose to buy a boat for 509,000 JMD. To record this transaction in &app;, you will need to
-          enter a simple transaction in <emphasis>Assets:Current Assets:Jamaican Bank</emphasis>
-          withdrawing 509,000 JMD and transferring it to <emphasis>Assets:Fixed
-          Assets:Boat</emphasis>.
+        <para>你确定花509,000越南盾买船。要在&app;中记录这项交易，你需要在<emphasis>资产:流动资产:越南银行</emphasis>中将509,000越南盾转账至<emphasis>资产:固定资产:船只</emphasis>。
         </para>
 
         <figure pgwide="1">
-          <title>The Chart Of Accounts After Purchasing The Boat</title>
+          <title>购入船只后的科目表</title>
           <screenshot id="currency_purchase_AfterBoat.png">
             <mediaobject>
               <imageobject>
@@ -549,24 +481,17 @@ TODO -->
           </screenshot>
         </figure>
 
-        <para>The Chart of Accounts now reflects that your bank account has been reduced by 509,000 JMD, and that
-          your Fixed Assets boat account has been increased by the same amount. If you also have
-          turned on the Chart of Accounts (Column Choice) <guilabel>Total (USD)</guilabel> you will see the corresponding value in
-          USD. The USD value will always reflect the latest currency exchange rate you have either
-          automatically or manually retrieved.
+        <para>现在科目表反映出你的银行科目已经减少了509,000越南盾，而固定资产船只科目增加了同样的数额。如果已在科目表的选择列中勾选了<guilabel>总计 (CNY)</guilabel>，则可以看到这些科目换算为人民币的金额。人民币金额总是根据自动或手动获取的最新货币汇率换算的。
         </para>
       </sect3>
 
       <sect3 id="currency_purchase3">
-        <title>Purchasing Foreign Stocks</title>
+        <title>购买境外股票</title>
 
-        <para>This example will show how to purchase stocks that are priced in a currency other than your primary
-          currency.
+        <para>此示例会展示怎样购买以外币计价的股票。
         </para>
 
-        <para>Assume that you live in New York and therefore you have set the default currency to USD. You decide
-          to purchase a stock traded in Hong Kong that is priced in HKD. You would also like to be
-          able to track the various income and expense amounts per stock and broker.
+        <para>假定你住在上海，即本位币为人民币。你决定买入在香港交易的、以港元计价的股票。另外，你也想跟踪属于每支股票和每家经纪商的各种收入和费用数额。
         </para>
 
  <!-- 
@@ -575,22 +500,20 @@ TODO -->
  
  It depends on the countries and financial systems. Therefore translate it according to your country.
   -->
-        <para>You decide to purchase stock in the Beijing Airport (Hong Kong). The ticker for this stock is
-          0694.HK on Yahoo! Since you wanted to track all various income and expense amounts, here
-          is the necessary account structure:
+        <para>你决定买入港铁公司的股票，编号为0694.HK。由于想要跟踪各种收入和费用金额，所以需要建立如下科目结构：
         <itemizedlist>
-            <listitem><simpara>Assets:Investments:Brokerage Accounts:Boom:0694.HK (0694.HK)</simpara></listitem>
-            <listitem><simpara>Assets:Investments:Brokerage Accounts:Boom:Bank (HKD)</simpara></listitem>
-            <listitem><simpara>Equity:Opening Balances:HKD (HKD)</simpara></listitem>
-            <listitem><simpara>Expenses:Commissions:Boom:0694.HK (HKD)</simpara></listitem>
-            <listitem><simpara>Income:Investments:Dividend:Boom:0694.HK (HKD)</simpara></listitem>
+            <listitem><simpara>资产:投资:经纪账户:宝盛证券:0694.HK (0694.HK)</simpara></listitem>
+            <listitem><simpara>资产:投资:经纪账户:宝盛证券:资金账户 (HKD)</simpara></listitem>
+            <listitem><simpara>所有者权益:期初余额:港元 (HKD)</simpara></listitem>
+            <listitem><simpara>费用:佣金:宝盛证券:0694.HK (HKD)</simpara></listitem>
+            <listitem><simpara>收入:投资:分红:宝盛证券:0694.HK (HKD)</simpara></listitem>
         </itemizedlist>
         </para>
-        <para>The Chart of Accounts looks like this after creating all the needed accounts:
+        <para>逐一创建所需科目后的科目表如下：
         </para>
 
         <figure pgwide="1">
-          <title>The Chart of Accounts For International Stocks</title>
+          <title>适用跨境股票交易的科目表</title>
           <screenshot id="currency_purchase_BeforeStocks.png">
             <mediaobject>
               <imageobject>
@@ -601,14 +524,14 @@ TODO -->
           </screenshot>
         </figure>
 
-        <para>The stock definition can be seen in the Security Editor (
+        <para>各支股票可通过证券编辑器（
           <menuchoice>
-            <guimenu>Tools</guimenu><guimenuitem>Security Editor</guimenuitem>
-          </menuchoice>.)
+            <guimenu>工具</guimenu><guimenuitem>证券编辑器</guimenuitem>
+          </menuchoice>）添加。
         </para>
 
         <figure pgwide="1">
-          <title>International Securities</title>
+          <title>境外证券</title>
           <screenshot id="currency_purchase_Commodities.png">
             <mediaobject>
               <imageobject>
@@ -619,25 +542,19 @@ TODO -->
           </screenshot>
         </figure>
 
-        <para>If you have not moved money (50,000 HKD) into the brokerage cash account
-          (<emphasis>Assets:Investments:Brokerage Accounts:Boom:Bank</emphasis>), do so now, either
-          using the Equity (HKD) account, or an existing bank account (Currency Transfer).
+        <para>若尚未将资金（50,000港元）转入经纪商现金账户
+          （<emphasis>资产:投资:经纪账户:宝盛证券:资金账户</emphasis>），则现在就该转入这笔资金了，可以使用所有者权益（港元）科目，或某一已经存在的银行科目（现金转账）。
         </para>
 
-        <para>There are two ways to enter the actual purchase transaction: you can enter it from the cash account
-          (shown below), or you can enter it from the stock account. 
-          <note><para>If entered from the stock account, the stock is assumed to be priced in the currency of the parent
-          account.</para></note>
+        <para>有两种录入买入交易的方式，可以在现金科目中录入交易（下文会介绍），也可以在股票科目中录入交易。
+          <note><para>如果在股票科目中录入交易，会假定股票以父科目使用的货币计价。</para></note>
         </para>
 
-        <para>Let&rsquo;s assume that the stock price is 3 HKD per share. To record the purchase, open the
-          brokerage&rsquo;s HKD cash account (<emphasis>Assets:Investments:Brokerage
-          Accounts:Boom:Bank</emphasis>), and enter the following:
+        <para>假设股票价格为每股28港元。要录入买入交易，打开经纪商的港元现金科目（<emphasis>资产:投资:经纪账户:宝盛证券:资金账户</emphasis>），并按下表录入：
         </para>
 
- 
         <informaltable>
-            <textobject><phrase><emphasis>Buy Stocks</emphasis></phrase></textobject>
+            <textobject><phrase><emphasis>买入股票</emphasis></phrase></textobject>
             <tgroup cols='3'>
             <colspec colwidth='3*' align='left'/>
 
@@ -648,11 +565,11 @@ TODO -->
             <tbody>
               <row>
                 <entry>
-                  Assets:Investments:Brokerage Accounts:Boom:Bank
+                  资产:投资:经纪账户:宝盛证券:资金账户
                 </entry>
 
                 <entry>
-                  Withdrawal
+                  取出
                 </entry>
 
                 <entry>
@@ -662,11 +579,11 @@ TODO -->
 
               <row>
                 <entry>
-                  Expenses:Commissions:Boom:0694.HK
+                  费用:佣金:宝盛证券:0694.HK
                 </entry>
 
                 <entry>
-                  Deposit
+                  存入
                 </entry>
 
                 <entry>
@@ -676,28 +593,26 @@ TODO -->
 
               <row>
                 <entry>
-                  Assets:Investments:Brokerage Accounts:Boom:0694.HK
+                  资产:投资:经纪账户:宝盛证券:0694.HK
                 </entry>
 
                 <entry>
-                  Deposit
+                  存入
                 </entry>
 
                 <entry>
-                  49,500 (16,500 shares)
+                  49,500 (16,500 份)
                 </entry>
               </row>
             </tbody>
           </tgroup>
         </informaltable>
 
-        <para>If the exchange rate dialog box does not appear automatically, right-click on the stock row, and
-          select <guilabel>Edit Exchange Rate</guilabel>. Enter the number of shares (16,500) as the
-          <guilabel>To Amount</guilabel>.
+        <para>如果汇率对话框没有自动弹出，右击股票交易行，选择<guilabel>编辑汇率</guilabel>。在<guilabel>转出份额<!-- ToDoP --></guilabel>中录入份额数量（16,500）。
         </para>
 
         <figure pgwide="1">
-          <title>Transfer Funds</title>
+          <title>资金转账</title>
           <screenshot id="currency_purchase_ToAmount.png">
             <mediaobject>
               <imageobject>
@@ -705,19 +620,18 @@ TODO -->
                            srccredit="Bengt Thuree" />
               </imageobject>
               <caption>
-                <para>Setting the number of shares in the Transfer Funds dialog
+                <para>在资金转账对话框中设定份额数量。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>When you return to the Chart of Accounts, you will see the purchased shares reflected in the stock
-          account&rsquo;s total.
+        <para>回到科目表后，可以看到买入的份额已经反映在了股票科目的总额中。
         </para>
 
         <figure pgwide="1">
-          <title>The Purchased international stocks</title>
+          <title>买入的境外股票</title>
           <screenshot id="currency_purchase_AfterStocks.png">
             <mediaobject>
               <imageobject>
@@ -725,78 +639,67 @@ TODO -->
                            srccredit="Bengt Thuree" />
               </imageobject>
               <caption>
-                <para>Chart of Accounts is now containing the international stocks
+                <para>科目表现已包含境外股票。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>However, as you can see, the USD totals may be zero if &app; doesn&rsquo;t have an exchange rate
-          between USD and HKD. To fix this, go to
+        <para>不过，可能你已经注意到了，如果&app;还没有记录人民币与港元间的汇率数据，则人民币总额仍为零。要解决这个问题，前往
           <menuchoice>
-            <guimenu>Tools</guimenu><guimenuitem>Price Database</guimenuitem>
+            <guimenu>工具</guimenu><guimenuitem>价格数据库</guimenuitem>
           </menuchoice>
-          and click the <guibutton>Get Quotes</guibutton> button to automatically retrieve the
-          exchange rates you need.
+          点击<guibutton>获取报价</guibutton>按钮自动获取所需汇率数据。
         </para>
 
         <note>
-          <para>To reiterate, this example shows how stock can be purchased in any currency by entering the
-            transaction in the register of the cash account used to make payment. It is also
-            possible to enter the purchase in the stock account&rsquo;s register, but be aware that
-            the stock is assumed to be priced in the currency of the stock account&rsquo;s parent.
+          <para>需要重申，该示例展示了怎样在提供买入资金的现金科目账簿中录入交易，来以任意一种货币买入股票。也可以在股票科目账簿中录入买入交易，但要注意股票默认使用其父科目的货币记价。
           </para>
 
-          <para>In this example, the stock account&rsquo;s parent (<emphasis>Assets:Investments:Brokerage
-            Account:Boom</emphasis>) is denominated in HKD. Since this is same currency as the stock
-            price, the purchase can be safely entered in the stock account&rsquo;s register.
+          <para>在此示例中，股票科目的父科目（<emphasis>资产:投资:经纪账户:宝盛证券</emphasis>）以港元记价。由于父科目货币也就是股票的计价货币，因此可以放心地在股票科目账簿中录入买入交易。
           </para>
         </note>
       </sect3>
     </sect2>
 
     <sect2 id="currency_invest1">
-      <title>Tracking Currency Investments</title>
+      <title>跟踪外币投资</title>
 
-      <para>Currency investment is when you decide to invest in a different country's currency, and hope that it
-        will rise in value relative your own currency.
+      <para>当你决定投资于其它国家的货币，并希望相对于本国货币升值时，你就是在进行外币投资。
       </para>
 
-      <para>When you enter these transactions into &app;, you will have to decide on how much detail you would
-        like to have.
+      <para>向&app;录入这些交易时，需要考虑是记录得简单些，还是详细些。
       </para>
 
-      <para>If you are not interested in detail at all, a very simple account structure would suffice:
+      <para>如果你一点也不在意细节，下面这个相当简单的科目结构就足够了：
         <itemizedlist>
-            <listitem><simpara>Assets:Investments:Currency:Bank (USD)</simpara></listitem>
-            <listitem><simpara>Assets:Investments:Currency:XXX (XXX)</simpara></listitem>
+            <listitem><simpara>资产:投资:货币:银行 (CNY)</simpara></listitem>
+            <listitem><simpara>资产:投资:货币:XXX  (XXX)</simpara></listitem>
         </itemizedlist>
       </para>
 
-      <para>You would simply enter transfers between the two accounts, noting exchange rates as you went.
+      <para>你只需录入两科目间的转账交易，并写明汇率。
       </para>
 
-      <para>But, if you do want to be able to track capital gains or losses, as well as any fees, you do need a
-        more complex account structure, such as:
+      <para>但是，你如果想能跟踪资本损益，以及任何形式的手续费，则无疑需要使用更复杂的科目结构，例如：
         <itemizedlist>
-            <listitem><simpara>Assets:Investments:Currency:Bank (USD)</simpara></listitem>
-            <listitem><simpara>Assets:Investments:Currency:Currency Bank:XXX (XXX)</simpara></listitem>
-            <listitem><simpara>Expenses:Investments:Currency:Bank (USD)</simpara></listitem>
-            <listitem><simpara>Income:Investments:Currency:Currency Bank:Capital Gains:XXX (XXX)</simpara></listitem>
+            <listitem><simpara>资产:投资:货币:银行 (CNY)</simpara></listitem>
+            <listitem><simpara>资产:投资:货币:外币银行:XXX (XXX)</simpara></listitem>
+            <listitem><simpara>费用:投资:货币:银行 (CNY)</simpara></listitem>
+            <listitem><simpara>收入:投资:货币:外币银行:资本利得:XXX (XXX)</simpara></listitem>
         </itemizedlist>
       </para>
 
       <sect3 id="currency_invest12">
-        <title>Purchasing Currency</title>
+        <title>买入外币</title>
 
-        <para>When purchasing an another currency, you will buy a certain number of units of foreign currency with
-          your own currency, at a particular rate. For example, you might buy 10,000 USD worth of
-          Andorran Francs, 1 USD = 5 ADF, with a transaction fee of 150 USD.
+        <para>买入外币，就是以一定的汇率拿本币买入一定数量的外币，例如，你可以买入价值10,000元人民币的瑞士法郎，即 1 CNY = 5 THB，交易手续费150元人民币。
+        <!-- 翻译提示：原安道尔法郎，在中国没有牌价，故改为泰铢。原 1 USD = 5 ADF，修改后也是 1 CNY = 5 THB。 -->
         </para>
 
         <informaltable>
-          <textobject><phrase><emphasis>Buy Currency</emphasis></phrase></textobject>
+          <textobject><phrase><emphasis>买入外币</emphasis></phrase></textobject>
           <tgroup cols='3'>
             <colspec colwidth='5*' align='left'/>
 
@@ -807,11 +710,11 @@ TODO -->
             <tbody>
               <row>
                 <entry>
-                  Assets:Investments:Currency:Bank (USD)
+                  资产:投资:货币:银行 (CNY)
                 </entry>
 
                 <entry>
-                  Withdrawal
+                  取出<!-- ToDoP --><!-- ToDoP: 其它非正式表头的翻译 -->
                 </entry>
 
                 <entry>
@@ -821,11 +724,11 @@ TODO -->
 
               <row>
                 <entry>
-                  Expenses:Investments:Currency:Bank (USD)
+                  费用:投资:货币:银行 (CNY)
                 </entry>
 
                 <entry>
-                  Expense
+                  费用
                 </entry>
 
                 <entry>
@@ -835,11 +738,11 @@ TODO -->
 
               <row>
                 <entry>
-                  Assets:Investments:Currency:Currency Bank:ADF (ADF)
+                  资产:投资:货币:外币银行:THB (THB)
                 </entry>
 
                 <entry>
-                  Deposit
+                  存入
                 </entry>
 
                 <entry>
@@ -850,36 +753,24 @@ TODO -->
           </tgroup>
         </informaltable>
 
-        <para>The Exchange Rate window should pop up when you leave the last row in the split above (Currency
-          Transaction). If this window does not pop up, right click on the row or select
-          <guimenu>Actions</guimenu>, and select <guilabel>Edit Exchange Rate</guilabel>. In the
-          Exchange Rate window you specify the exchange rate you got from the bank.
+        <para>在离开上述分录外币交易的最后一行时，汇率窗口会自动弹出。如果没有弹出窗口，右击该交易行或选择<guimenu>功能</guimenu>，再选择<guilabel>编辑汇率</guilabel>。在汇率窗口中设定由银行给出的汇率。
         </para>
       </sect3>
 
       <sect3 id="currency_invest13">
-        <title>Selling a currency investment</title>
+        <title>卖出外币投资</title>
 
-        <para>Entering a currency sale is done in the same way as a currency buy except that you are now
-          transferring money from the Currency account to your native currency&rsquo;s Bank account (very similar to
-          <xref linkend="invest-sell1" />).
+        <para>录入外币卖出的操作与外币买入相同，不过这里是将钱从外币科目转回本币银行科目（与<xref linkend="invest-sell1" />很类似）。
         </para>
 
-        <para>The proper recording of the currency sale <emphasis>must</emphasis> account for realized gains or losses. This can be
-          done using a split transaction. In the split transaction, you must account for the profit
-          (or loss) as coming from an <emphasis>Income:Investments:Currency:Currency Bank:Capital Gains:XXX</emphasis> account (or
-          <emphasis>Expense:Investments:Currency:Currency Bank:Capital Loss:XXX</emphasis>). To balance this income, you will need to
-          enter the Currency asset twice in the split&mdash;once to record the actual sale (using
-          the correct amount and correct exchange rate), and once to balance the income profit
-          (setting the amount to 0).
+        <para>外币卖出要录入得合理，就<emphasis>必须</emphasis>明确记录已实现损益，这可以通过分录交易实现。分录交易必须体现来自<emphasis>收入:投资:货币:外币银行:资本利得:XXX</emphasis>科目的损益。要平衡这项收入，需要录入外币资产两次，一次记录实际发生的卖出（使用实际金额和实际汇率），另一次用来平衡收入获利（份额设为0）。
         </para>
 
-        <para>In short, a selling Currency transaction should look something like below, seen again from the
-          <emphasis>Assets:Investments:Currency:Currency Bank:XXX</emphasis>.
+        <para>简而言之，外币卖出交易应当如下所示，也可以在<emphasis>资产:投资:货币:外币银行:XXX</emphasis>科目中看到这项交易。
         </para>
 
         <table>
-          <title>Selling a currency with a Split Transaction Scheme</title>
+          <title>使用分录交易方案卖出外币</title>
 
           <tgroup cols="3">
             <colspec colwidth='3*' align='left'/>
@@ -891,15 +782,15 @@ TODO -->
             <thead>
               <row>
                 <entry>
-                  Account
+                  科目
                 </entry>
 
                 <entry>
-                  Deposit/Expense
+                  存款/费用
                 </entry>
 
                 <entry>
-                  Withdrawal/Income
+                  取款/收入
                 </entry>
               </row>
             </thead>
@@ -907,23 +798,11 @@ TODO -->
             <tbody>
               <row>
                 <entry>
-                  Assets:Investments:Currency:Bank (USD)
+                  资产:投资:货币:银行 (CNY)
                 </entry>
 
                 <entry>
-                  Sold Amount - Exchange Fee
-                </entry>
-
-                <entry></entry>
-              </row>
-
-              <row>
-                <entry>
-                  Expenses:Investments:Currency:Bank (USD)
-                </entry>
-
-                <entry>
-                  Exchange Fee
+                  卖出金额 - 兑汇手续费
                 </entry>
 
                 <entry></entry>
@@ -931,41 +810,53 @@ TODO -->
 
               <row>
                 <entry>
-                  Assets:Investments:Currency:Currency Bank:XXX (XXX)
+                  费用:投资:货币:银行 (CNY)
+                </entry>
+
+                <entry>
+                  兑汇手续费
+                </entry>
+
+                <entry></entry>
+              </row>
+
+              <row>
+                <entry>
+                  资产:投资:货币:外币银行:XXX (XXX)
                 </entry>
 
                 <entry></entry>
 
                 <entry>
-                  Sold Amount (= Purchased Balance + PROFIT)
+                  卖出金额 (= 余额 + 获利)
                 </entry>
               </row>
 
               <row>
                 <entry>
-                  Income:Investments:Currency:Currency Bank:Capital Gains:XXX (XXX)
+                  收入:投资:货币:外币银行:资本利得:XXX (XXX)
                 </entry>
 
                 <entry>
-                  [LOSS]
+                  [亏损]
                 </entry>
 
                 <entry>
-                  PROFIT
+                  获利
                 </entry>
               </row>
 
               <row>
                 <entry>
-                  Assets:Investments:Currency:Currency Bank:XXX (XXX)
+                  资产:投资:货币:外币银行:XXX (XXX)
                 </entry>
 
                 <entry>
-                  PROFIT (with To Amount = 0)
+                  获利 (转出份额=0)
                 </entry>
 
                 <entry>
-                  [LOSS (with To Amount = 0) ]
+                  [亏损 (转出份额=0) ]
                 </entry>
               </row>
             </tbody>
@@ -975,91 +866,78 @@ TODO -->
     </sect2>
 
     <sect2 id="currency_reconcile1">
-      <title>Reconciling Statements in a Foreign Currency</title>
+      <title>对账外币账单</title>
 
-      <para>Reconciling foreign statement are done in the same manner as when you reconcile your local bank
-        statement. If you have created a Chart of Accounts structure which allows you to have the
-        same currency per account as your statement, it is actually exactly the same as reconciling
-        your local bank statement.
+      <para>对账外币账单的方法与对账当地银行账单的方法一样。如果你已经按照账单给出的条目，创建了相应的科目表结构，并将每个科目的货币设为该种外币，则对账操作与对账本币银行账单时几乎相同。
       </para>
 
-      <para>If you have different currencies you might have to manually convert the amounts from one currency to
-        another while you reconcile the accounts.
+      <para>如果存在多种货币，那么可能需要在对账科目时手动将一种货币的金额换算至另一种货币。
       </para>
     </sect2>
   </sect1>
 
   <sect1 id="currency_trading_accts">
-    <title>Automatically Recording Currency Transactions using Trading Accounts</title>
+    <title>使用贸易科目自动记录外币交易</title>
 
-    <para>Trading accounts were introduced as a feature from &app; version 2.3.14. The conceptual basis for
-      trading accounts is described in &ulink-sel-tut; by Peter Selinger. A second tutorial
-      &ulink-sel-gnc; describes the manual creation and use of trading accounts in &app; prior to version 2.3.14.
+    <para>贸易科目是在&app; 2.3.14 版本中引入的功能。其基本概念由Peter Selinger在&ulink-sel-tut;中提出，教程的第二部分&ulink-sel-gnc;则介绍了怎样在早于2.3.14的版本中手动创建并使用贸易科目。
+    
+    
+    Trading accounts were introduced as a feature from . The conceptual basis for
+      trading accounts is described in  by . A second tutorial
+       describes the manual creation and use of trading accounts in &app; prior to version 2.3.14.
     </para>
 
-    <para>Trading accounts are not enabled by default in &app;. To enable them go to
+    <para>&app;默认不启用贸易科目。要启用贸易科目，前往
         <menuchoice>
-            <guimenu>File</guimenu><guimenuitem>Properties</guimenuitem><guilabel>Accounts</guilabel>
-        </menuchoice> tab and check the <guilabel>Use Trading Accounts</guilabel> checkbox.
+            <guimenu>文件</guimenu><guimenuitem>属性</guimenuitem><guilabel>科目</guilabel>
+        </menuchoice>标签页，勾选<guilabel>使用贸易科目</guilabel>复选框。
     </para>
 
     <sect2 id="trading_acct_concepts">
-      <title>Trading Account Concepts</title>
+      <title>贸易科目的概念</title>
 
-      <para>In accounting terms, trading accounts are specialized equity accounts to record changes in income
-        which result from transactions between two or more currencies. In &app; they are implemented
-        as a top level account type of Trading. When trading accounts are enabled the required sub
-        accounts of Trading are automatically created if they do not already exist when a
-        transaction between one or more currencies is created.
+      <para>在会计领域中，贸易科目是一种特殊的所有者权益科目，用于记录由两种或多种货币间交易导致的收入变动。&app;使用贸易这一顶级科目类型实现贸易科目的功能。启用贸易科目功能后，如果在创建两种或多种货币间的交易时，所需的贸易子科目还不存在，则会自动创建。
       </para>
 
-      <para>In the extended Accounting Equation, Trading accounts would appear as follows:
+      <para>使用贸易科目拓展得到的会计等式如下：
+      
+      
+      In the extended Accounting Equation, Trading accounts would appear as follows:
         <equation>
-          <mathphrase>Assets = Liabilities + Equity (+ Income -Expenses) + Trading </mathphrase>
+          <mathphrase>资产 ＝ 负债 ＋所有者权益 （＋收入 －费用） ＋贸易 </mathphrase>
         </equation>
       </para>
 
       <caution>
-        <para>The user is prevented from manually making entries directly to the registers for any of the accounts
-          in the Trading top level account group. All entries to these accounts are automatically
-          generated when transactions between currencies are created in other account registers
-          within the &app; account hierarchy.
+        <para>&app;会阻止用户直接手动向贸易顶级科目类别下的科目账簿添加条目。这些科目下的所有条目均为当用户在&app;科目结构中的其它科目账簿下创建外币交易时自动生成的。
         </para>
       </caution>
 
-      <para>The Trading account group is structured below the top level account <guilabel>Trading</guilabel>
-        with a sub-account <guilabel>CURRENCY</guilabel> which in turn has a sub-account for each
-        currency between which transactions have been made. For the example previously used in
-        <xref linkend="currency_manual" />, the
-        additional accounts which will be created automatically when transactions are created
-        between different currencies with trading accounts enabled are:
+      <para>贸易科目组织在顶级科目<guilabel>贸易</guilabel>下，该顶级科目具有子科目<guilabel>货币</guilabel>，在此之下又为每种相互产生交易的货币分配了各自的子科目。如之前<xref linkend="currency_manual" />中举的例子，启用贸易科目功能后，当录入不同货币间的交易时，会自动创建更多的贸易科目，具体为：
       </para>
 <screen>
-Trading
-    CURRENCY
+贸易
+    货币
         EUR
         HKD
-        USD</screen>
+        CNY</screen>
       <caution>
-        <para>The names of these accounts are again assigned automatically and cannot be changed by a user without
-          disrupting the functionality of the trading accounts in &app;.
+        <para>这些科目的名称也同样是自动指定的，如果不在&app;中关闭贸易科目功能，就无法由用户修改。
         </para>
       </caution>
     </sect2>
 
     <sect2 id="currency_trading">
-      <title>Recording Foreign Currency Transactions with Trading Accounts</title>
+      <title>使用贸易科目记录外币交易</title>
 
       <sect3 id="currency_trading_account_setup">
-        <title>Setup of Accounts for Trading Accounts</title>
+        <title>建立适用于贸易科目功能的科目结构</title>
 
-        <para>The same account structure used in the manual recording of currency transactions in the previous
-          section is required. The initial account configuration for Assets and Equity accounts are
-          as follows:
+        <para>仍然继续采用前一小节手动记录外币交易中使用的科目结构。资产和所有者权益科目的初始结构如下：
         </para>
 
         <figure pgwide="1">
-          <title>The Initial Multicurrency Bank Accounts Setup</title>
+          <title>多货币银行科目初始结构</title>
           <screenshot id="currency__trading_acct_setup">
             <mediaobject>
               <imageobject>
@@ -1067,23 +945,21 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para>Initial setup of bank accounts in multiple currencies.
+                <para>多货币场景下银行科目的初始结构。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>The following prices were entered in the Price Database (
+        <para>到2020年1月1日，价格数据库（
           <menuchoice>
-            <guimenu>Tools</guimenu><guimenuitem>Price Database</guimenuitem>
-          </menuchoice>
-          ) as at Jan. 1, 2020 to convert the account balances for the foreign currency accounts to
-          USD:
+            <guimenu>工具</guimenu><guimenuitem>价格数据库</guimenuitem>
+          </menuchoice>）中已录入了下列价格记录，并按此将外币科目余额换算为人民币：
         </para>
-
+        <!-- ToDoZ: 通用句式 Initial XXX(Database) YYY(Entries) XXX（价格数据库）初始YYY（条目） -->
         <figure pgwide="1">
-          <title>The Initial Price Database Entries</title>
+          <title>价格数据库初始记录</title>
           <screenshot id="currency__trading_price_database">
             <mediaobject>
               <imageobject>
@@ -1091,20 +967,19 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para>Price Database window after setting initial exchange rates between USD, HKD and EUR.
+                <para>设定人民币、港元和欧元间初始汇率后的价格数据库窗口。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>With the currency prices set as shown, the Accounts tab will now display the values of the foreign
-          accounts in USD in the <guilabel>Total(USD)</guilabel> column:
+        <para>如图设定货币汇率后，现在<guilabel>科目</guilabel>标签页会在<guilabel>总计(CNY)</guilabel>列中以人民币显示外币科目的金额。
         </para>
 
         <figure pgwide="1">
-          <title>The Initial Multicurrency Setup After Entering Exchange Rates Between USD, HKD
-                and EUR</title>
+          <title>录入人民币、港元和欧元间汇率后的初始多货币科目结构
+          </title>
           <screenshot id="currency_trading_acct_setup_2">
             <mediaobject>
               <imageobject>
@@ -1112,7 +987,7 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para><guilabel>Accounts</guilabel> tab after setting exchange rates to USD.
+                <para>设定各外币相对人民币汇率后的<guilabel>科目</guilabel>标签页。
                 </para>
               </caption>
             </mediaobject>
@@ -1121,18 +996,13 @@ Trading
       </sect3>
 
       <sect3 id="currency_trading_transfer">
-        <title>Transfer of Funds to a Foreign Currency</title>
+        <title>兑换资金为外币</title>
 
-        <para>Let us assume we wish to purchase at item in Hong Kong using the Hong Kong bank account for 20,000
-          HKD on Feb. 1, 2020. The current funds in the Hong Kong account are insufficient and we will
-          need to transfer another 10,200 HKD from the US bank account. The exchange rate at the
-          time of the transfer is 1 USD = 7.7884 HKD and we will have to transfer 1,309.64 USD for
-          which the bank charges a 40 USD transfer fee. The transaction to effect this is created
-          with the <guilabel>Transfer Funds</guilabel> dialog as shown below:
+        <para>假定我们想在2020年1月1日通过香港银行科目花20,000港元在香港当地买些东西。香港银行科目中的流动资金不够，需要再从中国内地银行科目额外兑换10,200港元。兑汇时的汇率为 1 CNY = 1.0753 HKD，即需要花9,486元人民币购汇，同时银行收取40元人民币的购汇手续费。相关交易由<guilabel>资金转账</guilabel>对话框创建，如下所示：
         </para>
 
         <figure pgwide="1">
-          <title>The Transfer Dialog To Create Transaction For Transfer From USD To HKD</title>
+          <title>创建从人民币到港元交易的转账对话框</title>
           <screenshot id="currency__trading_tfr_dialog">
             <mediaobject>
               <imageobject>
@@ -1140,28 +1010,23 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para>Transfer of 10,200 HKD from US Bank account to Hong Kong bank account.
-                </para>
+                <para>从中国内地银行科目到香港银行科目的转账</para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>The <guilabel>Debit Amount</guilabel> has been specified in HKD and the transaction <guilabel>Amount</guilabel> being transferred in USD.
-          There is no provision to enter the transfer fee in the dialog. On closing the dialog the
-          following transaction as viewed in the US Bank Account register has been created:
+        <para><guilabel>借方金额</guilabel>已由港元指定，而交易<guilabel>金额</guilabel>以人民币进行转账。无法在对话框中录入手续费。关闭对话框后，新创建的交易在中国银行科目中显示如下：
         </para>
 
         <note>
-          <para><guilabel>Amount</guilabel> entered in the <guilabel>Transfer Funds</guilabel> are transferred from the selected <guilabel>Credit
-            Account</guilabel> to the selected <guilabel>Debit Account</guilabel>. And if <guilabel>Debit Amount</guilabel> radio button is selected and the foreign
-            currency amounts are entered, the transaction is recorded on the correct debit amounts. Whereas if <guilabel>Exchange Rate</guilabel> is selected
-            and entered, the exact value is not often recorded due to the rounding errors.
+          <para>在<guilabel>资金转账</guilabel>对话框中录入的<guilabel>金额</guilabel>就是将要从选择的<guilabel>贷方科目</guilabel>
+          转账到选择的<guilabel>借方科目</guilabel>的金额。如果选中<guilabel>借方金额</guilabel>单选框并输入外币金额，则记录的交易金额是精确的。然而如果选中<guilabel>汇率</guilabel>单选框并输入相应的汇率，则实际金额往往由于舍入误差而记录得不精确。 
           </para>
         </note>
 
         <figure pgwide="1">
-          <title>The Transaction After Transfer Displayed in The US Bank Account Register</title>
+          <title>转账后显示在中国银行科目账簿的交易</title>
           <screenshot id="currency_trading_transfer_trans1">
             <mediaobject>
               <imageobject role="html">
@@ -1173,20 +1038,18 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para>Transaction to transfer from US bank account to Hong Kong Bank account after closing transfer
-                  dialog.
+                <para>关闭转账对话框后，从中国银行科目转账至香港银行科目的交易。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>The transaction can be opened in the US Bank Account register and may then be edited to add splits
-          for the transfer fee as follows:
+        <para>在中国银行科目账簿中展开该交易后，可以向其中添加分录，用于记录手续费，如下所示：
         </para>
 
         <figure pgwide="1">
-          <title>The Transaction After Adding The Splits For The Transfer Fee</title>
+          <title>添加兑汇手续费分录后的交易</title>
           <screenshot id="currency_trading_transfer_trans2">
             <mediaobject>
               <imageobject role="html">
@@ -1198,19 +1061,18 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para>Transaction to transfer from US bank account to Hong Kong Bank account after adding the splits for
-                  the transaction fee.
+                <para>添加兑汇手续费分录后，从中国银行科目转账至香港银行科目的交易。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>Returning to the Accounts tab we can see the result of the transfer transaction on the accounts:
+        <para>回到<guilabel>科目</guilabel>标签页，可以看到由科目间转账交易引起的金额变动：
         </para>
 
         <figure pgwide="1">
-          <title>The Account Tab Balances After Completion Of USD To HKD Transfer</title>
+          <title>完成从人民币到港元转账后的科目标签页余额。</title>
           <screenshot id="currency_trading_accts_after_tfr">
             <mediaobject>
               <imageobject>
@@ -1218,40 +1080,27 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para>Account balances in the Accounts tab after the transfer of funds from the US Bank account to the
-                  Hong Kong bank account.
+                <para>完成从中国银行科目到香港银行科目的资金转账后，科目标签页中各科目的余额。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>The balances of the Asset and Equity accounts are presented with values set by the exchange rate
-          entered in the transaction to transfer funds on Feb. 1, 2020.
+        <para>资产和所有者权益科目显示的金额已经根据2020年2月1日资金转账交易中录入的汇率进行了换算。
         </para>
 
-        <para>The trading accounts have been automatically created and the amounts of the transfer have been
-          entered into the accounts. There are no entries associated with the pre-existing opening
-          balances of the accounts prior to the transfer. This reflects that the trading accounts
-          only reflect gains and losses since the book was opened.
+        <para>&app;已经自动创建了贸易科目，转账金额也已录入到相应的贸易科目中。其中的交易条目与录入该交易之前已经存在的期初余额均无关联。也就是，贸易科目只反映在其本身创建之后产生的损益。
         </para>
 
-        <para>At this point there have been no trading gains or losses. The balances of the USD and HKD trading
-          accounts are the same when converted to USD. The HKD trading account has a debit (negative
-          balance) and the USD trading account has a credit balance (positive balance). The net balance
-          of the CURRENCY sub account of Trading, and Trading itself, is 0 indicating that at this
-          point no gains or losses have been recorded in the trading of currencies.
+        <para>到现在，还没有产生贸易损益。人民币和港元的贸易科目余额换算为人民币后是相等的。港元贸易科目有一条借方交易（余额为负），而人民币贸易科目有一条贷方交易（余额为正）。货币子科目的净余额为，也即贸易父科目自身的余额，仍然为零，表明目前没有记录到由货币兑换导致的损益。
         </para>
 
-        <para>The hypothetical purchase in Hong Kong fails to take place and a month later on Mar. 1, 2020 the funds
-          are required in the US account for another purpose. A transfer of 10,200.00 HKD is made
-          from the Hong Kong bank account back to the US bank account. The exchange rate at the time
-          of the transfer is 1 USD = 7.7933 HKD and a fee of 20.00 USD is charged for the transfer.
-          The transaction to effect the transfer is as follows:
+        <para>原本去香港的购物之行未能成真。一个月后，即2020年3月1日，因其它安排，又需向中国银行科目汇集资金。为此执行一次从香港银行转回到中国银行，总额10,200.00港元的转账。进行这次转账时的汇率为 1 CNY = 7.7933 HKD，兑汇手续费20.00元人民币。记录这次兑汇的交易如下：
         </para>
 
         <figure pgwide="1">
-          <title>The Transaction To Transfer Funds From Hong Kong To US Bank Account</title>
+          <title>从香港银行到中国银行的资金转账交易</title>
           <screenshot id="currency_trading_tfr_back">
             <mediaobject>
               <imageobject role="html">
@@ -1263,19 +1112,18 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para>The transaction transfers 10,200.00 HKD from the Hong Kong Bank account to the US Bank account.
+                <para>该交易从香港银行科目向中国银行科目转账10,200.00港元。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>After transferring the funds back to the US Bank account, the prices database entries are as
-          follows:
+        <para>在资金转回中国银行科目后，价格数据库记录如下：
         </para>
 
         <figure pgwide="1">
-          <title>The Price database after transfer of funds back to US account</title>
+          <title>资金转回中国银行科目后的价格数据库</title>
           <screenshot id="currency_trading_prices_after_trf_back">
             <mediaobject>
               <imageobject>
@@ -1283,18 +1131,18 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para>The price database showing prices for the transfer of funds to HKD and back to USD.
+                <para>价格数据库显示了将资金从港元转回人民币时使用的汇率。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>The Accounts tab balances after transferring the funds back are as follows:
+        <para>转回资金后，科目标签页中各科目余额如下：
         </para>
 
         <figure pgwide="1">
-          <title>The Accounts tab after transfer back</title>
+          <title>转回资金后的科目标签页</title>
           <screenshot id="currency_trading_accts_after_trf_back">
             <mediaobject>
               <imageobject>
@@ -1302,30 +1150,26 @@ Trading
                            srccredit="David Cousens" />
               </imageobject>
               <caption>
-                <para>State of the accounts after the funds have been transferred back.
+                <para>转回资金后各科目的状态。
                 </para>
               </caption>
             </mediaobject>
           </screenshot>
         </figure>
 
-        <para>The Assets and Equity balances now reflect the the values of the accounts at the exchange rate for
-          the transfer of funds back to the US Bank account. The Trading and CURRENCY placeholder accounts now indicate a
-          modest realized loss of 0.82 USD on the currency transactions. The associated transfer fees appear in the
-          Expenses total. Not a profitable exercise but still illustrative.
+        <para>现在，资产和所有者权益余额反映了按将资金转回中国银行科目时的汇率换算得到的科目总额。贸易和货币占位符科目表明，货币兑换导致了些许已实现亏损，总计0.82元人民币。相关的兑汇手续费体现在费用总额中。在现实生活中，这并非有利可图的做法，但仍然可以通过这个例子理解贸易科目的实际用处。
         </para>
 
         <note>
-          <para>The gains or losses reported using trading accounts are realized gains and losses.
+          <para>由贸易科目汇总得到的损益为已实现损益。
           </para>
         </note>
 
-        <para>Finally we have the balance sheet after the above sequence of transactions reporting the Trading
-          Loss incurred:
+        <para>最终，在上述一系列交易后，资产负债表指出产生了贸易亏损：
         </para>
 
         <figure pgwide="1">
-          <title>The Balance Sheet After Above Transactions</title>
+          <title>进行上述交易后的资产负债表</title>
           <screenshot id="currency_trading_balance_sheet">
             <mediaobject>
               <imageobject>
@@ -1333,7 +1177,8 @@ Trading
                            srccredit="David Cousens"/>
               </imageobject>
               <caption>
-                <para>Balance Sheet after these transactions reflecting the trading loss incurred.
+                <para>经这些交易后，资产负债表反映产生了贸易亏损。
+                Balance Sheet after these transactions reflecting the trading loss incurred.
                 </para>
               </caption>
             </mediaobject>

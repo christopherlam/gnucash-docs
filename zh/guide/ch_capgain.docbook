@@ -11,11 +11,12 @@
   Originally designed by Carol Champagne.
   Translators:
     Xinhang Xu <xuxinhang4567@outlook.com>
+    (translators put your name and email here)
 -->
 <chapter id="chapter_capgain">
   <title>资本利得</title>
 
-  <para>本章会介绍一些方法，以跟踪未实现损益和已实现损益，也即众所周知的资本利得。
+  <para>本章会介绍一些方法，用于跟踪未实现损益和已实现损益，也即众所周知的资本利得。
   </para>
 
   <sect1 id="capgain_concepts1">
@@ -102,16 +103,16 @@
     <para>假定你购入了一项资产，比如德加的画作，希望它能够增值，同时想跟踪其价值变化。（保险公司很关心这个事情，即使其它人都不会在意。）
     </para>
 
-    <para>首先仿照<xref linkend="capgain_accounts1" />建立科目结构，只不过将<emphasis>物品甲</emphasis>换成<emphasis>德加</emphasis>并删去<emphasis>物品乙</emphasis>科目。假定德加的画作初始价值为十万元。一开始你的银行账户中有100,000元，然后将这笔钱从银行账户转到<emphasis>资产:固定资产:德加:成本</emphasis>科目（资产购入交易）。现在主科目窗口应该如下所示：
+    <para>首先仿照<xref linkend="capgain_accounts1" />建立科目结构，只不过将<emphasis>物品甲</emphasis>换成<emphasis>德加</emphasis>并删去<emphasis>物品乙</emphasis>科目。假定德加的画作初始价值为十万元。一开始你的银行账户中有100,000元，然后将这笔钱从银行账户转到<emphasis>资产:固定资产:德加:成本</emphasis>科目，即资产购入交易。现在主科目窗口应该如下所示：
     </para>
 
     <figure pgwide="1">
       <title>购入资产后的主窗口</title>
-      <!-- ToDoC: 还没增值呢 -->
       <screenshot id="capgain_appmain">
         <mediaobject>
           <imageobject>
             <imagedata fileref="figures/capgain_appmain.png"
+                       screenshot-physicalwidth="6.25in"
                        srccredit="Bengt Thuree" />
           </imageobject>
           <caption>
@@ -130,11 +131,12 @@
       </para>
 
       <figure pgwide="1">
-        <title>记入资产增值后的主窗口</title>
+        <title>记录未实现损益后的主窗口</title>
         <screenshot id="capgain_app2main">
           <mediaobject>
             <imageobject>
               <imagedata fileref="figures/capgain_app2main.png"
+                         screenshot-physicalwidth="6.25in"
                          srccredit="Bengt Thuree" />
             </imageobject>
             <caption>
@@ -254,11 +256,12 @@
           </para>
 
           <figure pgwide="1">
-            <title>出售资产后的主窗口</title>
+            <title>记录已实现损益后的主窗口</title><!-- ToDoZ: 这几张图标题怎样翻译 -->
             <screenshot id="capgain_app3main">
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="figures/capgain_app3main.png"
+                             screenshot-physicalwidth="6.25in"
                              srccredit="Bengt Thuree" />
                 </imageobject>
                 <caption>

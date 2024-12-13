@@ -13,6 +13,7 @@
   Originally written by Carol Champagne.
   Translators:
                Xinhang Xu <xuxinhang4567@outlook.com>
+               (translators put your name and email here)
 -->
 <chapter id="chapter_oview">
   <title>概览</title>
@@ -104,12 +105,13 @@
         <listitem>
           <para><emphasis>贷款还款助手</emphasis>：用于计算各式各样的贷款偿还计划交易。
           <!-- ToDoZ: Mortgage and Loan Repayment Assistant 是什么 -->
+          <!-- ToDoZ,ToDoP: 与ch_loans中的“贷款还款计算器”统一起来 -->
           <!-- ToDoZ: Used to set up a variable payment loan scheduled transaction. variable 是什么意思 -->
           </para>
         </listitem>
 
         <listitem>
-          <para><emphasis>轻松进行科目对账</emphasis>：&app;内置对账功能，将&app;科目同银行账单对账现在简单又高效。
+          <para><emphasis>轻松实现科目对账</emphasis>：&app;内置对账功能，将&app;科目同银行账单对账现在简单又高效。
           </para>
         </listitem>
 
@@ -223,7 +225,7 @@
         </listitem>
 
         <listitem>
-          <para><emphasis>报表</emphasis>：&app;能够随时生成各式各样、能够直接拿来使用的商业报表。
+          <para><emphasis>报表</emphasis>：&app;能够随时生成各式各样、能够直接拿来使用的企业级报表。
           </para>
         </listitem>
       </itemizedlist>

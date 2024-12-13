@@ -375,13 +375,10 @@
   </glossentry>
 
   <glossentry id="gnc-gl_return">
-    <glossterm>Return</glossterm>
+    <glossterm>回报</glossterm>
 
     <glossdef>
-      <para>The total income plus capital gains or losses of an
-      investment.</para>
-
-      <glossseealso otherterm="gnc-gl_yield">Yield</glossseealso>
+      <para>计入资本利得或资本损失的总收入。另见“收益率”。</para>
     </glossdef>
   </glossentry>
 
@@ -526,13 +523,7 @@
     <glossterm>收益率</glossterm>
 
     <glossdef>
-      <para>A measure of the amount of money you earn from an investment
-      (i.e., how much income you receive from the investment). Typically, this
-      is reported as a percentage of the principal amount. Yield does not
-      include capital gains or losses (see Return). For example, a stock that
-      sells for $100 and gives $2 in dividends per year has a yield of 2%.
-      对投资盈利的金额的度量，也就是从投资中得到了多少收入。收益率一般记为本金的百分比。收益率不含资本收益或损失。
-      例如，某股票售价100美元且每年分红2美无，其收益率为2%。</para>
+      <para>对从投资中赚取收益的度量，也就是你从投资中挣到了多少钱。一般将收益率记为相对本金金额的百分比。资本利得或损失不计入收益率（另见“回报”。例如，价格100元，每年分红2元的股票收益率为2%。</para>
     </glossdef>
   </glossentry>
 
