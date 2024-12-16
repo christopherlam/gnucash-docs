@@ -16,8 +16,7 @@ set (entities
         chartofaccts.docbook
         chtacctseg.docbook
         para-assist-intro.docbook
-        txf-categories.docbook
-        tips-appendix.docbook)
+        txf-categories.docbook)
 
 set (figures
         figures/AccountReg_Screen.png
