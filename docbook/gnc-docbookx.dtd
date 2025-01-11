@@ -96,6 +96,16 @@ https://www.w3.org/2003/entities/2007/w3centities-f.ent
 <!ENTITY img-w "800px">  <!-- The maximum width of the graphic elements. -->
 <!ENTITY dArrow "&lt;-|-&gt;"> <!-- double arrow: <-|->  -->
 
+<!--
+  Definition of some GUI colors
+  Import Matcher, amount of intervention required.
+  Use processing instructions to set the background color of table rows.
+-->
+ <!ENTITY color-intervention-required "<?dbhtml bgcolor='#FF4040' ?><?dbfo bgcolor='#FF4040' ?>"> <!-- color: Brown -->
+ <!ENTITY color-intervention-probably-required "<?dbhtml bgcolor='#FFD700' ?><?dbfo bgcolor='#FFD700' ?>"> <!-- color: Gold -->
+ <!ENTITY color-intervention-not-required "<?dbhtml bgcolor='#CFFFCB' ?><?dbfo bgcolor='#CFFFCB' ?>"> <!-- color: DarkSeaGreen -->
+ <!ENTITY color-row-selected "<?dbhtml bgcolor='#6495ED' ?><?dbfo bgcolor='#6495ED' ?>"> <!-- color: Cornflower Blue -->
+
 <!-- 
   5. Some common URLs - should be changed on demand.
   
