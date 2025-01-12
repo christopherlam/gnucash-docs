@@ -2996,33 +2996,26 @@ Translators:
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#FFD700"?>
-<?dbfo bgcolor="#FFD700"?>
-                gold
+                &color-intervention-probably-required; gold
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#FFD700"?>
-<?dbfo bgcolor="#FFD700"?>
-                Keine Übereinstimmungen, zur Eingabe markiert und kein Gegenkonto zugeordnet
-                &ndash; Importieren als eine neue Buchung. Manueller Eingriff erforderlich, um ein
-                Überweisungskonto auszuwählen.
+                &color-intervention-probably-required; Keine Übereinstimmungen, zur Eingabe
+                markiert und kein Gegenkonto zugeordnet &ndash; Importieren als eine neue Buchung.
+                Manueller Eingriff erforderlich, um ein Überweisungskonto auszuwählen.
               </entry>
             </row>
 
             <row>
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                dunkelgrün
+                &color-intervention-not-required; grün
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                Keine Übereinstimmungen erkannt, zur Eingabe markiert und ein Übertragungskonto
-                wird zugeordnet &ndash; Importieren als neue Buchung. Der Abgleichungszustand wird
-                beim Import als bestätigt (b) markiert. Ein Eingreifen ist nicht erforderlich.
+                &color-intervention-not-required; Keine Übereinstimmungen erkannt, zur Eingabe
+                markiert und ein Übertragungskonto wird zugeordnet &ndash; Importieren als neue
+                Buchung. Der Abgleichungszustand wird beim Import als bestätigt (b) markiert. Ein
+                Eingreifen ist nicht erforderlich.
               </entry>
             </row>
 
@@ -3032,17 +3025,14 @@ Translators:
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                dunkelgrün
+                &color-intervention-not-required; grün
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                Passt zu einer vorhandenen Buchung, aber nicht genau hinsichtlich Datum und/oder
-                Betrag &ndash; Manueller Eingriff nicht erforderlich, importieren und aktualisieren.
-                Der Abgleichungszustand wird beim Import als bestätigt (b) markiert.
+                &color-intervention-not-required; Passt zu einer vorhandenen Buchung, aber nicht
+                genau hinsichtlich Datum und/oder Betrag &ndash; Manueller Eingriff nicht
+                erforderlich, importieren und aktualisieren. Der Abgleichungszustand wird beim
+                Import als bestätigt (b) markiert.
               </entry>
             </row>
 
@@ -3052,17 +3042,13 @@ Translators:
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                dunkelgrün
+                &color-intervention-not-required; grün
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                Entspricht einer bestehenden Buchung &ndash; Wird nicht importiert. Der
-                Abgleichungszustand der vorhandene Buchung wird beim Import als bestätigt (b)
-                angezeigt. Ein Eingreifen ist nicht erforderlich.
+                &color-intervention-not-required; Entspricht einer bestehenden Buchung &ndash; Wird
+                nicht importiert. Der Abgleichungszustand der vorhandene Buchung wird beim Import
+                als bestätigt (b) angezeigt. Ein Eingreifen ist nicht erforderlich.
               </entry>
             </row>
 
@@ -3070,16 +3056,13 @@ Translators:
               <entry></entry>
 
               <entry>
-<?dbhtml bgcolor="#FF4040"?>
-<?dbfo bgcolor="#FF4040"?>
-                braun
+                &color-intervention-required; braun
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#FF4040"?>
-<?dbfo bgcolor="#FF4040"?>
-                Die Buchung hat eine schlechte Übereinstimmungen und es wurde keine Aktion gesetzt:
-                &ndash; Kann nicht importiert werden. Eine manuelle Handlung ist erforderlich.
+                &color-intervention-required; Die Buchung hat eine schlechte Übereinstimmungen und
+                es wurde keine Aktion gesetzt: &ndash; Kann nicht importiert werden. Eine manuelle
+                Handlung ist erforderlich.
               </entry>
             </row>
 
@@ -3087,15 +3070,11 @@ Translators:
               <entry></entry>
 
               <entry>
-<?dbhtml bgcolor="#6495ED"?>
-<?dbfo bgcolor="#6495ED"?>
-                kornblumenblau
+                &color-row-selected; blau
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#6495ED"?>
-<?dbfo bgcolor="#6495ED"?>
-                Die Zeile ist ausgewählt.
+                &color-row-selected; Die Zeile ist ausgewählt.
               </entry>
             </row>
           </tbody>
