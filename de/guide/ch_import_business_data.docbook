@@ -170,7 +170,7 @@ Updated:
 
         <listitem>
           <para><emphasis><prompt>Steuertabelle</prompt></emphasis> - Steuertabelle. Optional. Falls die angegebene
-            Steuertabelle in nicht vorhanden ist, wird der Wert in der Rechnung leer bleiben. 
+            Steuertabelle nicht vorhanden ist, wird der Wert in der Rechnung leer bleiben. 
           </para>
         </listitem>
 
