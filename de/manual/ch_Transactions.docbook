@@ -184,8 +184,8 @@ Translators:
         des Betrags des <guilabel>Buchen nach</guilabel> Buchungsteils zu erfassen. Sie können
         entweder einen Wechselkurs oder einen Betrag eingeben und &app; wird das andere berechnen.
         Wenn Sie den <emphasis>Online Kursabruf</emphasis> installiert haben (siehe
-        <xref linkend="fq-install"/>), können Sie über die Schaltfläche
-        <guilabel>Wechselkurs abrufen</guilabel> einen aktuellen Kurs abfragen.
+        <xref linkend="fq-install"/>), können Sie über die Schaltfläche <guilabel>Wechselkurs
+        abrufen</guilabel> einen aktuellen Kurs abfragen.
       </para>
 
       <para>Er ist nur aktiviert, wenn die ausgewählten Konten unterschiedliche Währungen verwenden oder der
@@ -2996,33 +2996,26 @@ Translators:
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#FFD700"?>
-<?dbfo bgcolor="#FFD700"?>
-                gold
+                &color-intervention-probably-required; gold
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#FFD700"?>
-<?dbfo bgcolor="#FFD700"?>
-                Keine Übereinstimmungen, zur Eingabe markiert und kein Gegenkonto zugeordnet
-                &ndash; Importieren als eine neue Buchung. Manueller Eingriff erforderlich, um ein
-                Überweisungskonto auszuwählen.
+                &color-intervention-probably-required; Keine Übereinstimmungen, zur Eingabe
+                markiert und kein Gegenkonto zugeordnet &ndash; Importieren als eine neue Buchung.
+                Manueller Eingriff erforderlich, um ein Überweisungskonto auszuwählen.
               </entry>
             </row>
 
             <row>
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                dunkelgrün
+                &color-intervention-not-required; grün
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                Keine Übereinstimmungen erkannt, zur Eingabe markiert und ein Übertragungskonto
-                wird zugeordnet &ndash; Importieren als neue Buchung. Der Abgleichungszustand wird
-                beim Import als bestätigt (b) markiert. Ein Eingreifen ist nicht erforderlich.
+                &color-intervention-not-required; Keine Übereinstimmungen erkannt, zur Eingabe
+                markiert und ein Übertragungskonto wird zugeordnet &ndash; Importieren als neue
+                Buchung. Der Abgleichungszustand wird beim Import als bestätigt (b) markiert. Ein
+                Eingreifen ist nicht erforderlich.
               </entry>
             </row>
 
@@ -3032,17 +3025,14 @@ Translators:
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                dunkelgrün
+                &color-intervention-not-required; grün
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                Passt zu einer vorhandenen Buchung, aber nicht genau hinsichtlich Datum und/oder
-                Betrag &ndash; Manueller Eingriff nicht erforderlich, importieren und aktualisieren.
-                Der Abgleichungszustand wird beim Import als bestätigt (b) markiert.
+                &color-intervention-not-required; Passt zu einer vorhandenen Buchung, aber nicht
+                genau hinsichtlich Datum und/oder Betrag &ndash; Manueller Eingriff nicht
+                erforderlich, importieren und aktualisieren. Der Abgleichungszustand wird beim
+                Import als bestätigt (b) markiert.
               </entry>
             </row>
 
@@ -3052,17 +3042,13 @@ Translators:
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                dunkelgrün
+                &color-intervention-not-required; grün
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-                Entspricht einer bestehenden Buchung &ndash; Wird nicht importiert. Der
-                Abgleichungszustand der vorhandene Buchung wird beim Import als bestätigt (b)
-                angezeigt. Ein Eingreifen ist nicht erforderlich.
+                &color-intervention-not-required; Entspricht einer bestehenden Buchung &ndash; Wird
+                nicht importiert. Der Abgleichungszustand der vorhandene Buchung wird beim Import
+                als bestätigt (b) angezeigt. Ein Eingreifen ist nicht erforderlich.
               </entry>
             </row>
 
@@ -3070,16 +3056,13 @@ Translators:
               <entry></entry>
 
               <entry>
-<?dbhtml bgcolor="#FF4040"?>
-<?dbfo bgcolor="#FF4040"?>
-                braun
+                &color-intervention-required; braun
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#FF4040"?>
-<?dbfo bgcolor="#FF4040"?>
-                Die Buchung hat eine schlechte Übereinstimmungen und es wurde keine Aktion gesetzt:
-                &ndash; Kann nicht importiert werden. Eine manuelle Handlung ist erforderlich.
+                &color-intervention-required; Die Buchung hat eine schlechte Übereinstimmungen und
+                es wurde keine Aktion gesetzt: &ndash; Kann nicht importiert werden. Eine manuelle
+                Handlung ist erforderlich.
               </entry>
             </row>
 
@@ -3087,15 +3070,11 @@ Translators:
               <entry></entry>
 
               <entry>
-<?dbhtml bgcolor="#6495ED"?>
-<?dbfo bgcolor="#6495ED"?>
-                kornblumenblau
+                &color-row-selected; blau
               </entry>
 
               <entry>
-<?dbhtml bgcolor="#6495ED"?>
-<?dbfo bgcolor="#6495ED"?>
-                Die Zeile ist ausgewählt.
+                &color-row-selected; Die Zeile ist ausgewählt.
               </entry>
             </row>
           </tbody>
@@ -3266,10 +3245,8 @@ Translators:
           <keycombo action="click">
             <mousebutton>Button1</mousebutton>
           </keycombo>
-          ausgewählt. Darauf hin wird sie mit einer <phrase>
-<?dbhtml bgcolor="#6495ED"?>
-<?dbfo bgcolor="#6495ED"?>
-          kornblumenblauen</phrase> Hintergrundfarbe angezeigt.
+          ausgewählt. Darauf hin wird sie mit einer <phrase>blauen</phrase> Hintergrundfarbe
+          angezeigt.
         </para>
 
         <para>Bei einem doppeltem Mausklick mit
@@ -3281,11 +3258,9 @@ Translators:
           Sie das gewünschte Konto im Dialog aus und klicken Sie auf <guibutton>OK</guibutton>. Der
           Dialog hat die Schaltfläche <guibutton>Neues Konto…</guibutton>, mit der Sie ein
           passendes Konto erstellen können, wenn es kein vorhandenes gibt, das als Gegenkonto
-          verwendet werden kann. Der Hintergrund der Zeile ändert sich zu <phrase>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-          dunkelgrün</phrase> und das zugewiesene Konto wird in der Spalte <guilabel>zusätzliche
-          Kommentare</guilabel> angezeigt.
+          verwendet werden kann. Der Hintergrund der Zeile ändert sich zu <phrase>grün</phrase>
+          und das zugewiesene Konto wird in der Spalte <guilabel>zusätzliche Kommentare</guilabel>
+          angezeigt.
         </para>
 
         <para>Oder alternativ, ein Mausklick mit
@@ -3310,23 +3285,13 @@ Translators:
           Zielkontos auf alle markierten Buchungen.
         </para>
 
-        <para>Wenn Sie Zeilen in einer Auswahl erfassen, werden sie mit einem <phrase>
-<?dbhtml bgcolor="#6495ED"?>
-<?dbfo bgcolor="#6495ED"?>
-          kornblumenblauem</phrase> Hintergrund markiert.
+        <para>Wenn Sie Zeilen in einer Auswahl erfassen, werden sie mit einem <phrase>blauem</phrase> Hintergrund
+          markiert.
         </para>
 
         <para>Nur die Zeilen, in denen das Kontrollkästchen <guilabel>Neu</guilabel> aktiviert ist und die
-          entweder eine <phrase>
-<?dbhtml bgcolor="#CFFFCB"?>
-<?dbfo bgcolor="#CFFFCB"?>
-          dunkelgrüne</phrase> oder <phrase>
-<?dbhtml bgcolor="#FFD700"?>
-<?dbfo bgcolor="#FFD700"?>
-          goldene</phrase> Hintergrundfarbe haben, können in eine Mehrfachauswahl aufgenommen
-          werden. Zeilen mit einem <phrase>
-<?dbhtml bgcolor="#FF4040"?>
-<?dbfo bgcolor="#FF4040"?>
+          entweder eine <phrase>grüne</phrase> oder <phrase>goldene</phrase> Hintergrundfarbe
+          haben, können in eine Mehrfachauswahl aufgenommen werden. Zeilen mit einem <phrase>
           braunen</phrase> Hintergrund oder die bei <guilabel>Ü+Abgl</guilabel> oder
           <guilabel>Abgl</guilabel> angekreuzten sind können nicht in einer Mehrfachauswahl
           markiert werden.
@@ -3367,8 +3332,8 @@ Translators:
               <keycombo action="click">
                 <mousebutton>Button1</mousebutton>
               </keycombo>
-              <emphasis>gedrückt halten und über Zeilen ziehen können</emphasis>, um eine
-              Auswahl zu erstellen. Um weitere Zeilen hinzuzufügen, betätigen Sie
+              <emphasis>gedrückt halten und über Zeilen ziehen können</emphasis>, um eine Auswahl
+              zu erstellen. Um weitere Zeilen hinzuzufügen, betätigen Sie
               <keycombo>
                 &kc.ctrl;<mousebutton>Button1</mousebutton>
               </keycombo>
