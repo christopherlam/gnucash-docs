@@ -24,7 +24,7 @@
     <title>Manuale di aiuto di &app;</title>
     <edition>v3.1</edition>
     <copyright>
-      <year>2002-2024</year> <holder>Gruppo della documentazione di &appname;</holder>
+      <year>2002-2025</year> <holder>Gruppo della documentazione di &appname;</holder>
     </copyright>
 
     <copyright>
@@ -209,6 +209,18 @@
     </authorgroup>
 
     <revhistory>
+      <revision>
+        <revnumber>&appname; Help Manual 5.11</revnumber>
+        <date>30 March 2025</date>
+        <revdescription>
+          <para role="author">Multiple authors
+          </para>
+
+          <para role="publisher">&appname; Documentation Team
+          </para>
+        </revdescription>
+      </revision>
+
       <revision>
         <revnumber>&appname; Help Manual 5.10</revnumber>
         <date>15 December 2024</date>

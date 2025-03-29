@@ -26,7 +26,7 @@
     <edition>v&manrevision;</edition>
     <titleabbrev>&appname;指南 &manrevision;</titleabbrev>
     <copyright>
-      <year>2009-2024</year> <holder>&appname;文档团队</holder>
+      <year>2009-2025</year> <holder>&appname;文档团队</holder>
     </copyright>
 
     <copyright>
@@ -78,6 +78,15 @@
     </authorgroup>
 
     <revhistory>
+      <revision>
+        <revnumber>&appname; Tutorial and Concepts Guide 5.11</revnumber>
+        <date>30 March 2025</date>
+        <revdescription>
+          <para role="author">Multiple authors</para>
+          <para role="publisher">&appname; Documentation Team</para>
+        </revdescription>
+      </revision>
+
       <revision>
         <revnumber>&appname; Tutorial and Concepts Guide 5.10</revnumber>
         <date>15 December 2024</date>

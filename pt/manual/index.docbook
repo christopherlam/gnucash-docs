@@ -24,7 +24,7 @@
     <title>Manual de ajuda do &app;</title>
     <edition>v&manrevision;</edition>
     <copyright>
-      <year>2002-2023</year> <holder>Equipa de documentação do GnuCash</holder>
+      <year>2002-2025</year> <holder>Equipa de documentação do GnuCash</holder>
     </copyright>
 <!-- translators: uncomment this:   -->
     <copyright>
@@ -46,6 +46,18 @@
     </authorgroup>
 
     <revhistory>
+      <revision>
+        <revnumber>Manual de ajuda do &appname; 5.11</revnumber>
+        <date>30 de março de 2025</date>
+        <revdescription>
+          <para role="author">Múltiplos autores
+          </para>
+
+          <para role="publisher">Equipa de documentação do &appname;
+          </para>
+        </revdescription>
+      </revision>
+
       <revision>
         <revnumber>Manual de ajuda do &appname; 5.10</revnumber>
         <date>15 de decembro de 2024</date>

@@ -1,3 +1,19 @@
+2025-03-27 John Ralls 
+
+	* Merge Christian Wehling's branch 'docbook_color-defs' into stable. (HEAD -> stable, upstream/stable)
+
+2025-01-12 Christian Wehling 
+
+	* manual:ch_Transactions: insert entities for background colors (docbook_color-defs)
+
+2025-01-12 Christian Wehling 
+
+	* manual:ch_Transactions: Remove processing instructions ...
+
+2025-01-11 Christian Wehling 
+
+	* docbook: new entities for describing of background colors
+
 2024-09-26 Christian Wehling 
 
 	* L10n:de: help_ch_Tools_Assistant: The "Loan Repayment Calculator" (HEAD -> stable, origin/stable, origin/HEAD)
