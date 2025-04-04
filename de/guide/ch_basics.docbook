@@ -1253,7 +1253,7 @@ gcashdata.gnucash.7f0982.12093.LNK gcashdata.gnucash.LCK
         ist. Die Warnmeldung erscheint, weil die <filename>.LNK</filename> und
         <filename>.LCK</filename> Dateien in Ihrem Ordner gefunden wurden. Es ist sicher,
         <guibutton>Trotzdem öffnen</guibutton> zu wählen, aber Sie sollten die
-        <filename>.LNK</filename> und <filename>.LCK</filename>Dateien löschen (von der
+        <filename>.LNK</filename> und <filename>.LCK</filename> Dateien löschen (von der
         Kommandozeile oder mit dem Dateimanager). Sobald die Dateien entfernt sind, wird die
         Warnmeldung nicht mehr erscheinen, sofern &app; nicht wieder abstürzt.
       </para>
