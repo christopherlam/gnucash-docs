@@ -1146,7 +1146,7 @@ gcashdata.gnucash.7f0982.12093.LNK gcashdata.gnucash.LCK
         Dateinamensendung jjjjMMtthhmmss.gnucash gespeichert. Diese Sicherungsdatei ist eine
         vollständige Kopie Ihrer Datendatei. Die Dateinamensendung gibt Jahr, Monat, Tag und Zeit
         der Sicherung an. Zum Beispiel bedeutet der Dateiname
-        <filename>gcashdata.gnucash.20010404185747.gnucash</filename>, dass die Sicherungskopie der
+        <filename>gcashdata.gnucash.20150404185747.gnucash</filename>, dass die Sicherungskopie der
         Datei gcashdata.gnucash am 4. April 2015 um 18:57:47 Uhr erfolgte.
       </para>
 
