@@ -2219,8 +2219,8 @@ Scrolling to older transactions is not possible. If you want to see all entries 
             <para>In dem Feld können Sie die Anzahl Tage anngeben, nach dem Buchungen schreibgeschützt werden und
               nicht mehr verändert werden können. Dieser Schwellenwert wird durch eine rote Linie
               in dem Kontenblatt markiert. Ist der Wert Null, ist der Schreibschutz aufgehoben und
-              alle Buchungen können bearbeitet werden. Dieses Auswahlfeld soll vor versehentlichen
-              Änderungen an langfristigen Buchungen schützen.
+              alle Buchungen können bearbeitet werden. Diese Einstellung soll vor versehentlichen
+              Änderungen an [länger] zurückliegenden Buchungen schützen.
             </para>
 
             <tip>
