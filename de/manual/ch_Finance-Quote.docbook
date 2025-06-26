@@ -461,7 +461,7 @@ Failed to initialize Finance::Quote: missing_modules Finance::Quote JSON::Parse
                 Währungscodes erfordern; die Wechselkurse werden in der ersten Währung angegeben.
                 <footnote>
                   <para>Seit &app-fq; 1.41 ist die Standardquelle für Währungen <quote>Alpha Vantage</quote>. Lesen Sie
-                    auch die Hinweise dazu in <xref linkend="gnc-tbl-fq-currency-source" />.
+                    auch die Hinweise dazu in <ulink url="&url-wiki;Online_Quotes#Finance::Quote_Sources_-_Currency_Source">wiki:Online_Quotes#Finance::Quote_Sources_-_Currency_Source</ulink>.
                   </para>
                 </footnote>
                 Zum Beispiel:
