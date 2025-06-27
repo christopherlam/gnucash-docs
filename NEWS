@@ -1,5 +1,9 @@
 Version History
 ---------------
+ 5.12  - 29 June 2025
+       o Fixed several typos in the German version.
+       o Remove the Finance::Quote appedix from the German version, mirorring the English
+         change in 5.10.
  5.11  - 30 March 2025
        o manual:ch_Transactions: insert entities for background colors
        o manual:ch_Transactions: Remove processing instructions. For background

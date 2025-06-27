@@ -1,3 +1,47 @@
+2025-06-27 John Ralls 
+
+	* Merge Christian Wehling's 'de_book-options' of github.com:CWehli/gnucash-docs into stable (HEAD -> stable, upstream/stable)
+
+2025-06-26 John Ralls 
+
+	* Merge K0NRAD1U5's 'typo-fix-2' into stable. (origin/stable, origin/HEAD)
+
+2025-06-26 John Ralls 
+
+	* Merge KONR4D1U5's 'typo-fix-1' into stable.
+
+2025-06-26 John Ralls 
+
+	* Merge Thomas Kriegel's 'German Corrections' into stable.
+
+2025-06-26 John Ralls 
+
+	* Merge Christian Wehling's 'de_FQ' into stable.
+
+2025-05-14 Christian Wehling 
+
+	* de:manual:ch_Customize: Better description for 'Day Threshold Read-Only Transactions'
+
+2024-12-16 Christian Wehling 
+
+	* de:manual: Remove Finance::Quote appendix
+
+2025-04-04 K0NR4D1U5 
+
+	* missing space :)
+
+2025-04-04 K0NR4D1U5 
+
+	* Update ch_basics.docbook
+
+2025-03-25 Thomas 
+
+	* Update ch_import_business_data.docbook
+
+2025-03-25 Thomas 
+
+	* Update ch_import_business_data.docbook
+
 2025-03-27 John Ralls 
 
 	* Merge Christian Wehling's branch 'docbook_color-defs' into stable. (HEAD -> stable, upstream/stable)
